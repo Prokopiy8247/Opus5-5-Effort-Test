@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_jngbg"]
+
+[resource]
+script = ExtResource("1_jngbg")
+category = "weight"
+level = 1
+display_name = "Street Weight"
+description = "Lighter panels and stripped trim: less mass to move."
+cost = 8000
+multipliers = {
+"mass": 0.96
+}

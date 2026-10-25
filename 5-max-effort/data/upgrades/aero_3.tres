@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_hti1u"]
+
+[resource]
+script = ExtResource("1_hti1u")
+part = "aero"
+level = 3
+display_name = "Race Aero"
+description = "Full race aero package."
+downforce_add = 0.25
+drag_mult = 1.04
+price = 36000

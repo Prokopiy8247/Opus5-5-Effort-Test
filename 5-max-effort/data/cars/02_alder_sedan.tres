@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_axeqs"]
+
+[resource]
+script = ExtResource("1_axeqs")
+id = &"02_alder_sedan"
+display_name = "Alder Sedan 2.0"
+maker = "Alder"
+category = "Sedan"
+year = 2019
+description = "Comfortable family sedan. Soft, predictable and surprisingly willing."
+model_path = "res://assets/imported/cars/02_alder_sedan.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1430.0
+com_offset = Vector3(0, 0.16, -0.15)
+max_torque_nm = 215.0
+torque_curve = PackedFloat32Array(0.62, 0.74, 0.85, 0.93, 0.99, 1, 0.95, 0.86)
+redline_rpm = 6300.0
+drivetrain = 0
+gear_ratios = PackedFloat32Array(3.6, 2.55, 1.94, 1.5, 1.18, 0.93)
+reverse_ratio = 3.42
+final_drive = 3.85
+diff_lock = 0.1
+tire_grip = 0.94
+wheel_radius_front = 0.32
+wheel_radius_rear = 0.32
+spring_hz_front = 1.45
+spring_hz_rear = 1.55
+damping_bump = 0.28
+damping_rebound = 0.48
+anti_roll_front = 15000.0
+anti_roll_rear = 9000.0
+brake_torque = 2300.0
+steer_lock_deg = 36.0
+drag_area = 0.8290000000000001
+downforce_area = 0.0
+engine_tone = 0.95
+engine_roughness = 0.2
+exhaust_pop = 0.0
+performance_class = "C"
+performance_index = 589
+default_color = Color(0.25, 0.32, 0.4, 1)
+top_speed_kmh = 205.0
+power_kw = 122.0

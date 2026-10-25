@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_3b7yb"]
+
+[resource]
+script = ExtResource("1_3b7yb")
+id = "car10_breeze"
+display_name = "Breeze Roadster '58"
+category = "Vintage Roadster"
+glb_path = "res://assets/imported/vehicles/car10_breeze.glb"
+mass = 880.0
+com_offset = Vector3(0, -0.186, 0)
+power_kw = 75.0
+peak_rpm = 5200.0
+redline = 6000.0
+gear_ratios = PackedFloat32Array(3.5, 2.1, 1.4, 1)
+final_drive = 4.0
+top_speed_kmh = 165.0
+grip = 0.95
+offroad_grip = 0.8
+susp_freq = 1.5
+anti_roll = 5280.0
+downforce = 0.0
+brake_force = 7000.0
+steer_lock_deg = 36.0
+engine_voice = 1.4
+base_color = Color(0.55, 0.85, 0.8, 1)

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WeatherPreset" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/weather_preset.gd" id="1_6jfj7"]
+
+[resource]
+script = ExtResource("1_6jfj7")
+key = "rain"
+display_name = "Rain"
+cloud_coverage = 0.9
+cloud_darkness = 0.7
+fog_density = 0.0016
+volumetric_fog = 0.004
+rain = 0.75
+wetness = 1.0
+grip = 0.78
+wind = 0.6
+sun_energy = 0.35
+ambient_energy = 0.7
+visibility_m = 2500.0

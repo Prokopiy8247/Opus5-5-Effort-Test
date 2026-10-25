@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/surface_def.gd" id="1_xhydq"]
+
+[resource]
+script = ExtResource("1_xhydq")
+id = 6
+key = "snow"
+display_name = "Snow"
+grip_by_tire = PackedFloat32Array(0.42, 0.38, 0.58, 0.62, 0.4)
+rolling_resistance = 0.04
+drag = 0.04
+bumpiness = 0.01
+wet_sensitivity = 0.3
+is_offroad = true
+particle_color = Color(0.95, 0.96, 1, 0.8)
+squeal = 0.05
+rumble = 0.3

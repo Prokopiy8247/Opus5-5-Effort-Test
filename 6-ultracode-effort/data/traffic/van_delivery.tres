@@ -1,0 +1,30 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic/traffic_vehicle_data.gd" id="1_tmpfx"]
+
+[resource]
+script = ExtResource("1_tmpfx")
+id = "van_delivery"
+display_name = "Delivery Van"
+model_path = "res://assets/imported/traffic/van_delivery.glb"
+mass = 2300.0
+length = 5.3
+width = 1.98
+height = 2.4
+wheelbase = 3.3
+wheel_radius = 0.34
+com_height = 0.8
+front_drive = false
+max_speed_kmh = 135.0
+accel = 1.5
+decel = 2.8
+power_kw = 105.0
+corner_g = 0.24
+time_gap = 2.0
+limit_factor = 0.97
+allowed_classes = PackedInt32Array(0, 1, 2, 3)
+allowed_regions = PackedInt32Array()
+spawn_weight = 0.16
+paints = PackedStringArray("white", "white", "silver", "yellow", "blue", "grey")
+finishes = PackedInt32Array(0)
+horn_hz = 400.0

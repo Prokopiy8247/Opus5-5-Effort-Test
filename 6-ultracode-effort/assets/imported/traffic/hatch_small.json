@@ -1,0 +1,214 @@
+{
+  "id": "hatch_small",
+  "name": "City Hatch",
+  "class": "city car (5-door hatchback)",
+  "drivetrain": "FWD",
+  "engine": "front, 1.0 petrol I3",
+  "doors": 5,
+  "seats": 4,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Traffic/Traffic_hatch_small",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (vehicle faces -z); metres; origin = ground, mid-axles",
+  "length": 3.6139,
+  "length_overall": 3.6139,
+  "width": 1.6526,
+  "width_with_mirrors": 1.91,
+  "height": 1.5,
+  "height_overall": 1.4998,
+  "ground_clearance": 0.1618,
+  "wheelbase": 2.35,
+  "track_front": 1.43,
+  "track_rear": 1.43,
+  "wheel_radius_front": 0.29,
+  "wheel_radius_rear": 0.29,
+  "wheel_width_front": 0.165,
+  "wheel_width_rear": 0.165,
+  "wheels": {
+    "FL": [
+      -0.715,
+      0.29,
+      -1.175
+    ],
+    "FR": [
+      0.715,
+      0.29,
+      -1.175
+    ],
+    "RL": [
+      -0.715,
+      0.29,
+      1.175
+    ],
+    "RR": [
+      0.715,
+      0.29,
+      1.175
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.52,
+      0.742,
+      -1.7811
+    ],
+    "Socket_HeadlightL": [
+      -0.52,
+      0.742,
+      -1.7811
+    ],
+    "Socket_Exhaust": [
+      -0.43,
+      0.268,
+      1.775
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.08,
+      -1.1
+    ],
+    "Socket_CamCockpit": [
+      -0.36,
+      1.23,
+      0.15
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.45,
+      -1.882
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.36,
+      0.905,
+      -0.33
+    ],
+    "column_axis": [
+      0.0,
+      -0.4067,
+      -0.9135
+    ],
+    "radius": 0.18,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.36,
+    1.23,
+    0.15
+  ],
+  "body_aabb": {
+    "min": [
+      -0.955,
+      0.1618,
+      -1.8139
+    ],
+    "max": [
+      0.955,
+      1.4998,
+      1.8
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -0.955,
+      0.0,
+      -1.8139
+    ],
+    "max": [
+      0.955,
+      1.4998,
+      1.8
+    ]
+  },
+  "tris": {
+    "Body": 11718,
+    "Glass": 560,
+    "Lights_Head": 402,
+    "Lights_Tail": 334,
+    "Lights_Brake": 140,
+    "Lights_Reverse": 104,
+    "Interior": 779,
+    "SteeringWheel": 660,
+    "Wheel_FR": 1884,
+    "Caliper_FR": 70,
+    "Wheel_FL": 1884,
+    "Caliper_FL": 70,
+    "Wheel_RR": 1884,
+    "Caliper_RR": 70,
+    "Wheel_RL": 1884,
+    "Caliper_RL": 70,
+    "total": 22513
+  },
+  "materials": [
+    "Amber_hatch_small",
+    "BrakeLens_hatch_small",
+    "Caliper_hatch_small",
+    "Chrome_hatch_small",
+    "Gauge_hatch_small",
+    "Glass_hatch_small",
+    "Grille_hatch_small",
+    "HeadlightLens_hatch_small",
+    "InteriorDark_hatch_small",
+    "Interior_hatch_small",
+    "Paint_hatch_small",
+    "Plate_hatch_small",
+    "ReverseLens_hatch_small",
+    "Rim_hatch_small",
+    "Rubber_hatch_small",
+    "TaillightLens_hatch_small",
+    "Trim_hatch_small",
+    "Underbody_hatch_small"
+  ],
+  "default_paint": {
+    "hex": "#8EC3E6",
+    "linear_rgb": [
+      0.27,
+      0.546,
+      0.791
+    ],
+    "finish": "metallic"
+  },
+  "rim_diameter_in_front": 14,
+  "rim_diameter_in_rear": 14,
+  "tyre_width_nominal": 0.165,
+  "notes": "Cabin tub (LoftBody inner shell) is part of Body so the merged traffic LOD stays opaque.",
+  "glb": {
+    "path": "res://assets/imported/traffic/hatch_small.glb",
+    "bytes": 797828,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "hatch_small"
+    ]
+  }
+}

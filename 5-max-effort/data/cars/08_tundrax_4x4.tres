@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_skn2n"]
+
+[resource]
+script = ExtResource("1_skn2n")
+id = &"08_tundrax_4x4"
+display_name = "Tundrax 4x4"
+maker = "Tundrax"
+category = "Off-Road SUV"
+year = 2022
+description = "Tall, tough off-roader. Long-travel suspension shrugs off rocks, ruts and riverbeds."
+engine_label = "4.4 V8"
+model_path = "res://assets/imported/cars/08_tundrax_4x4.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 2180.0
+com_offset = Vector3(0, 0.32, -0.05)
+inertia_scale = Vector3(1.05, 1.05, 1.1)
+max_torque_nm = 560.0
+torque_curve = PackedFloat32Array(0.8, 0.93, 1, 0.98, 0.92, 0.85, 0.77, 0.66)
+idle_rpm = 700.0
+redline_rpm = 5900.0
+engine_inertia = 0.3
+drivetrain = 2
+gear_ratios = PackedFloat32Array(3.9, 2.86, 2.23, 1.77, 1.42, 1.15)
+reverse_ratio = 3.7
+final_drive = 3.9
+awd_front_split = 0.45
+diff_lock = 0.65
+tire_grip = 0.92
+slide_ratio = 0.8
+load_sensitivity = 0.1
+offroad_grip = 1.35
+wheel_radius_front = 0.4
+wheel_radius_rear = 0.4
+spring_hz_front = 1.3
+spring_hz_rear = 1.35
+damping_bump = 0.3
+damping_rebound = 0.5
+travel_up = 0.16
+travel_down = 0.22
+anti_roll_front = 26000.0
+anti_roll_rear = 19000.0
+brake_torque = 3400.0
+steer_lock_deg = 36.0
+drag_area = 1.979
+downforce_area = 0.0
+cylinders = 8
+engine_tone = 0.7
+engine_roughness = 0.55
+exhaust_pop = 0.2
+performance_index = 603
+default_color = Color(0.32, 0.36, 0.22, 1)
+default_finish = 2
+top_speed_kmh = 192.0
+power_kw = 233.0

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/surface_def.gd" id="1_5bl2r"]
+
+[resource]
+script = ExtResource("1_5bl2r")
+id = 4
+key = "grass"
+display_name = "Grass"
+grip_by_tire = PackedFloat32Array(0.52, 0.48, 0.7, 0.76, 0.52)
+rolling_resistance = 0.045
+drag = 0.05
+bumpiness = 0.02
+wet_sensitivity = 1.2
+is_offroad = true
+particle_color = Color(0.35, 0.42, 0.22, 0.6)
+squeal = 0.05
+rumble = 0.6

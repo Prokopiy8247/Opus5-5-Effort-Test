@@ -1,0 +1,896 @@
+{
+	"events": [
+		{
+			"dir": 1,
+			"extra": {
+				"laps": 1,
+				"opponents": 0
+			},
+			"gates": [
+				19917.0,
+				21378.9,
+				22810.7,
+				24257.6,
+				25704.4,
+				28598.1,
+				30045.0,
+				31491.9,
+				32938.7,
+				34385.6,
+				35832.4,
+				37279.3,
+				38726.1,
+				40173.0
+			],
+			"id": "tt_sunward_ring",
+			"kind": "time_trial",
+			"length": 20256.0,
+			"pos": [
+				-220.31,
+				26.29,
+				847.07
+			],
+			"road": "ring",
+			"thresholds": [
+				820.5,
+				715.0,
+				645.0
+			],
+			"title": "Sunward Ring Time Trial"
+		},
+		{
+			"dir": 1,
+			"extra": {
+				"laps": 1,
+				"opponents": 3
+			},
+			"gates": [
+				156.0,
+				845.7,
+				1577.3,
+				2225.0,
+				2914.7,
+				3604.3,
+				4294.0,
+				5001.7,
+				5673.3,
+				6363.0
+			],
+			"id": "rc_highmoor",
+			"kind": "race",
+			"length": 6207.0,
+			"pos": [
+				-354.98,
+				28.4,
+				640.91
+			],
+			"road": "ring",
+			"thresholds": [
+				269.0,
+				234.5,
+				211.5
+			],
+			"title": "Highmoor Hillclimb"
+		},
+		{
+			"dir": 1,
+			"extra": {
+				"laps": 1,
+				"opponents": 3
+			},
+			"gates": [
+				13365.0,
+				14079.6,
+				14794.2,
+				15508.8,
+				16223.4,
+				16938.0
+			],
+			"id": "rc_coast",
+			"kind": "race",
+			"length": 3573.0,
+			"pos": [
+				1795.7,
+				53.55,
+				1279.19
+			],
+			"road": "ring",
+			"thresholds": [
+				148.0,
+				129.0,
+				116.0
+			],
+			"title": "Saltwind Coast Sprint"
+		},
+		{
+			"dir": 1,
+			"extra": {
+				"ramp": true,
+				"ramp_back": 10.0,
+				"ramp_height": 1.6,
+				"ramp_len": 11.0
+			},
+			"gates": [
+				240.0,
+				370.0
+			],
+			"id": "dj_hedgerow",
+			"kind": "jump",
+			"length": 130.0,
+			"pos": [
+				-1417.4,
+				24.39,
+				623.11
+			],
+			"road": "farm_track",
+			"thresholds": [
+				17.0,
+				26.0,
+				36.0
+			],
+			"title": "Hedgerow Hop"
+		},
+		{
+			"dir": 1,
+			"extra": {
+				"ramp": true,
+				"ramp_back": 10.0,
+				"ramp_height": 1.6,
+				"ramp_len": 11.0
+			},
+			"gates": [
+				663.0,
+				793.0
+			],
+			"id": "dj_redwall",
+			"kind": "jump",
+			"length": 130.0,
+			"pos": [
+				741.91,
+				56.45,
+				363.28
+			],
+			"road": "canyon_floor",
+			"thresholds": [
+				14.0,
+				20.0,
+				28.0
+			],
+			"title": "Redwall Ramp"
+		},
+		{
+			"dir": -1,
+			"extra": {
+				"ramp": true,
+				"ramp_back": 10.0,
+				"ramp_height": 1.6,
+				"ramp_len": 11.0
+			},
+			"gates": [
+				269.0,
+				139.0
+			],
+			"id": "dj_lakeshore",
+			"kind": "jump",
+			"length": 130.0,
+			"pos": [
+				-50.39,
+				42.13,
+				-427.77
+			],
+			"road": "lake_loop",
+			"thresholds": [
+				14.0,
+				20.0,
+				27.0
+			],
+			"title": "Lakeshore Leap"
+		},
+		{
+			"dir": -1,
+			"extra": {
+				"ramp": true,
+				"ramp_back": 10.0,
+				"ramp_height": 1.6,
+				"ramp_len": 11.0
+			},
+			"gates": [
+				536.0,
+				406.0
+			],
+			"id": "dj_pinewood",
+			"kind": "jump",
+			"length": 130.0,
+			"pos": [
+				-705.55,
+				30.5,
+				-391.92
+			],
+			"road": "forest_track",
+			"thresholds": [
+				18.0,
+				26.0,
+				37.0
+			],
+			"title": "Pinewood Kicker"
+		},
+		{
+			"dir": 1,
+			"extra": {
+				"ramp": true,
+				"ramp_back": 10.0,
+				"ramp_height": 1.6,
+				"ramp_len": 11.0
+			},
+			"gates": [
+				228.0,
+				358.0
+			],
+			"id": "dj_dune_run",
+			"kind": "jump",
+			"length": 130.0,
+			"pos": [
+				-1326.96,
+				7.83,
+				1487.63
+			],
+			"road": "dune_track",
+			"thresholds": [
+				12.0,
+				18.0,
+				24.0
+			],
+			"title": "Dune Run Launch"
+		},
+		{
+			"dir": 0,
+			"extra": {
+				"radius": 1372.0
+			},
+			"gates": [
+				1251.0
+			],
+			"id": "st_valley_express",
+			"kind": "speed_trap",
+			"length": 0.0,
+			"pos": [
+				-426.02,
+				31.55,
+				169.46
+			],
+			"road": "expressway",
+			"thresholds": [
+				160.0,
+				200.0,
+				245.0
+			],
+			"title": "Valley Express"
+		},
+		{
+			"dir": 0,
+			"extra": {
+				"radius": 1569.0
+			},
+			"gates": [
+				2634.0
+			],
+			"id": "st_mesa_climb",
+			"kind": "speed_trap",
+			"length": 0.0,
+			"pos": [
+				860.94,
+				78.01,
+				-206.42
+			],
+			"road": "expressway",
+			"thresholds": [
+				160.0,
+				200.0,
+				245.0
+			],
+			"title": "Mesa Climb"
+		},
+		{
+			"dir": 0,
+			"extra": {
+				"radius": 149.0
+			},
+			"gates": [
+				11433.0
+			],
+			"id": "st_ochre_straight",
+			"kind": "speed_trap",
+			"length": 0.0,
+			"pos": [
+				1751.66,
+				95.23,
+				-382.66
+			],
+			"road": "ring",
+			"thresholds": [
+				65.0,
+				80.0,
+				100.0
+			],
+			"title": "Ochre Straight"
+		},
+		{
+			"dir": 0,
+			"extra": {
+				"radius": 395.0
+			},
+			"gates": [
+				17217.0
+			],
+			"id": "st_beach_road",
+			"kind": "speed_trap",
+			"length": 0.0,
+			"pos": [
+				-1278.59,
+				25.7,
+				1320.79
+			],
+			"road": "ring",
+			"thresholds": [
+				110.0,
+				135.0,
+				165.0
+			],
+			"title": "Beach Road"
+		},
+		{
+			"dir": 0,
+			"extra": {
+				"radius": 165.0
+			},
+			"gates": [
+				360.0
+			],
+			"id": "st_mirror_lake",
+			"kind": "speed_trap",
+			"length": 0.0,
+			"pos": [
+				265.49,
+				31.92,
+				-242.86
+			],
+			"road": "lake_road",
+			"thresholds": [
+				75.0,
+				90.0,
+				110.0
+			],
+			"title": "Mirror Lake Run"
+		},
+		{
+			"dir": 0,
+			"extra": {
+				"radius": 493.0
+			},
+			"gates": [
+				156.0
+			],
+			"id": "st_dustwater",
+			"kind": "speed_trap",
+			"length": 0.0,
+			"pos": [
+				1126.38,
+				94.46,
+				-210.69
+			],
+			"road": "canyon_link",
+			"thresholds": [
+				120.0,
+				150.0,
+				185.0
+			],
+			"title": "Dustwater Dash"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				1401.0,
+				2401.0
+			],
+			"id": "sz_expressway",
+			"kind": "speed_zone",
+			"length": 1000.0,
+			"pos": [
+				-276.72,
+				31.33,
+				183.91
+			],
+			"road": "expressway",
+			"thresholds": [
+				150.0,
+				185.0,
+				215.0
+			],
+			"title": "Expressway Rush"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				13740.0,
+				14640.0
+			],
+			"id": "sz_saltwind",
+			"kind": "speed_zone",
+			"length": 900.0,
+			"pos": [
+				1624.2,
+				33.35,
+				1465.94
+			],
+			"road": "ring",
+			"thresholds": [
+				70.0,
+				85.0,
+				100.0
+			],
+			"title": "Saltwind Cliffs"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				42.0,
+				1015.0
+			],
+			"id": "sz_gale_ridge",
+			"kind": "speed_zone",
+			"length": 973.0,
+			"pos": [
+				1745.66,
+				122.48,
+				-1029.36
+			],
+			"road": "desert_north",
+			"thresholds": [
+				100.0,
+				125.0,
+				145.0
+			],
+			"title": "Gale Ridge Run"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				1314.0,
+				2164.0
+			],
+			"id": "sz_vale",
+			"kind": "speed_zone",
+			"length": 850.0,
+			"pos": [
+				-1324.0,
+				32.31,
+				371.55
+			],
+			"road": "ring",
+			"thresholds": [
+				80.0,
+				100.0,
+				115.0
+			],
+			"title": "Vale Sweepers"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				2853.0,
+				3953.0
+			],
+			"id": "dz_highmoor",
+			"kind": "drift",
+			"length": 1100.0,
+			"pos": [
+				-1604.61,
+				57.14,
+				-630.9
+			],
+			"road": "ring",
+			"thresholds": [
+				33000.0,
+				82500.0,
+				143000.0
+			],
+			"title": "Highmoor Switchbacks"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				8208.0,
+				9049.0
+			],
+			"id": "dz_ember_spur",
+			"kind": "drift",
+			"length": 841.0,
+			"pos": [
+				417.55,
+				56.02,
+				-984.5
+			],
+			"road": "ring",
+			"thresholds": [
+				25000.0,
+				63000.0,
+				109500.0
+			],
+			"title": "Ember Spur Esses"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				12156.0,
+				12906.0
+			],
+			"id": "dz_ochre_gorge",
+			"kind": "drift",
+			"length": 750.0,
+			"pos": [
+				1471.66,
+				68.96,
+				247.53
+			],
+			"road": "ring",
+			"thresholds": [
+				22500.0,
+				56500.0,
+				97500.0
+			],
+			"title": "Ochre Gorge"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [
+				81.0,
+				601.0
+			],
+			"id": "dz_plateau",
+			"kind": "drift",
+			"length": 520.0,
+			"pos": [
+				1166.95,
+				121.26,
+				-1594.38
+			],
+			"road": "plateau_stage",
+			"thresholds": [
+				15500.0,
+				39000.0,
+				67500.0
+			],
+			"title": "Plateau Sideways"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_festival_hill",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-209.59,
+				28.64,
+				636.13
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Festival Hill"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_millbrook",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-1183.92,
+				28.66,
+				724.89
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Millbrook Green"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_wend_farm",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-1502.11,
+				25.04,
+				561.66
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Wend Farm Barnyard"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_crossroads",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-742.68,
+				19.87,
+				225.78
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Crossroads Diner"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_mirror_lake",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				86.88,
+				40.33,
+				-433.75
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Mirror Lake Shore"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_pinewood",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-723.69,
+				29.38,
+				-242.69
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Pinewood Clearing"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_highmoor",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-1453.95,
+				160.19,
+				-1337.04
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Highmoor Hamlet"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_old_keep",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-1800.0,
+				181.22,
+				-1470.0
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Old Keep Ruins"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_ironcrest",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-895.07,
+				189.68,
+				-1500.41
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Ironcrest Viewpoint"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_ember_spur",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-435.41,
+				127.18,
+				-1076.13
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Ember Spur Lookout"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_gale_ridge",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				1124.59,
+				94.38,
+				-1451.13
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Gale Ridge Turbines"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_mesa_fuel",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				1251.08,
+				106.02,
+				-393.09
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Mesa Fuel"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_dustwater",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				1101.09,
+				93.99,
+				-55.64
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Dustwater Yard"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_redwall",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				716.4,
+				59.85,
+				195.66
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Redwall Canyon Floor"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_gullhaven",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				1078.95,
+				11.93,
+				1375.91
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Gullhaven Quay"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_lighthouse",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				1741.28,
+				31.48,
+				1483.35
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Saltwind Lighthouse"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_seabreak",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				232.91,
+				24.13,
+				1348.86
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Seabreak Dunes"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_estuary",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-889.09,
+				2.72,
+				1495.54
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Estuary Beach"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_dune_run",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-1172.35,
+				2.18,
+				1551.38
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Dune Run Hollow"
+		},
+		{
+			"dir": 0,
+			"extra": {},
+			"gates": [],
+			"id": "flag_coast_fuel",
+			"kind": "collectible",
+			"length": 0.0,
+			"pos": [
+				-1609.88,
+				31.1,
+				1215.22
+			],
+			"road": "",
+			"thresholds": [],
+			"title": "Coast Fuel"
+		}
+	],
+	"signature": "894319905",
+	"version": 5
+}

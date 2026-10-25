@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="WeatherPreset" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/weather_preset.gd" id="1_p716p"]
+
+[resource]
+script = ExtResource("1_p716p")
+id = &"storm"
+display_name = "Storm"
+cloud_coverage = 1.0
+cloud_darkness = 0.95
+fog_density = 0.0013
+fog_height_density = 0.003
+rain = 1.0
+lightning = true
+wetness = 1.0
+sun_energy = 0.18
+ambient = 0.45
+wind = 11.0
+grip = 0.93
+weight = 0.8

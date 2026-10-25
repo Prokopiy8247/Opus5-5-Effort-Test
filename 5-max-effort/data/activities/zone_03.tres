@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_arakb"]
+
+[resource]
+script = ExtResource("1_arakb")
+id = "zone_03"
+kind = 1
+display_name = "Highland Rush"
+region = "Saltwind Coast"
+s0 = 7390
+s1 = 7770
+position = Vector3(-1428.45, 30.58, 313.53)
+heading = Vector3(-0.038761448, 0, -0.9992485)
+end_position = Vector3(-1557.53, 35.37, -406.13)
+end_heading = Vector3(0.21004757, 0, -0.9776911)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(105, 135, 155)
+unit = "km/h"
+length_m = 760.0

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_ec7f3"]
+
+[resource]
+script = ExtResource("1_ec7f3")
+part = "brakes"
+level = 3
+display_name = "Race Brakes"
+description = "Carbon-ceramic race brakes."
+mass_mult = 0.995
+brake_mult = 1.12
+price = 36000

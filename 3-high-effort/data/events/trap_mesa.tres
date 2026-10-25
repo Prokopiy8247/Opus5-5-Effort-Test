@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_ioh1j"]
+
+[resource]
+script = ExtResource("1_ioh1j")
+id = "trap_mesa"
+display_name = "Ochre Flash"
+road_id = "mesa_run"
+start_frac = 0.55
+end_frac = 0.55
+stars = PackedFloat32Array(110, 140, 170)
+reward = 800

@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_hflkw"]
+
+[sub_resource type="Curve" id="Curve_gciu1"]
+_data = [Vector2(0, 0.52), 0.0, 0.0, 0, 0, Vector2(0.14, 0.72), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(0.74, 1), 0.0, 0.0, 0, 0, Vector2(0.9, 0.86), 0.0, 0.0, 0, 0, Vector2(1, 0.74), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_hflkw")
+id = "vortex_x"
+display_name = "Vortex X"
+category = "Supercar"
+blurb = "Mid-engined twin-turbo AWD missile with real downforce. Brutal launch, glued at speed."
+perf_class = "X"
+perf_index = 984
+model_path = "res://assets/imported/cars/vortex_x.glb"
+year_style = "Modern"
+default_color = Color(0.91, 0.35, 0.05, 1)
+default_finish = 2
+mass = 1480.0
+com = Vector3(0, 0.42, 0.22)
+inertia_scale = Vector3(1, 0.8, 1)
+idle_rpm = 950.0
+redline_rpm = 8200.0
+max_rpm = 8600.0
+peak_torque = 860.4060871865831
+torque_curve = SubResource("Curve_gciu1")
+turbo = true
+cylinders = 8
+exhaust_rasp = 0.65
+engine_pitch = 1.15
+gear_ratios = PackedFloat32Array(3.72, 2.805, 2.196, 1.742, 1.392, 1.119, 0.903)
+reverse_ratio = 3.53353573705637
+reverse_max_kmh = 35.0
+final_drive = 3.4
+drivetrain = 2
+awd_front_split = 0.35
+diff_lock = 0.6
+tire_grip = 1.22
+grip_rear = 1.04
+peak_slip_deg = 6.8
+wheelbase = 2.7
+track_front = 1.7
+track_rear = 1.65
+wheel_radius_front = 0.345
+wheel_radius_rear = 0.36
+body_size = Vector3(2.04, 1.12, 4.6)
+spring_front = 82000.0
+spring_rear = 86000.0
+damper_bump = 5000.0
+damper_rebound = 7000.0
+suspension_travel = 0.14
+anti_roll_front = 24000.0
+anti_roll_rear = 20000.0
+drag_area = 0.8936716328893445
+downforce_front = 0.45
+downforce_rear = 0.75
+brake_force = 19600.38
+brake_bias = 0.6
+handbrake_force = 10889.1
+max_steer_deg = 31.0
+high_speed_steer_deg = 5.0
+top_speed_kmh = 352.0

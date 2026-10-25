@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_wlioi"]
+
+[resource]
+script = ExtResource("1_wlioi")
+part = "tires"
+level = 3
+display_name = "Race Slick"
+description = "Maximum tarmac grip; poor on loose ground."
+grip_mult = 1.06
+offroad_mult = 0.9
+price = 36000

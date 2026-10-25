@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_77r36"]
+
+[sub_resource type="Curve" id="Curve_0yfn3"]
+_data = [Vector2(0, 0.52), 0.0, 0.0, 0, 0, Vector2(0.14, 0.72), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(0.74, 1), 0.0, 0.0, 0, 0, Vector2(0.9, 0.86), 0.0, 0.0, 0, 0, Vector2(1, 0.74), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_77r36")
+id = "aurelia_sedan"
+display_name = "Aurelia Saloon"
+category = "Family Sedan"
+blurb = "Comfortable, predictable everyday saloon. Soft springs, safe understeer, a calm long-distance cruiser."
+perf_class = "D"
+perf_index = 374
+model_path = "res://assets/imported/cars/aurelia_sedan.glb"
+year_style = "Modern"
+default_color = Color(0.24, 0.35, 0.5, 1)
+default_finish = 2
+mass = 1420.0
+com = Vector3(0, 0.53, -0.22)
+idle_rpm = 750.0
+redline_rpm = 6200.0
+max_rpm = 6500.0
+peak_torque = 241.6830312253351
+torque_curve = SubResource("Curve_0yfn3")
+turbo = true
+exhaust_rasp = 0.15
+engine_pitch = 0.95
+gear_ratios = PackedFloat32Array(3.837, 2.757, 2.071, 1.578, 1.214, 0.94)
+reverse_ratio = 3.644723477051068
+reverse_max_kmh = 28.0
+final_drive = 3.6
+drivetrain = 0
+awd_front_split = 0.0
+diff_lock = 0.15
+tire_grip = 0.97
+grip_rear = 1.06
+peak_slip_deg = 7.0
+slide_grip = 0.78
+offroad_tires = 0.1
+wheelbase = 2.78
+track_front = 1.57
+track_rear = 1.56
+wheel_radius_front = 0.325
+wheel_radius_rear = 0.325
+body_size = Vector3(1.82, 1.45, 4.75)
+spring_front = 40000.0
+spring_rear = 38000.0
+damper_bump = 3000.0
+damper_rebound = 4300.0
+suspension_travel = 0.21
+anti_roll_front = 14000.0
+anti_roll_rear = 7000.0
+drag_area = 0.7467582350348964
+downforce_front = 0.05
+downforce_rear = 0.08
+brake_force = 18805.77
+brake_bias = 0.68
+handbrake_force = 10447.650000000001
+high_speed_steer_deg = 7.5
+top_speed_kmh = 218.0

@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_uuxcm"]
+
+[sub_resource type="Curve" id="Curve_tx2bp"]
+_data = [Vector2(0, 0.52), 0.0, 0.0, 0, 0, Vector2(0.14, 0.72), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(0.74, 1), 0.0, 0.0, 0, 0, Vector2(0.9, 0.86), 0.0, 0.0, 0, 0, Vector2(1, 0.74), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_uuxcm")
+id = "granite_rally"
+display_name = "Granite RS"
+category = "Rally"
+blurb = "Gravel-spec AWD turbo on long-travel dampers. Flat-out on dirt, sideways on demand."
+perf_class = "B"
+perf_index = 558
+model_path = "res://assets/imported/cars/granite_rally.glb"
+year_style = "1990s"
+default_color = Color(0.96, 0.96, 0.94, 1)
+mass = 1260.0
+com = Vector3(0, 0.52, -0.1)
+inertia_scale = Vector3(1, 0.82, 1)
+idle_rpm = 1000.0
+redline_rpm = 7500.0
+max_rpm = 7800.0
+peak_torque = 386.5684164507939
+torque_curve = SubResource("Curve_tx2bp")
+turbo = true
+exhaust_rasp = 0.8
+engine_pitch = 1.05
+gear_ratios = PackedFloat32Array(3.656, 2.649, 2.004, 1.538, 1.19, 0.927)
+reverse_ratio = 3.4733556708869915
+reverse_max_kmh = 35.0
+final_drive = 4.4
+drivetrain = 2
+awd_front_split = 0.45
+diff_lock = 0.7
+tire_grip = 1.02
+grip_rear = 0.98
+peak_slip_deg = 9.0
+slide_grip = 0.88
+offroad_tires = 0.75
+wheelbase = 2.55
+track_front = 1.58
+track_rear = 1.58
+wheel_radius_front = 0.33
+wheel_radius_rear = 0.33
+body_size = Vector3(1.85, 1.4, 4.2)
+spring_front = 38000.0
+spring_rear = 36000.0
+damper_bump = 3400.0
+damper_rebound = 4800.0
+suspension_travel = 0.27
+anti_roll_front = 12000.0
+drag_area = 1.4268472664039622
+downforce_front = 0.1
+downforce_rear = 0.18
+brake_force = 16686.81
+brake_bias = 0.6
+handbrake_force = 9270.45
+max_steer_deg = 35.0
+high_speed_steer_deg = 7.5
+top_speed_kmh = 222.0

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_014mk"]
+
+[resource]
+script = ExtResource("1_014mk")
+id = "trial_loop"
+kind = 5
+display_name = "Ridgeline Loop Time Trial"
+region = "Meadowbrook Vale"
+position = Vector3(-640, 20.68, 600)
+heading = Vector3(0.93588006, 0, 0.3523187)
+end_heading = Vector3(0.93588006, 0, 0.3523187)
+width = 9.2
+points = PackedVector3Array(115.58, 24.14, -26.04, 803.16, 96.09, -636.1, 391.76, 206.09, -893.05, 674.45, 316.09, -1072.63, 1185.71, 367.36, -1221.42, 1544.31, 257.36, -970.56, 1708.56, 152.09, -719.26, 1762.64, 99.92, -234.29, 1481.15, 85.72, 561.22, 1848.02, 85.25, 1418.4, 1072.82, 61.35, 1672.09, 119.34, 23.51, 1760.21, -759.63, 38.31, 1710.98, -1442.7, 35.63, 1046.95, -1537.97, 29.23, 125.52, -1581.77, 74.47, -861.74, -1047.36, 166.76, -1640.41, -638.05, 126.82, -890.59, -1261.3, 27.37, -240.61, -735.55, 28.66, 317.69, -640, 20.68, 600)
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(835, 688, 589)
+lower_is_better = true
+unit = "s"
+reward = 1500
+length_m = 20306.0

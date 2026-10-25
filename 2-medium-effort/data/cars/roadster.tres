@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_racno"]
+
+[resource]
+script = ExtResource("1_racno")
+id = "roadster"
+display_name = "Aurelia 1600"
+maker = "Lucent"
+description = "Charming vintage roadster. Light, slow and wonderfully playful."
+car_class = "D"
+pi = 380
+model_path = "res://assets/imported/cars/roadster.glb"
+year = 1962
+mass = 830.0
+com_offset = Vector3(0, -0.2, 0)
+peak_torque = 145.0
+redline = 6600.0
+idle_rpm = 800.0
+torque_falloff = 0.5
+gears = PackedFloat32Array(3.5, 2.2, 1.45, 1)
+final_drive = 4.366153790033176
+grip = 0.92
+loose_grip = 0.95
+lateral_stiffness = 8.0
+rest_length = 0.38
+spring = 20355.75
+damper_bump = 1315.3234978513842
+damper_rebound = 1972.985246777076
+arb_front = 9000.0
+arb_rear = 5000.0
+brake_force = 7000.0
+brake_bias = 0.6
+steer_lock = 38.0
+steer_speed_reduction = 0.7
+top_speed_kmh = 168.0
+downforce = 0.0
+sound_pitch = 1.05
+sound_rough = 0.45
+paint_color = Color(0.55, 0.78, 0.82, 1)
+rim_color = Color(0.78, 0.79, 0.8, 1)

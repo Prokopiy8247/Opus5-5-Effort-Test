@@ -1,0 +1,220 @@
+{
+  "id": "castellan_gt",
+  "name": "Castellan GT",
+  "class": "front-engine grand tourer (2+2 coupe)",
+  "drivetrain": "RWD",
+  "engine": "front V12",
+  "doors": 2,
+  "seats": 4,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Cars/Car_castellan_gt",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (car faces -z); metres; origin = ground, mid-axles",
+  "length": 4.8515,
+  "length_body_shell": 4.828,
+  "width": 1.9823,
+  "width_with_mirrors": 2.178,
+  "height": 1.2799,
+  "height_overall": 1.2799,
+  "ground_clearance": 0.13,
+  "ground_clearance_min": 0.1246,
+  "wheelbase": 2.85,
+  "track_front": 1.66,
+  "track_rear": 1.65,
+  "wheel_radius_front": 0.35,
+  "wheel_radius_rear": 0.35,
+  "wheel_width_front": 0.255,
+  "wheel_width_rear": 0.295,
+  "rim_diameter_in": 20,
+  "wheels": {
+    "FL": [
+      -0.83,
+      0.35,
+      -1.425
+    ],
+    "FR": [
+      0.83,
+      0.35,
+      -1.425
+    ],
+    "RL": [
+      -0.825,
+      0.35,
+      1.425
+    ],
+    "RR": [
+      0.825,
+      0.35,
+      1.425
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.518,
+      0.6407,
+      -2.3963
+    ],
+    "Socket_HeadlightL": [
+      -0.518,
+      0.6407,
+      -2.3963
+    ],
+    "Socket_Exhaust": [
+      0.5025,
+      0.452,
+      2.425
+    ],
+    "Socket_Exhaust2": [
+      -0.5025,
+      0.452,
+      2.425
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.005,
+      -0.52
+    ],
+    "Socket_CamCockpit": [
+      -0.38,
+      1.062,
+      0.54
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.45,
+      -2.467
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.38,
+      0.775,
+      0.02
+    ],
+    "column_axis": [
+      0.0,
+      -0.3746,
+      -0.9272
+    ],
+    "radius": 0.182,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.38,
+    1.062,
+    0.54
+  ],
+  "body_aabb": {
+    "min": [
+      -1.089,
+      0.1246,
+      -2.4256
+    ],
+    "max": [
+      1.089,
+      1.2799,
+      2.426
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.089,
+      0.0,
+      -2.4256
+    ],
+    "max": [
+      1.089,
+      1.2799,
+      2.426
+    ]
+  },
+  "tris": {
+    "Body": 29075,
+    "Glass": 1700,
+    "Interior": 6259,
+    "Wheel_FR": 3076,
+    "Caliper_FR": 70,
+    "Wheel_FL": 3076,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3076,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3076,
+    "Caliper_RL": 70,
+    "Lights_Head": 504,
+    "Lights_Tail": 496,
+    "Lights_Brake": 426,
+    "Lights_Reverse": 68,
+    "SteeringWheel": 1040,
+    "total": 52152
+  },
+  "materials": [
+    "BrakeDisc_castellan_gt",
+    "BrakeLens_castellan_gt",
+    "Caliper_castellan_gt",
+    "Carbon_castellan_gt",
+    "Chrome_castellan_gt",
+    "Gauge_castellan_gt",
+    "Glass_castellan_gt",
+    "Grille_castellan_gt",
+    "HeadlightLens_castellan_gt",
+    "InteriorAccent_castellan_gt",
+    "InteriorDark_castellan_gt",
+    "InteriorWood_castellan_gt",
+    "Interior_castellan_gt",
+    "Paint_castellan_gt",
+    "ReverseLens_castellan_gt",
+    "Rim_castellan_gt",
+    "Rubber_castellan_gt",
+    "TaillightLens_castellan_gt",
+    "Trim_castellan_gt",
+    "Underbody_castellan_gt"
+  ],
+  "default_paint": {
+    "hex": "#1F3D2B",
+    "linear_rgb": [
+      0.0137,
+      0.0467,
+      0.0242
+    ],
+    "finish": "metallic"
+  },
+  "glb": {
+    "path": "res://assets/imported/cars/castellan_gt.glb",
+    "bytes": 1799880,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_Exhaust2",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "castellan_gt"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_or401"]
+
+[resource]
+script = ExtResource("1_or401")
+id = "board_16"
+display_name = "Festival board 17"
+kind = 6
+road_id = "south_lane"
+start_frac = 0.5
+end_frac = 0.5
+stars = PackedFloat32Array(0, 0, 0)
+reward = 500

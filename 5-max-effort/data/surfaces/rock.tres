@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_2giqw"]
+
+[resource]
+script = ExtResource("1_2giqw")
+id = 7
+key = &"rock"
+display_name = "Rock"
+grip = 0.78
+slip_peak_scale = 1.2
+slide_ratio = 0.8
+loose = 0.3
+rolling_resistance = 0.02
+bumpiness = 0.03
+wet_grip = 0.8
+dust_color = Color(0.55, 0.52, 0.5, 0.6)
+particle = 1
+sound = 1
+skidmarks = false

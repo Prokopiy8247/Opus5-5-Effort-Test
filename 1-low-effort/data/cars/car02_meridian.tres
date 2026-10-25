@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_2lybv"]
+
+[resource]
+script = ExtResource("1_2lybv")
+id = "car02_meridian"
+display_name = "Meridian Saloon"
+category = "Sedan"
+glb_path = "res://assets/imported/vehicles/car02_meridian.glb"
+mass = 1450.0
+com_offset = Vector3(0, -0.186, 0)
+power_kw = 140.0
+peak_rpm = 5600.0
+redline = 6500.0
+gear_ratios = PackedFloat32Array(3.6, 2.2, 1.5, 1.12, 0.9, 0.74)
+final_drive = 3.7
+top_speed_kmh = 210.0
+grip = 1.02
+susp_freq = 1.6
+anti_roll = 8700.0
+downforce = 0.15
+brake_force = 10000.0
+engine_voice = 0.9
+base_color = Color(0.15, 0.22, 0.38, 1)
+finish = 2

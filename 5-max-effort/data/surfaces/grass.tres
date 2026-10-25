@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_u1yfr"]
+
+[resource]
+script = ExtResource("1_u1yfr")
+id = 4
+key = &"grass"
+display_name = "Grass"
+grip = 0.55
+slip_peak_scale = 1.5
+slide_ratio = 0.8
+loose = 0.7
+rolling_resistance = 0.045
+soft_drag = 0.25
+bumpiness = 0.022
+wet_grip = 0.7
+dust_color = Color(0.35, 0.45, 0.2, 0.6)
+particle = 3
+sound = 3
+skidmarks = false

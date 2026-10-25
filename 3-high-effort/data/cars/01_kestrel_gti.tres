@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_8vvn1"]
+
+[resource]
+script = ExtResource("1_8vvn1")
+id = "kestrel_gti"
+display_name = "Kestrel GTi"
+maker = "Kestrel"
+year = 2021
+body_style = "Hot hatch"
+car_class = "B"
+pi = 655
+description = "Feisty front-drive hatch. Light, eager and happiest on twisty B-roads."
+model_path = "res://assets/imported/cars/kestrel_gti.glb"
+mass = 1190.0
+com_offset = Vector3(0, 0.52, -0.25)
+peak_torque = 340.0
+torque_curve = PackedVector2Array(1000, 0.5, 2000, 0.95, 4500, 1, 6000, 0.86, 6800, 0.72)
+redline_rpm = 6900.0
+engine_layout = "I4 turbo"
+turbo = true
+sound_base_pitch = 1.05
+sound_roughness = 0.25
+drivetrain = 0
+gear_ratios = PackedFloat32Array(3.4, 2.15, 1.55, 1.2, 0.98, 0.82)
+tire_type = 1
+grip = 1.08
+slide_grip = 0.8
+spring_hz_front = 1.75
+spring_hz_rear = 1.9
+damping_ratio = 0.42
+anti_roll_front = 11000.0
+anti_roll_rear = 13000.0
+brake_force = 12500.0
+brake_bias = 0.64
+handbrake_force = 5200.0
+steer_lock_deg = 35.0
+aero_balance = 0.5
+top_speed_kmh = 245.0
+paint_color = Color(0.82, 0.07, 0.05, 1)
+paint_finish = "gloss"
+rim_color = Color(0.12, 0.12, 0.13, 1)
+stat_speed = 6.2
+stat_handling = 7.3
+stat_accel = 6.4
+stat_launch = 5.5
+stat_braking = 6.8
+stat_offroad = 3.5
+power_hp = 245

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_xtyay"]
+
+[resource]
+script = ExtResource("1_xtyay")
+id = "zone_coast"
+display_name = "Saltcliff Stretch"
+kind = 1
+road_id = "festival_loop"
+start_xz = Vector2(1370, 400)
+end_xz = Vector2(1270, -60)
+stars = PackedFloat32Array(90, 115, 140)
+reward = 1200

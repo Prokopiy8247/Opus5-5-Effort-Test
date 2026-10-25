@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_m6mlk"]
+
+[resource]
+script = ExtResource("1_m6mlk")
+id = "hatch"
+display_name = "Pico GTi"
+maker = "Velora"
+description = "Nimble front-drive hot hatch. Darts into corners, forgiving at the limit."
+pi = 565
+model_path = "res://assets/imported/cars/hatch.glb"
+year = 2019
+mass = 1090.0
+com_offset = Vector3(0, -0.2, 0.05)
+peak_torque = 270.0
+peak_torque_rpm = 4600.0
+redline = 7200.0
+idle_rpm = 800.0
+torque_falloff = 0.55
+gears = PackedFloat32Array(3.3, 2.05, 1.5, 1.18, 0.96, 0.8)
+final_drive = 4.7181421041725935
+drive = 0
+turbo = true
+grip = 1.04
+lateral_stiffness = 9.5
+rest_length = 0.315
+spring = 35643.0
+damper_bump = 1994.5749141107735
+damper_rebound = 2991.8623711661603
+arb_front = 20000.0
+arb_rear = 14000.0
+brake_force = 10000.0
+brake_bias = 0.6
+steer_lock = 36.0
+steer_speed_reduction = 0.7
+top_speed_kmh = 212.0
+downforce = 0.3
+sound_pitch = 1.15
+sound_rough = 0.25
+paint_color = Color(0.85, 0.12, 0.1, 1)
+rim_color = Color(0.78, 0.79, 0.8, 1)

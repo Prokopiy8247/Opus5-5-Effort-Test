@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_phk37"]
+
+[resource]
+script = ExtResource("1_phk37")
+id = "trap_valley"
+display_name = "Valley Radar"
+road_id = "valley_highway"
+start_frac = 0.3
+end_frac = 0.3
+stars = PackedFloat32Array(130, 165, 200)
+reward = 800
+description = "Blast through the camera on the highway."

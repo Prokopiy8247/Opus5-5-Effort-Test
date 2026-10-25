@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_yhlcp"]
+
+[resource]
+script = ExtResource("1_yhlcp")
+id = "jump_02"
+kind = 3
+display_name = "Mesa Launch"
+region = "Granite Crown Highlands"
+s0 = 9060
+position = Vector3(-739.48, 113.62, -827.61)
+heading = Vector3(-0.90985113, 0, 0.41493484)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(30, 50, 70)
+unit = "m"
+prop_position = Vector3(-743.67084, 115.00234, -836.7995)
+prop_yaw = -1.1429251392984687

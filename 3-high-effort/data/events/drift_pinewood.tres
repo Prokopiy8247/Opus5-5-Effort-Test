@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_b21dg"]
+
+[resource]
+script = ExtResource("1_b21dg")
+id = "drift_pinewood"
+display_name = "Pinewood Slide"
+kind = 2
+road_id = "pinewood_gravel"
+start_xz = Vector2(-400, -1060)
+end_xz = Vector2(-760, -660)
+stars = PackedFloat32Array(1500, 3500, 6000)
+reward = 1500

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_iwu3q"]
+
+[resource]
+script = ExtResource("1_iwu3q")
+level = 2
+display_name = "Sport Cams & Tune"
+description = "Hotter cams and an aggressive engine map."
+torque_mult = 1.08
+redline_add = 150.0
+price = 16000

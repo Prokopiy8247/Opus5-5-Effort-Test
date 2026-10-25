@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_wg4w3"]
+
+[resource]
+script = ExtResource("1_wg4w3")
+id = "sora_coupe"
+display_name = "Sora Coupe"
+maker = "Sora"
+year = 2003
+body_style = "Sports coupe"
+car_class = "A"
+pi = 765
+description = "High-revving rear-drive coupe with a perfectly balanced chassis. A drifter's dream."
+model_path = "res://assets/imported/cars/sora_coupe.glb"
+mass = 1290.0
+com_offset = Vector3(0, 0.48, 0)
+peak_torque = 360.0
+torque_curve = PackedVector2Array(1000, 0.5, 3000, 0.78, 5500, 1, 7500, 0.92, 8200, 0.8)
+idle_rpm = 950.0
+redline_rpm = 8200.0
+cylinders = 6
+engine_layout = "I6 twin-turbo"
+turbo = true
+sound_base_pitch = 1.1
+gear_ratios = PackedFloat32Array(3.2, 2.2, 1.6, 1.25, 1, 0.82)
+tire_type = 1
+grip = 1.12
+grip_rear_bias = 0.98
+peak_slip_angle_deg = 8.5
+slide_grip = 0.84
+suspension_rest = 0.15
+spring_hz_front = 2.0
+spring_hz_rear = 2.1
+damping_ratio = 0.45
+anti_roll_front = 14000.0
+anti_roll_rear = 10000.0
+brake_force = 13500.0
+brake_bias = 0.6
+handbrake_force = 6500.0
+steer_lock_deg = 38.0
+downforce_area = 0.35
+top_speed_kmh = 265.0
+paint_color = Color(0.92, 0.92, 0.94, 1)
+paint_finish = "pearl"
+rim_color = Color(0.1, 0.1, 0.1, 1)
+stat_speed = 7.2
+stat_handling = 7.8
+stat_accel = 7.0
+stat_launch = 6.0
+stat_braking = 7.2
+stat_offroad = 3.0
+power_hp = 320

@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_ql7eh"]
+
+[resource]
+script = ExtResource("1_ql7eh")
+id = &"09_haulmark_p30"
+display_name = "Haulmark P30"
+maker = "Haulmark"
+category = "Pickup"
+year = 2018
+description = "Heavy work truck with a lazy V8. Leans in corners, never quits."
+engine_label = "5.7 V8"
+model_path = "res://assets/imported/cars/09_haulmark_p30.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 2280.0
+com_offset = Vector3(0, 0.34, -0.3)
+inertia_scale = Vector3(1.1, 1.1, 1.05)
+max_torque_nm = 540.0
+torque_curve = PackedFloat32Array(0.8, 0.93, 1, 0.98, 0.92, 0.85, 0.77, 0.66)
+idle_rpm = 650.0
+redline_rpm = 5600.0
+engine_inertia = 0.32
+gear_ratios = PackedFloat32Array(3.5, 2.64, 2.11, 1.71, 1.41, 1.16)
+reverse_ratio = 3.3200000000000003
+diff_lock = 0.25
+tire_grip = 0.9
+grip_rear = 0.95
+offroad_grip = 1.15
+wheel_radius_front = 0.39
+wheel_radius_rear = 0.39
+spring_hz_front = 1.2
+spring_hz_rear = 1.35
+damping_bump = 0.24
+damping_rebound = 0.4
+travel_up = 0.14
+travel_down = 0.18
+anti_roll_front = 14000.0
+anti_roll_rear = 6000.0
+brake_torque = 3300.0
+steer_lock_deg = 37.0
+steer_speed = 2.6
+drag_area = 1.975
+downforce_area = 0.0
+cylinders = 8
+engine_tone = 0.6
+engine_roughness = 0.6
+exhaust_pop = 0.1
+performance_class = "C"
+performance_index = 572
+default_color = Color(0.55, 0.08, 0.06, 1)
+top_speed_kmh = 186.0
+power_kw = 213.0

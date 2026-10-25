@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_is4ho"]
+
+[resource]
+script = ExtResource("1_is4ho")
+category = "aero"
+level = 2
+display_name = "Sport Aero"
+description = "Splitter and wing: more downforce at speed."
+cost = 20000
+multipliers = {
+"aero": 1.7
+}

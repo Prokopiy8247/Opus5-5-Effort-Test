@@ -1,0 +1,9 @@
+﻿run_id: run-20261023-185330-max
+start_timestamp_iso: 2026-10-23T18:53:30.6584362+02:00
+start_timestamp_local: 2026-10-23 18:53:30
+timezone_id: Central European Standard Time
+timezone_display: (UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
+utc_offset: 02:00:00
+start_unix_seconds: 1792774410
+working_directory: W:\YouTube\Opus 5.5 Effort Test\5. Opus 5.5 Forza Max Effort\5.-opus-5.5-forza-max-effort
+

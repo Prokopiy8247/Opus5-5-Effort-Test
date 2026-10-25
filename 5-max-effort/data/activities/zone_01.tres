@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_rxwc8"]
+
+[resource]
+script = ExtResource("1_rxwc8")
+id = "zone_01"
+kind = 1
+display_name = "Ridgeline Flow"
+region = "Saltwind Coast"
+s0 = 7950
+s1 = 8330
+position = Vector3(-1576.33, 65.97, -761.95)
+heading = Vector3(-0.10630913, 0, -0.9943331)
+end_position = Vector3(-1319.32, 130.6, -1450.75)
+end_heading = Vector3(0.673238, 0, -0.73942584)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(120, 155, 185)
+unit = "km/h"
+length_m = 760.0

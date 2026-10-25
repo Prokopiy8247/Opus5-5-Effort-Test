@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_4q47h"]
+
+[resource]
+script = ExtResource("1_4q47h")
+id = &"07_gravelo_rs"
+display_name = "Gravelo RS Rally"
+maker = "Gravelo"
+category = "Rally"
+description = "Stage-bred rally weapon. Long travel, short gears and grip on any surface."
+engine_label = "2.0 Turbo I4"
+model_path = "res://assets/imported/cars/07_gravelo_rs.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1320.0
+com_offset = Vector3(0, 0.14, -0.05)
+max_torque_nm = 450.0
+torque_curve = PackedFloat32Array(0.48, 0.8, 0.98, 1, 1, 0.96, 0.88, 0.76)
+redline_rpm = 7600.0
+turbo = true
+turbo_lag = 0.35
+drivetrain = 2
+gear_ratios = PackedFloat32Array(3.2, 2.37, 1.87, 1.49, 1.21, 0.99)
+reverse_ratio = 3.04
+final_drive = 4.4
+awd_front_split = 0.45
+diff_lock = 0.6
+slide_ratio = 0.82
+offroad_grip = 1.4
+wheel_radius_front = 0.32
+wheel_radius_rear = 0.32
+spring_hz_rear = 1.75
+travel_up = 0.12
+travel_down = 0.16
+anti_roll_front = 20000.0
+anti_roll_rear = 16000.0
+brake_torque = 2900.0
+brake_bias = 0.6
+handbrake_torque = 3200.0
+steer_lock_deg = 38.0
+steer_speed = 3.8
+drag_area = 1.996
+downforce_area = 0.3
+engine_tone = 1.2
+engine_roughness = 0.5
+exhaust_pop = 1.0
+performance_class = "A"
+performance_index = 789
+default_color = Color(0.1, 0.25, 0.75, 1)
+default_finish = 0
+top_speed_kmh = 205.0
+power_kw = 276.0

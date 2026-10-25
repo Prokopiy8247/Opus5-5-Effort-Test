@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_wjyr4"]
+
+[resource]
+script = ExtResource("1_wjyr4")
+id = &"RidgebackSUV"
+display_name = "Ridgeback 4x4"
+maker = "Ridgeback"
+model_year = 2024
+body_style = "Off-road SUV"
+description = "Tall, heavy V8 off-roader with all-terrain tyres and long-travel suspension. Goes where roads don't."
+model_path = "res://assets/imported/cars/RidgebackSUV.glb"
+order = 8
+default_color = Color(0.3, 0.35, 0.18, 1)
+default_finish = 2
+default_rim_color = Color(0.18, 0.18, 0.19, 1)
+mass = 2150.0
+com_offset = Vector3(0, 0.78, -0.05)
+drivetrain = 2
+idle_rpm = 700.0
+redline_rpm = 6000.0
+max_rpm = 6300.0
+torque_curve = PackedVector2Array(1000, 450, 2000, 640, 4500, 650, 5500, 560, 6300, 440)
+engine_inertia = 0.3
+engine_brake = 0.2
+gear_ratios = PackedFloat32Array(4.7, 3.1, 2.1, 1.67, 1.28, 1, 0.84, 0.67)
+reverse_ratio = 3.6
+final_drive = 3.55
+shift_time = 0.18
+awd_front_split = 0.45
+lsd = 0.6
+cylinders = 8
+engine_sound = &"v8_truck"
+spring_front = 36000.0
+spring_rear = 36000.0
+damper_front = 4000.0
+damper_rear = 3800.0
+arb_front = 10000.0
+arb_rear = 7000.0
+bump_travel = 0.2
+droop_travel = 0.24
+tire_type = 3
+grip = 0.95
+peak_slip_angle_deg = 9.0
+peak_slip_ratio = 0.13
+tire_shape = 1.35
+brake_torque = 7000.0
+brake_bias = 0.62
+handbrake_torque = 3200.0
+max_steer_deg = 34.0
+high_speed_steer_deg = 6.0
+steer_speed = 3.4
+drag_area = 1.25
+downforce = 0.0
+aero_balance = 0.5
+car_class = "C"
+top_speed_kmh = 220.0

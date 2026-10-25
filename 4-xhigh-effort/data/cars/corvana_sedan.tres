@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_bn3u5"]
+
+[resource]
+script = ExtResource("1_bn3u5")
+id = &"CorvanaSedan"
+display_name = "Corvana Sedan"
+maker = "Corvana"
+model_year = 2023
+body_style = "Family sedan"
+description = "Comfortable everyday saloon. Soft, predictable and forgiving - the festival shuttle car."
+model_path = "res://assets/imported/cars/CorvanaSedan.glb"
+order = 2
+default_color = Color(0.62, 0.64, 0.66, 1)
+default_rim_color = Color(0.7, 0.71, 0.73, 1)
+mass = 1480.0
+com_offset = Vector3(0, 0.52, -0.2)
+drivetrain = 0
+idle_rpm = 750.0
+redline_rpm = 6300.0
+max_rpm = 6600.0
+torque_curve = PackedVector2Array(1000, 190, 2500, 240, 4500, 250, 6000, 220, 6600, 190)
+engine_inertia = 0.2
+engine_brake = 0.12
+gear_ratios = PackedFloat32Array(3.3, 1.96, 1.35, 1, 0.8, 0.66)
+reverse_ratio = 3.2
+shift_time = 0.22
+lsd = 0.0
+cylinders = 4
+engine_sound = &"i4"
+spring_front = 30000.0
+spring_rear = 28000.0
+damper_front = 2800.0
+damper_rear = 2700.0
+arb_front = 9000.0
+arb_rear = 6000.0
+bump_travel = 0.12
+tire_type = 0
+grip = 0.98
+peak_slip_angle_deg = 8.0
+peak_slip_ratio = 0.12
+tire_shape = 1.4
+brake_torque = 4800.0
+brake_bias = 0.66
+handbrake_torque = 2400.0
+max_steer_deg = 36.0
+high_speed_steer_deg = 7.0
+steer_speed = 3.6
+drag_area = 0.62
+downforce = 0.05
+aero_balance = 0.5
+car_class = "D"
+top_speed_kmh = 205.0

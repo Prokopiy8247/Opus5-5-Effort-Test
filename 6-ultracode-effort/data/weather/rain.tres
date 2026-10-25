@@ -1,0 +1,31 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/env/weather_preset.gd" id="1_6jfj7"]
+
+[resource]
+script = ExtResource("1_6jfj7")
+id = &"rain"
+display_name = "Rain"
+cloud_coverage = 1.0
+cloud_darkness = 0.55
+overcast = 0.92
+cirrus = 0.0
+cloud_speed = 2.0
+haze = 0.55
+sky_tint = Color(0.9, 0.94, 1, 1)
+sun_energy = 0.14
+ambient_energy = 1.05
+shadow_softness = 1.0
+exposure = 1.18
+saturation = 0.94
+contrast = 1.02
+fog_density = 0.0016
+fog_color = Color(0.55, 0.6, 0.66, 1)
+fog_tint = 0.6
+aerial_perspective = 0.45
+fog_sky_affect = 0.25
+volumetric_density = 0.004
+rain = 0.85
+wind = 0.55
+wetness = 0.85
+lights_on = 1.0

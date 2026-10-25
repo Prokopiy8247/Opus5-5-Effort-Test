@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_4y1ut"]
+
+[resource]
+script = ExtResource("1_4y1ut")
+id = "arden_saloon"
+display_name = "Arden S4 Saloon"
+maker = "Arden"
+year = 2018
+body_style = "Family saloon"
+car_class = "D"
+pi = 470
+description = "A comfortable four-door commuter. Forgiving, quiet and surprisingly willing."
+model_path = "res://assets/imported/cars/arden_saloon.glb"
+mass = 1430.0
+com_offset = Vector3(0, 0.55, -0.2)
+peak_torque = 250.0
+torque_curve = PackedVector2Array(1000, 0.6, 2500, 0.95, 4000, 1, 5600, 0.85, 6200, 0.7)
+idle_rpm = 800.0
+redline_rpm = 6200.0
+sound_base_pitch = 0.95
+sound_roughness = 0.15
+drivetrain = 0
+gear_ratios = PackedFloat32Array(3.6, 2.1, 1.4, 1.05, 0.84, 0.7)
+grip = 0.96
+grip_rear_bias = 1.02
+peak_slip_angle_deg = 7.0
+suspension_rest = 0.18
+spring_hz_front = 1.35
+spring_hz_rear = 1.45
+damping_ratio = 0.36
+anti_roll_front = 8000.0
+anti_roll_rear = 6000.0
+brake_bias = 0.66
+handbrake_force = 4500.0
+steer_lock_deg = 36.0
+downforce_area = 0.05
+aero_balance = 0.5
+top_speed_kmh = 205.0
+paint_color = Color(0.18, 0.3, 0.5, 1)
+rim_color = Color(0.72, 0.73, 0.75, 1)
+stat_speed = 4.8
+stat_accel = 4.2
+stat_launch = 4.5
+stat_braking = 5.2
+stat_offroad = 3.8
+power_hp = 165

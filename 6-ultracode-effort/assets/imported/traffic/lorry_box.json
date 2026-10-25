@@ -1,0 +1,226 @@
+{
+  "id": "lorry_box",
+  "name": "Box Lorry",
+  "class": "rigid box lorry (cab-over day cab, 2 axles, dual rear tyres)",
+  "drivetrain": "RWD",
+  "engine": "front under cab, 6.7 turbo-diesel I6",
+  "doors": 2,
+  "seats": 2,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Traffic/Traffic_lorry_box",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (vehicle faces -z); metres; origin = ground, mid-axles",
+  "length": 7.8,
+  "length_overall": 7.8,
+  "width": 2.454,
+  "width_with_mirrors": 3.0,
+  "height": 3.4,
+  "height_overall": 3.4,
+  "ground_clearance": 0.24,
+  "wheelbase": 4.6,
+  "track_front": 2.0,
+  "track_rear": 1.8,
+  "wheel_radius_front": 0.48,
+  "wheel_radius_rear": 0.48,
+  "wheel_width_front": 0.27,
+  "wheel_width_rear": 0.535,
+  "wheels": {
+    "FL": [
+      -1.0,
+      0.48,
+      -2.3
+    ],
+    "FR": [
+      1.0,
+      0.48,
+      -2.3
+    ],
+    "RL": [
+      -0.9,
+      0.48,
+      2.3
+    ],
+    "RR": [
+      0.9,
+      0.48,
+      2.3
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.86,
+      1.075,
+      -3.4666
+    ],
+    "Socket_HeadlightL": [
+      -0.86,
+      1.075,
+      -3.4666
+    ],
+    "Socket_Exhaust": [
+      1.025,
+      0.481,
+      1.719
+    ],
+    "Socket_CamHood": [
+      0.0,
+      2.6,
+      -3.2
+    ],
+    "Socket_CamCockpit": [
+      -0.6,
+      2.36,
+      -2.08
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.8,
+      -3.65
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.6,
+      1.78,
+      -2.9
+    ],
+    "column_axis": [
+      0.0,
+      -0.788,
+      -0.6157
+    ],
+    "radius": 0.235,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.6,
+    2.36,
+    -2.08
+  ],
+  "body_aabb": {
+    "min": [
+      -1.5,
+      0.24,
+      -3.55
+    ],
+    "max": [
+      1.5,
+      3.4,
+      4.25
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.5,
+      0.0,
+      -3.55
+    ],
+    "max": [
+      1.5,
+      3.4,
+      4.25
+    ]
+  },
+  "tris": {
+    "Body": 8906,
+    "Glass": 54,
+    "Lights_Head": 440,
+    "Lights_Tail": 48,
+    "Lights_Brake": 24,
+    "Lights_Reverse": 24,
+    "Interior": 810,
+    "SteeringWheel": 740,
+    "Wheel_FR": 2280,
+    "Caliper_FR": 70,
+    "Wheel_FL": 2280,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3480,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3480,
+    "Caliper_RL": 70,
+    "total": 22846
+  },
+  "materials": [
+    "Alu_lorry_box",
+    "Amber_lorry_box",
+    "BrakeDisc_lorry_box",
+    "BrakeLens_lorry_box",
+    "Caliper_lorry_box",
+    "Chrome_lorry_box",
+    "Gauge_lorry_box",
+    "Glass_lorry_box",
+    "Grille_lorry_box",
+    "HeadlightLens_lorry_box",
+    "InteriorDark_lorry_box",
+    "Interior_lorry_box",
+    "Paint_lorry_box",
+    "Panel_lorry_box",
+    "Plate_lorry_box",
+    "ReverseLens_lorry_box",
+    "Rim_lorry_box",
+    "Rubber_lorry_box",
+    "Steel_lorry_box",
+    "TaillightLens_lorry_box",
+    "Trim_lorry_box",
+    "Underbody_lorry_box"
+  ],
+  "default_paint": {
+    "hex": "#B3261E",
+    "linear_rgb": [
+      0.451,
+      0.019,
+      0.013
+    ],
+    "finish": "gloss"
+  },
+  "rim_diameter_in_front": 19.5,
+  "rim_diameter_in_rear": 19.5,
+  "tyre_width_nominal": 0.27,
+  "wheel_width_note": "rear wheel objects hold dual tyres (2 x 0.25 + 0.035 gap)",
+  "cargo": {
+    "box_floor_height": 1.15,
+    "box_inner_length_approx": 5.55,
+    "box_inner_width_approx": 2.35,
+    "rear_doors": "twin hinged, 4 lock rods"
+  },
+  "notes": "Cab lining is part of Body so the merged traffic LOD stays opaque; box body is part of Body.",
+  "livery": "Paint = cab (repaintable); Panel = white box body (fixed); Alu frame",
+  "glb": {
+    "path": "res://assets/imported/traffic/lorry_box.glb",
+    "bytes": 940284,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "lorry_box"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+* text=auto
+*.bat -text
+*.command -text
+*.sh -text
+*.blend binary
+*.glb binary
+*.png binary
+*.jpg binary
+*.wav binary
+*.ogg binary
+*.mp3 binary

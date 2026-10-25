@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_7fbu6"]
+
+[resource]
+script = ExtResource("1_7fbu6")
+id = "car03_ironhorse"
+display_name = "Ironhorse 440"
+category = "Muscle"
+glb_path = "res://assets/imported/vehicles/car03_ironhorse.glb"
+mass = 1620.0
+com_offset = Vector3(0, -0.186, 0)
+power_kw = 320.0
+peak_rpm = 5200.0
+redline = 6200.0
+gear_ratios = PackedFloat32Array(2.9, 1.9, 1.35, 1, 0.8)
+final_drive = 3.4
+top_speed_kmh = 262.0
+grip = 1.0
+offroad_grip = 0.75
+susp_freq = 1.5
+anti_roll = 9720.0
+downforce = 0.2
+brake_force = 11500.0
+steer_lock_deg = 33.0
+engine_voice = 0.62
+cylinders = 8
+base_color = Color(0.95, 0.65, 0.05, 1)

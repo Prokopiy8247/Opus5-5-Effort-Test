@@ -1,0 +1,218 @@
+{
+  "id": "tractor_farm",
+  "name": "Farm Tractor",
+  "class": "farm tractor (open four-post canopy, rear-wheel drive)",
+  "drivetrain": "RWD",
+  "engine": "front, 4.4 turbo-diesel I4",
+  "doors": 0,
+  "seats": 1,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Traffic/Traffic_tractor_farm",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (vehicle faces -z); metres; origin = ground, mid-axles",
+  "length": 4.01,
+  "length_overall": 4.016,
+  "width": 2.216,
+  "width_with_mirrors": 2.216,
+  "height": 2.72,
+  "height_overall": 2.8,
+  "ground_clearance": 0.44,
+  "wheelbase": 2.4,
+  "track_front": 1.6,
+  "track_rear": 1.78,
+  "wheel_radius_front": 0.4497,
+  "wheel_radius_rear": 0.7994,
+  "wheel_width_front": 0.308,
+  "wheel_width_rear": 0.432,
+  "wheels": {
+    "FL": [
+      -0.8,
+      0.45,
+      -1.2
+    ],
+    "FR": [
+      0.8,
+      0.45,
+      -1.2
+    ],
+    "RL": [
+      -0.89,
+      0.8,
+      1.2
+    ],
+    "RR": [
+      0.89,
+      0.8,
+      1.2
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.205,
+      1.36,
+      -1.9878
+    ],
+    "Socket_HeadlightL": [
+      -0.205,
+      1.36,
+      -1.9878
+    ],
+    "Socket_Exhaust": [
+      0.25,
+      2.56,
+      -1.3
+    ],
+    "Socket_CamHood": [
+      0.0,
+      2.1,
+      -0.2
+    ],
+    "Socket_CamCockpit": [
+      0.0,
+      2.3,
+      1.12
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.8,
+      -2.08
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      0.0,
+      1.98,
+      0.64
+    ],
+    "column_axis": [
+      0.0,
+      -0.6428,
+      -0.766
+    ],
+    "radius": 0.2,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    0.0,
+    2.3,
+    1.12
+  ],
+  "body_aabb": {
+    "min": [
+      -1.1,
+      0.38,
+      -2.0
+    ],
+    "max": [
+      1.1,
+      2.8,
+      2.01
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.108,
+      0.0003,
+      -2.0
+    ],
+    "max": [
+      1.108,
+      2.8,
+      2.016
+    ]
+  },
+  "tris": {
+    "Body": 4836,
+    "Glass": 12,
+    "Lights_Head": 128,
+    "Lights_Tail": 24,
+    "Lights_Brake": 24,
+    "Lights_Reverse": 24,
+    "Interior": 918,
+    "SteeringWheel": 660,
+    "Wheel_FR": 1572,
+    "Caliper_FR": 70,
+    "Wheel_FL": 1572,
+    "Caliper_FL": 70,
+    "Wheel_RR": 2056,
+    "Caliper_RR": 70,
+    "Wheel_RL": 2056,
+    "Caliper_RL": 70,
+    "total": 14162
+  },
+  "materials": [
+    "Alu_tractor_farm",
+    "Amber_tractor_farm",
+    "BrakeLens_tractor_farm",
+    "Caliper_tractor_farm",
+    "Chrome_tractor_farm",
+    "Gauge_tractor_farm",
+    "Glass_tractor_farm",
+    "Grille_tractor_farm",
+    "HeadlightLens_tractor_farm",
+    "InteriorDark_tractor_farm",
+    "Interior_tractor_farm",
+    "Paint_tractor_farm",
+    "Plate_tractor_farm",
+    "ReverseLens_tractor_farm",
+    "Rim_tractor_farm",
+    "Rubber_tractor_farm",
+    "Steel_tractor_farm",
+    "Stripe_tractor_farm",
+    "TaillightLens_tractor_farm",
+    "Trim_tractor_farm"
+  ],
+  "default_paint": {
+    "hex": "#4E9A2A",
+    "linear_rgb": [
+      0.076,
+      0.323,
+      0.023
+    ],
+    "finish": "gloss"
+  },
+  "rim_diameter_in_front": 20,
+  "rim_diameter_in_rear": 34,
+  "tyre_width_nominal": 0.42,
+  "wheel_width_note": "front 0.30 / rear 0.42 nominal; lugs add ~1 cm",
+  "notes": "Wheel_F* sit at z 0.45 (R 0.45), Wheel_R* at z 0.80 (R 0.80). Open canopy: Glass = front screen.",
+  "livery": "Paint = green (repaintable); yellow rims (Rim) and yellow canopy roof (Stripe) are fixed",
+  "glb": {
+    "path": "res://assets/imported/traffic/tractor_farm.glb",
+    "bytes": 634452,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "tractor_farm"
+    ]
+  }
+}

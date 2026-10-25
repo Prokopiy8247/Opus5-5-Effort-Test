@@ -1,0 +1,219 @@
+{
+  "id": "sora_s2",
+  "name": "Sora S2",
+  "class": "compact sports coupe (2+2)",
+  "drivetrain": "RWD",
+  "engine": "front-mid",
+  "doors": 2,
+  "seats": 4,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Cars/Car_sora_s2",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (car faces -z); metres; origin = ground, mid-axles",
+  "length": 4.3557,
+  "length_body_shell": 4.35,
+  "width": 1.812,
+  "width_with_mirrors": 2.102,
+  "height": 1.27,
+  "height_overall": 1.2996,
+  "ground_clearance": 0.152,
+  "ground_clearance_min": 0.1458,
+  "wheelbase": 2.55,
+  "track_front": 1.54,
+  "track_rear": 1.56,
+  "wheel_radius_front": 0.32,
+  "wheel_radius_rear": 0.32,
+  "wheel_width_front": 0.225,
+  "wheel_width_rear": 0.245,
+  "rim_diameter_in": 18,
+  "wheels": {
+    "FL": [
+      -0.77,
+      0.32,
+      -1.275
+    ],
+    "FR": [
+      0.77,
+      0.32,
+      -1.275
+    ],
+    "RL": [
+      -0.78,
+      0.32,
+      1.275
+    ],
+    "RR": [
+      0.78,
+      0.32,
+      1.275
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.5375,
+      0.6189,
+      -2.1159
+    ],
+    "Socket_HeadlightL": [
+      -0.5375,
+      0.6189,
+      -2.1159
+    ],
+    "Socket_Exhaust": [
+      0.6,
+      0.405,
+      2.1899
+    ],
+    "Socket_Exhaust2": [
+      -0.6,
+      0.405,
+      2.1899
+    ],
+    "Socket_CamHood": [
+      0.0,
+      0.995,
+      -0.8
+    ],
+    "Socket_CamCockpit": [
+      -0.37,
+      1.095,
+      0.6
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.46,
+      -2.225
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.37,
+      0.815,
+      0.19
+    ],
+    "column_axis": [
+      0.0,
+      -0.3584,
+      -0.9336
+    ],
+    "radius": 0.178,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.37,
+    1.095,
+    0.6
+  ],
+  "body_aabb": {
+    "min": [
+      -1.051,
+      0.1458,
+      -2.1653
+    ],
+    "max": [
+      1.051,
+      1.2996,
+      2.1903
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.051,
+      0.0,
+      -2.1653
+    ],
+    "max": [
+      1.051,
+      1.2996,
+      2.1903
+    ]
+  },
+  "tris": {
+    "Body": 29640,
+    "Glass": 1716,
+    "Interior": 8646,
+    "Lights_Head": 504,
+    "Lights_Tail": 436,
+    "Lights_Brake": 362,
+    "Lights_Reverse": 34,
+    "SteeringWheel": 980,
+    "Wheel_FR": 3488,
+    "Caliper_FR": 70,
+    "Wheel_FL": 3488,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3488,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3488,
+    "Caliper_RL": 70,
+    "total": 56550
+  },
+  "materials": [
+    "BrakeDisc_sora_s2",
+    "BrakeLens_sora_s2",
+    "Caliper_sora_s2",
+    "Carbon_sora_s2",
+    "Chrome_sora_s2",
+    "Gauge_sora_s2",
+    "Glass_sora_s2",
+    "Grille_sora_s2",
+    "HeadlightLens_sora_s2",
+    "InteriorAccent_sora_s2",
+    "InteriorDark_sora_s2",
+    "Interior_sora_s2",
+    "Paint_sora_s2",
+    "ReverseLens_sora_s2",
+    "Rim_sora_s2",
+    "Rubber_sora_s2",
+    "TaillightLens_sora_s2",
+    "Trim_sora_s2",
+    "Underbody_sora_s2"
+  ],
+  "default_paint": {
+    "hex": "#E8E8E4",
+    "linear_rgb": [
+      0.807,
+      0.807,
+      0.776
+    ],
+    "finish": "satin pearl"
+  },
+  "glb": {
+    "path": "res://assets/imported/cars/sora_s2.glb",
+    "bytes": 1973092,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_Exhaust2",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "sora_s2"
+    ]
+  }
+}

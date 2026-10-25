@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_vvpuh"]
+
+[resource]
+script = ExtResource("1_vvpuh")
+id = "race_highway"
+display_name = "Highway Charge"
+kind = 4
+road_id = "valley_highway"
+start_xz = Vector2(-1600, 1640)
+end_xz = Vector2(1260, -720)
+stars = PackedFloat32Array(140, 115, 95)
+opponents = 3
+reward = 4000
+description = "Flat out from the desert to the coast."

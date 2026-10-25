@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Ridgeline Festival game icon: sunset sky, mountain ridgeline, sweeping road -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2a4a"/>
+      <stop offset="0.55" stop-color="#e2654a"/>
+      <stop offset="1" stop-color="#ffb347"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f8f3a"/>
+      <stop offset="1" stop-color="#2e5e26"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect x="8" y="8" width="240" height="240" rx="52"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect x="0" y="0" width="256" height="256" fill="url(#sky)"/>
+    <circle cx="176" cy="118" r="34" fill="#ffe08a"/>
+    <path d="M0 150 L52 92 L84 122 L120 70 L160 120 L196 96 L256 146 L256 256 L0 256 Z" fill="#3b4a66"/>
+    <path d="M112 78 L120 70 L130 82 L122 80 Z" fill="#f2f4f8"/>
+    <path d="M0 176 Q70 150 128 168 T256 162 L256 256 L0 256 Z" fill="url(#land)"/>
+    <path d="M70 256 C92 214 150 206 168 182 C178 170 196 166 214 168" fill="none" stroke="#2b2d33" stroke-width="30" stroke-linecap="round"/>
+    <path d="M70 256 C92 214 150 206 168 182 C178 170 196 166 214 168" fill="none" stroke="#ffd34d" stroke-width="3.5" stroke-dasharray="12 10" stroke-linecap="round"/>
+  </g>
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="none" stroke="#ffa31f" stroke-width="6"/>
+</svg>

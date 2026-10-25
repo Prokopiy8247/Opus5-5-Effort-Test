@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_l5xyh"]
+
+[resource]
+script = ExtResource("1_l5xyh")
+id = "sedan"
+display_name = "Meridian Touring"
+maker = "Aster Motors"
+description = "Comfortable rear-drive saloon with a silky straight-six."
+car_class = "B"
+pi = 610
+model_path = "res://assets/imported/cars/sedan.glb"
+year = 2021
+mass = 1480.0
+com_offset = Vector3(0, -0.2, 0)
+peak_torque = 360.0
+redline = 6800.0
+idle_rpm = 800.0
+torque_falloff = 0.5
+gears = PackedFloat32Array(3.6, 2.2, 1.55, 1.2, 1, 0.82, 0.68)
+final_drive = 5.09951215941416
+turbo = true
+grip = 1.02
+loose_grip = 0.95
+lateral_stiffness = 8.8
+rest_length = 0.354
+spring = 40330.00000000001
+damper_bump = 2472.2645813100185
+damper_rebound = 3708.3968719650275
+brake_force = 12000.0
+brake_bias = 0.6
+steer_speed_reduction = 0.7
+top_speed_kmh = 232.0
+downforce = 0.4
+cylinders = 6
+sound_rough = 0.18
+paint_color = Color(0.18, 0.28, 0.42, 1)
+paint_finish = 1
+rim_color = Color(0.78, 0.79, 0.8, 1)

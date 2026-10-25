@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/upgrade_def.gd" id="1_i8hru"]
+
+[resource]
+script = ExtResource("1_i8hru")
+key = "brakes"
+display_name = "Brakes"
+level_names = PackedStringArray("Stock", "Street", "Sport", "Race")
+effects = {
+"mod_brake": [1.0, 1.1, 1.2, 1.32]
+}
+pi_per_level = 8
+cost_per_level = 1500

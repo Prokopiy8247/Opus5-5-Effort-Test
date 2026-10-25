@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_ghsef"]
+
+[resource]
+script = ExtResource("1_ghsef")
+id = &"SolanoCoupe"
+display_name = "Solano RS Coupe"
+maker = "Solano"
+model_year = 2024
+body_style = "Sports coupe"
+description = "Front-engine twin-turbo V6 coupe. Balanced, eager to rotate, happiest on mountain passes."
+model_path = "res://assets/imported/cars/SolanoCoupe.glb"
+order = 4
+default_color = Color(0.78, 0.09, 0.06, 1)
+default_rim_color = Color(0.72, 0.73, 0.75, 1)
+mass = 1390.0
+com_offset = Vector3(0, 0.47, -0.07)
+redline_rpm = 7100.0
+max_rpm = 7350.0
+torque_curve = PackedVector2Array(1000, 300, 2000, 430, 3000, 470, 5500, 470, 6500, 420, 7350, 340)
+engine_inertia = 0.2
+engine_brake = 0.16
+gear_ratios = PackedFloat32Array(3.36, 2.21, 1.62, 1.27, 1.03, 0.84)
+reverse_ratio = 3.2
+final_drive = 3.45
+shift_time = 0.14
+lsd = 0.45
+turbo = true
+engine_sound = &"v6_turbo"
+spring_front = 48000.0
+spring_rear = 46000.0
+damper_front = 3900.0
+damper_rear = 3700.0
+arb_front = 17000.0
+arb_rear = 10000.0
+bump_travel = 0.1
+droop_travel = 0.12
+grip = 1.12
+brake_torque = 6200.0
+brake_bias = 0.63
+handbrake_torque = 2600.0
+max_steer_deg = 34.0
+steer_speed = 4.2
+drag_area = 0.62
+downforce = 0.5
+aero_balance = 0.44
+car_class = "A"
+top_speed_kmh = 295.0

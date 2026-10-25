@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_jktgt"]
+
+[resource]
+script = ExtResource("1_jktgt")
+id = "race_highway"
+kind = 4
+display_name = "Sunline Highway Sprint"
+region = "Saltwind Coast"
+road = 1
+s0 = 18
+s1 = 1432
+position = Vector3(-1362.22, 31.39, 1175.96)
+heading = Vector3(0.9617569, 0, -0.27390438)
+end_heading = Vector3(0.99535364, 0, -0.096287124)
+width = 21.0
+points = PackedVector3Array(-811.31, 27.56, 1087.65, -258.46, 20.95, 1011.53, 296.93, 29.47, 941.26, 844.58, 48.96, 825.99, 1422.48, 81.55, 721.77)
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(75, 61, 52)
+lower_is_better = true
+unit = "s"
+reward = 800
+length_m = 2828.0

@@ -1,0 +1,5 @@
+run_id: run-20261023-185330-max
+end_timestamp_iso: 2026-10-24T02:22:30.076+02:00
+end_timestamp_local: 2026-10-24 02:22:30
+end_unix_seconds: 1792801350
+note: written after final validation and report preparation (segment 2, session 417a090e-f30c-4f33-b4c4-3714e17336b8)

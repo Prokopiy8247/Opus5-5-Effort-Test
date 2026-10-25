@@ -1,0 +1,26 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic/traffic_vehicle_data.gd" id="1_cmsbj"]
+
+[resource]
+script = ExtResource("1_cmsbj")
+id = "pickup_work"
+display_name = "Work Pickup"
+model_path = "res://assets/imported/traffic/pickup_work.glb"
+mass = 2200.0
+length = 5.4
+width = 1.95
+height = 1.85
+wheelbase = 3.3
+wheel_radius = 0.38
+com_height = 0.75
+front_drive = false
+accel = 1.9
+power_kw = 140.0
+time_gap = 1.9
+allowed_classes = PackedInt32Array(0, 1, 2, 3)
+allowed_regions = PackedInt32Array()
+spawn_weight = 0.18
+paints = PackedStringArray("white", "grey", "black", "red", "blue", "silver", "brown", "green")
+finishes = PackedInt32Array(0, 2)
+horn_hz = 370.0

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_s1hsa"]
+
+[resource]
+script = ExtResource("1_s1hsa")
+id = "board_17"
+display_name = "Festival board 18"
+kind = 6
+road_id = "clifftop_track"
+start_frac = 0.5
+end_frac = 0.5
+stars = PackedFloat32Array(0, 0, 0)
+reward = 500

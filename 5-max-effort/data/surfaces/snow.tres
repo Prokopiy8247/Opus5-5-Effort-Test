@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_fvvds"]
+
+[resource]
+script = ExtResource("1_fvvds")
+id = 6
+key = &"snow"
+display_name = "Snow"
+grip = 0.42
+slip_peak_scale = 1.6
+slide_ratio = 0.86
+loose = 0.9
+rolling_resistance = 0.04
+soft_drag = 0.2
+bumpiness = 0.01
+wet_grip = 1.0
+dust_color = Color(0.95, 0.96, 1, 0.9)
+particle = 5
+sound = 5
+skidmarks = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_bhis1"]
+
+[resource]
+script = ExtResource("1_bhis1")
+id = "jump_hollow"
+display_name = "Hollow Oak Hop"
+kind = 3
+road_id = "hollow_track"
+start_frac = 0.55
+end_frac = 0.55
+stars = PackedFloat32Array(20, 32, 45)

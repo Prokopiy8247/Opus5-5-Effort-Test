@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/surface_def.gd" id="1_hcvif"]
+
+[resource]
+script = ExtResource("1_hcvif")
+id = 1
+key = "concrete"
+display_name = "Concrete"
+grip_by_tire = PackedFloat32Array(0.97, 1.03, 0.95, 0.87, 0.9)
+bumpiness = 0.002
+wet_sensitivity = 0.85
+particle_color = Color(0.8, 0.8, 0.78, 0.5)
+rumble = 0.1

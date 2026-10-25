@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_tt884"]
+
+[resource]
+script = ExtResource("1_tt884")
+id = "mistral_r5"
+display_name = "Mistral R5"
+maker = "Mistral"
+year = 2016
+body_style = "Rally car"
+car_class = "A"
+pi = 735
+description = "Purpose-built gravel weapon. Short gearing, long-travel dampers and AWD bite on loose roads."
+model_path = "res://assets/imported/cars/mistral_r5.glb"
+mass = 1240.0
+com_offset = Vector3(0, 0.5, -0.1)
+peak_torque = 450.0
+torque_curve = PackedVector2Array(1000, 0.55, 2500, 0.95, 4500, 1, 6800, 0.85, 7500, 0.75)
+idle_rpm = 1000.0
+redline_rpm = 7500.0
+engine_layout = "I4 turbo (anti-lag)"
+turbo = true
+sound_roughness = 0.55
+drivetrain = 2
+awd_front_split = 0.45
+gear_ratios = PackedFloat32Array(3.3, 2.4, 1.85, 1.48, 1.22, 1.03)
+tire_type = 2
+grip = 1.08
+grip_rear_bias = 0.98
+peak_slip_angle_deg = 10.0
+slide_grip = 0.86
+suspension_rest = 0.22
+spring_hz_front = 1.5
+spring_hz_rear = 1.6
+damping_ratio = 0.45
+brake_force = 13000.0
+brake_bias = 0.58
+handbrake_force = 8000.0
+steer_lock_deg = 38.0
+downforce_area = 0.3
+top_speed_kmh = 210.0
+paint_color = Color(0.12, 0.35, 0.85, 1)
+paint_finish = "gloss"
+rim_color = Color(0.95, 0.95, 0.95, 1)
+stat_speed = 5.6
+stat_handling = 7.4
+stat_accel = 7.6
+stat_launch = 8.6
+stat_braking = 6.6
+stat_offroad = 9.0
+power_hp = 330

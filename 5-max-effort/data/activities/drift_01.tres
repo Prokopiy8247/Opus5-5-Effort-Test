@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_bpd2b"]
+
+[resource]
+script = ExtResource("1_bpd2b")
+id = "drift_01"
+kind = 2
+display_name = "Hairpin Hollow"
+region = "Granite Crown Highlands"
+s0 = 3390
+s1 = 3690
+position = Vector3(1772.88, 176.29, -828.64)
+heading = Vector3(0.95029634, 0, 0.3113469)
+end_position = Vector3(1411.84, 111.49, -608.07)
+end_heading = Vector3(0.7182947, 0, 0.695739)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(5000, 12000, 22000)
+unit = "pts"
+length_m = 600.0

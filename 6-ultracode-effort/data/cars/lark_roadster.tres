@@ -1,0 +1,62 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_bsmn7"]
+
+[sub_resource type="Curve" id="Curve_cinu3"]
+_data = [Vector2(0, 0.6), 0.0, 0.0, 0, 0, Vector2(0.3, 0.86), 0.0, 0.0, 0, 0, Vector2(0.55, 1), 0.0, 0.0, 0, 0, Vector2(0.8, 0.9), 0.0, 0.0, 0, 0, Vector2(1, 0.78), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[resource]
+script = ExtResource("1_bsmn7")
+id = "lark_roadster"
+display_name = "Lark Roadster"
+category = "Vintage Roadster"
+blurb = "A featherweight open two-seater from a gentler era. Slow, skinny-tyred, and endlessly charming."
+perf_class = "D"
+perf_index = 263
+model_path = "res://assets/imported/cars/lark_roadster.glb"
+year_style = "1959"
+default_color = Color(0.62, 0.85, 0.77, 1)
+mass = 860.0
+com = Vector3(0, 0.42, -0.05)
+inertia_scale = Vector3(1, 0.9, 1)
+idle_rpm = 750.0
+redline_rpm = 5500.0
+max_rpm = 6000.0
+peak_torque = 150.66842587289568
+torque_curve = SubResource("Curve_cinu3")
+exhaust_rasp = 0.3
+engine_pitch = 0.9
+gear_ratios = PackedFloat32Array(3.258, 2.062, 1.388, 0.953)
+reverse_ratio = 3.0953663616869713
+reverse_max_kmh = 26.0
+final_drive = 4.2
+awd_front_split = 0.0
+diff_lock = 0.25
+tire_grip = 0.88
+grip_rear = 0.98
+peak_slip_deg = 8.5
+slide_grip = 0.86
+offroad_tires = 0.15
+wheelbase = 2.3
+track_front = 1.3
+track_rear = 1.28
+wheel_radius_front = 0.33
+wheel_radius_rear = 0.33
+body_size = Vector3(1.55, 1.2, 3.9)
+spring_front = 26000.0
+spring_rear = 24000.0
+damper_bump = 2100.0
+damper_rebound = 2900.0
+suspension_travel = 0.22
+anti_roll_front = 6000.0
+anti_roll_rear = 3000.0
+drag_area = 0.9639740745525679
+downforce_front = 0.0
+downforce_rear = 0.0
+brake_force = 11389.410000000002
+brake_bias = 0.6
+handbrake_force = 6327.450000000001
+max_steer_deg = 36.0
+high_speed_steer_deg = 9.0
+top_speed_kmh = 166.0

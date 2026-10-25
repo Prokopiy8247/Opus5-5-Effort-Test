@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_7sknm"]
+
+[resource]
+script = ExtResource("1_7sknm")
+id = &"t_compact"
+display_name = "Civic Compact"
+category = "Traffic"
+model_path = "res://assets/imported/traffic/t_compact.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1080.0
+com_offset = Vector3(0, 0.12, 0)
+max_torque_nm = 165.0
+torque_curve = PackedFloat32Array(0.62, 0.74, 0.85, 0.93, 0.99, 1, 0.95, 0.86)
+idle_rpm = 800.0
+redline_rpm = 6200.0
+drivetrain = 0
+gear_ratios = PackedFloat32Array(3.5, 2.42, 1.8, 1.36, 1.05)
+reverse_ratio = 3.3200000000000003
+tire_grip = 0.95
+wheel_radius_front = 0.3
+wheel_radius_rear = 0.3
+wheel_mass = 20.0
+spring_hz_front = 1.5
+spring_hz_rear = 1.6
+travel_up = 0.1
+travel_down = 0.14
+anti_roll_front = 15120.0
+anti_roll_rear = 10800.0
+brake_torque = 2808.0
+handbrake_torque = 1620.0
+steer_lock_deg = 36.0
+drag_area = 1.0230000000000001
+performance_class = "C"
+performance_index = 593
+top_speed_kmh = 175.0
+power_kw = 92.0

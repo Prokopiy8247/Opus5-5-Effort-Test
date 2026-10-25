@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_l0550"]
+
+[resource]
+script = ExtResource("1_l0550")
+category = "brakes"
+level = 1
+display_name = "Street Brakes"
+description = "Bigger discs and better pads: more stopping torque."
+cost = 8000
+multipliers = {
+"brake": 1.1
+}

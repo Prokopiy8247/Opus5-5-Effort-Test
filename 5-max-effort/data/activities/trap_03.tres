@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_v76nk"]
+
+[resource]
+script = ExtResource("1_v76nk")
+id = "trap_03"
+display_name = "Ridge Flats"
+region = "Meadowbrook Vale"
+road = 1
+s0 = 660
+position = Vector3(-96.5, 22.02, 985.77)
+heading = Vector3(0.9899744, 0, -0.14124699)
+width = 21.0
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(150, 190, 225)
+unit = "km/h"
+reward = 400
+prop_position = Vector3(-94.649666, 21.666122, 998.7387)
+prop_yaw = -1.4290754059803086

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WeatherPreset" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/weather_preset.gd" id="1_578hg"]
+
+[resource]
+script = ExtResource("1_578hg")
+cloud_coverage = 0.18
+fog_density = 0.00035
+wind = 0.25
+visibility_m = 8000.0

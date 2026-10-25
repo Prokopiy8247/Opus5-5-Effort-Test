@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_2psm0"]
+
+[resource]
+script = ExtResource("1_2psm0")
+id = "race_coast"
+display_name = "Coast Sprint"
+kind = 4
+road_id = "festival_loop"
+start_xz = Vector2(1250, 900)
+end_xz = Vector2(1120, -1450)
+stars = PackedFloat32Array(200, 170, 145)
+opponents = 3
+checkpoint_spacing_m = 500.0
+reward = 4000
+description = "Sprint north along the Saltcliff cliffs, across the bay bridge."

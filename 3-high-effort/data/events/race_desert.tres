@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_67a6n"]
+
+[resource]
+script = ExtResource("1_67a6n")
+id = "race_desert"
+display_name = "Desert Run"
+kind = 4
+road_id = "festival_loop"
+start_xz = Vector2(-1760, 660)
+end_xz = Vector2(-20, 1380)
+stars = PackedFloat32Array(220, 185, 160)
+opponents = 3
+checkpoint_spacing_m = 500.0
+reward = 4000
+description = "Wind through the Ochre Mesa and back to the valley."

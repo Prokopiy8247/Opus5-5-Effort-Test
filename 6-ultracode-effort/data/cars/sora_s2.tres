@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_7vuc3"]
+
+[sub_resource type="Curve" id="Curve_5u6qx"]
+_data = [Vector2(0, 0.5), 0.0, 0.0, 0, 0, Vector2(0.2, 0.68), 0.0, 0.0, 0, 0, Vector2(0.5, 0.88), 0.0, 0.0, 0, 0, Vector2(0.76, 1), 0.0, 0.0, 0, 0, Vector2(0.9, 0.95), 0.0, 0.0, 0, 0, Vector2(1, 0.84), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_7vuc3")
+id = "sora_s2"
+display_name = "Sora S2"
+category = "Sports Coupe"
+blurb = "Balanced front-mid-engine coupe with a high-revving heart. Precise, adjustable, rewarding."
+perf_class = "B"
+perf_index = 596
+model_path = "res://assets/imported/cars/sora_s2.glb"
+year_style = "Modern"
+default_color = Color(0.9, 0.9, 0.88, 1)
+mass = 1290.0
+com = Vector3(0, 0.46, -0.06)
+inertia_scale = Vector3(1, 0.85, 1)
+redline_rpm = 7800.0
+max_rpm = 8200.0
+peak_torque = 307.0838973836496
+torque_curve = SubResource("Curve_5u6qx")
+exhaust_rasp = 0.45
+engine_pitch = 1.2
+gear_ratios = PackedFloat32Array(3.375, 2.45, 1.857, 1.427, 1.107, 0.864)
+reverse_ratio = 3.2063175754055027
+reverse_max_kmh = 32.0
+final_drive = 4.1
+awd_front_split = 0.0
+diff_lock = 0.55
+tire_grip = 1.1
+slide_grip = 0.83
+wheelbase = 2.55
+track_front = 1.54
+track_rear = 1.56
+body_size = Vector3(1.8, 1.27, 4.35)
+spring_front = 60000.0
+spring_rear = 56000.0
+damper_bump = 4000.0
+damper_rebound = 5600.0
+suspension_travel = 0.17
+anti_roll_front = 18000.0
+anti_roll_rear = 14000.0
+drag_area = 0.8356807399138633
+downforce_front = 0.15
+downforce_rear = 0.25
+brake_force = 17084.115
+brake_bias = 0.62
+handbrake_force = 9491.175000000001
+high_speed_steer_deg = 6.5
+top_speed_kmh = 258.0

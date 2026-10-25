@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_uf61m"]
+
+[resource]
+script = ExtResource("1_uf61m")
+id = "trap_06"
+display_name = "Eastern Mile"
+region = "Granite Crown Highlands"
+road = 16
+s0 = 340
+position = Vector3(-173.68, 290.65, -1685.9)
+heading = Vector3(0.98809576, 0, -0.15384014)
+width = 7.8
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(150, 190, 225)
+unit = "km/h"
+reward = 400
+prop_position = Vector3(-172.68004, 290.38132, -1679.4774)
+prop_yaw = -1.4163428166778198

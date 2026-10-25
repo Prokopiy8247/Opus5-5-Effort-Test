@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_ei61r"]
+
+[resource]
+script = ExtResource("1_ei61r")
+id = "car04_arrow"
+display_name = "Arrow S"
+category = "Sports Coupe"
+glb_path = "res://assets/imported/vehicles/car04_arrow.glb"
+mass = 1290.0
+com_offset = Vector3(0, -0.174, 0)
+power_kw = 245.0
+peak_rpm = 7200.0
+redline = 8200.0
+gear_ratios = PackedFloat32Array(3.2, 2.15, 1.6, 1.28, 1.05, 0.88)
+final_drive = 4.0
+top_speed_kmh = 258.0
+grip = 1.2
+offroad_grip = 0.78
+susp_travel = 0.18
+susp_freq = 2.2
+anti_roll = 7740.0
+downforce = 0.45
+brake_force = 12500.0
+steer_lock_deg = 35.0
+engine_voice = 1.1
+cylinders = 6
+base_color = Color(0.1, 0.55, 0.85, 1)
+finish = 2

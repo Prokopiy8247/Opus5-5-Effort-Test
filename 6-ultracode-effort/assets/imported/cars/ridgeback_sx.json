@@ -1,0 +1,223 @@
+{
+  "id": "ridgeback_sx",
+  "name": "Ridgeback SX",
+  "class": "off-road SUV (5-door, tall suspension)",
+  "drivetrain": "AWD",
+  "engine": "front, turbo straight-six",
+  "doors": 5,
+  "seats": 5,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Cars/Car_ridgeback_sx",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (car faces -z); metres; origin = ground, mid-axles",
+  "length": 4.7043,
+  "length_shell": 4.288,
+  "width": 1.95,
+  "width_with_mirrors": 2.22,
+  "height": 1.85,
+  "height_overall": 2.0344,
+  "height_note": "height = roof without the rack; height_overall includes the roof rack / antenna",
+  "ground_clearance": 0.28,
+  "body_floor_height": 0.46,
+  "wheelbase": 2.85,
+  "track_front": 1.65,
+  "track_rear": 1.65,
+  "wheel_radius_front": 0.3999,
+  "wheel_radius_rear": 0.3999,
+  "wheel_width_front": 0.273,
+  "wheel_width_rear": 0.273,
+  "rim_diameter_in_front": 17,
+  "rim_diameter_in_rear": 17,
+  "wheels": {
+    "FL": [
+      -0.825,
+      0.4,
+      -1.425
+    ],
+    "FR": [
+      0.825,
+      0.4,
+      -1.425
+    ],
+    "RL": [
+      -0.825,
+      0.4,
+      1.425
+    ],
+    "RR": [
+      0.825,
+      0.4,
+      1.425
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.635,
+      0.94,
+      -2.21
+    ],
+    "Socket_HeadlightL": [
+      -0.635,
+      0.94,
+      -2.21
+    ],
+    "Socket_Exhaust": [
+      0.56,
+      0.4,
+      2.1879
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.42,
+      -1.15
+    ],
+    "Socket_CamCockpit": [
+      -0.42,
+      1.52,
+      0.15
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.64,
+      -2.36
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.42,
+      1.16,
+      -0.42
+    ],
+    "column_axis": [
+      0.0,
+      -0.4067,
+      -0.9135
+    ],
+    "radius": 0.19,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.42,
+    1.52,
+    0.15
+  ],
+  "spare_wheel_center": [
+    -0.04,
+    1.01,
+    2.2537
+  ],
+  "body_aabb": {
+    "min": [
+      -1.11,
+      0.28,
+      -2.3141
+    ],
+    "max": [
+      1.11,
+      2.0344,
+      2.3902
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.11,
+      0.0001,
+      -2.3141
+    ],
+    "max": [
+      1.11,
+      2.0344,
+      2.3902
+    ]
+  },
+  "tris": {
+    "Body": 29762,
+    "Glass": 1020,
+    "Interior": 6556,
+    "Lights_Head": 568,
+    "Lights_Tail": 392,
+    "Lights_Brake": 288,
+    "Lights_Reverse": 264,
+    "SteeringWheel": 912,
+    "Wheel_FR": 3296,
+    "Caliper_FR": 70,
+    "Wheel_FL": 3296,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3296,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3296,
+    "Caliper_RL": 70,
+    "total": 53226
+  },
+  "materials": [
+    "Alu_ridgeback_sx",
+    "Amber_ridgeback_sx",
+    "BrakeDisc_ridgeback_sx",
+    "BrakeLens_ridgeback_sx",
+    "Caliper_ridgeback_sx",
+    "Chrome_ridgeback_sx",
+    "Gauge_ridgeback_sx",
+    "Glass_ridgeback_sx",
+    "Grille_ridgeback_sx",
+    "HeadlightLens_ridgeback_sx",
+    "InteriorDark_ridgeback_sx",
+    "Interior_ridgeback_sx",
+    "Paint_ridgeback_sx",
+    "Plastic_ridgeback_sx",
+    "ReverseLens_ridgeback_sx",
+    "Rim_ridgeback_sx",
+    "Rubber_ridgeback_sx",
+    "Steel_ridgeback_sx",
+    "TaillightLens_ridgeback_sx",
+    "TowStrap_ridgeback_sx",
+    "Trim_ridgeback_sx",
+    "Underbody_ridgeback_sx"
+  ],
+  "default_paint": {
+    "hex": "#6B6B3A",
+    "linear_rgb": [
+      0.147,
+      0.147,
+      0.042
+    ],
+    "finish": "matte"
+  },
+  "glb": {
+    "path": "res://assets/imported/cars/ridgeback_sx.glb",
+    "bytes": 2118212,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "ridgeback_sx"
+    ]
+  }
+}

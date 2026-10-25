@@ -1,0 +1,213 @@
+{
+  "id": "aurelia_sedan",
+  "name": "Aurelia Saloon",
+  "class": "mid-size sedan",
+  "drivetrain": "FWD",
+  "engine": "front",
+  "doors": 4,
+  "seats": 5,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Cars/Car_aurelia_sedan",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (car faces -z); metres; origin = ground, mid-axles",
+  "length": 4.75,
+  "length_overall": 4.771,
+  "width": 1.82,
+  "width_with_mirrors": 2.166,
+  "height": 1.45,
+  "height_overall": 1.4744,
+  "ground_clearance": 0.15,
+  "ground_clearance_min": 0.1445,
+  "wheelbase": 2.78,
+  "track_front": 1.57,
+  "track_rear": 1.56,
+  "wheel_radius_front": 0.325,
+  "wheel_radius_rear": 0.325,
+  "wheel_width_front": 0.205,
+  "wheel_width_rear": 0.205,
+  "rim_diameter_in": 16,
+  "wheels": {
+    "FL": [
+      -0.785,
+      0.325,
+      -1.39
+    ],
+    "FR": [
+      0.785,
+      0.325,
+      -1.39
+    ],
+    "RL": [
+      -0.78,
+      0.325,
+      1.39
+    ],
+    "RR": [
+      0.78,
+      0.325,
+      1.39
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.5852,
+      0.7415,
+      -2.3279
+    ],
+    "Socket_HeadlightL": [
+      -0.5852,
+      0.7415,
+      -2.3279
+    ],
+    "Socket_Exhaust": [
+      -0.5,
+      0.258,
+      2.418
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.085,
+      -1.12
+    ],
+    "Socket_CamCockpit": [
+      -0.375,
+      1.18,
+      0.2
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.5,
+      -2.38
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.375,
+      0.88,
+      -0.27
+    ],
+    "column_axis": [
+      0.0,
+      -0.3907,
+      -0.9205
+    ],
+    "radius": 0.188,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.375,
+    1.18,
+    0.2
+  ],
+  "body_aabb": {
+    "min": [
+      -1.083,
+      0.1445,
+      -2.353
+    ],
+    "max": [
+      1.083,
+      1.4744,
+      2.418
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.083,
+      0.0,
+      -2.353
+    ],
+    "max": [
+      1.083,
+      1.4744,
+      2.418
+    ]
+  },
+  "tris": {
+    "Body": 27822,
+    "Glass": 1616,
+    "Interior": 5374,
+    "Lights_Head": 424,
+    "Lights_Tail": 1160,
+    "Lights_Brake": 378,
+    "Lights_Reverse": 68,
+    "SteeringWheel": 992,
+    "Wheel_FR": 3256,
+    "Caliper_FR": 70,
+    "Wheel_FL": 3256,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3256,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3256,
+    "Caliper_RL": 70,
+    "total": 51138
+  },
+  "materials": [
+    "BrakeDisc_aurelia_sedan",
+    "BrakeLens_aurelia_sedan",
+    "Caliper_aurelia_sedan",
+    "Carbon_aurelia_sedan",
+    "Chrome_aurelia_sedan",
+    "Gauge_aurelia_sedan",
+    "Glass_aurelia_sedan",
+    "Grille_aurelia_sedan",
+    "HeadlightLens_aurelia_sedan",
+    "InteriorDark_aurelia_sedan",
+    "InteriorWood_aurelia_sedan",
+    "Interior_aurelia_sedan",
+    "Paint_aurelia_sedan",
+    "ReverseLens_aurelia_sedan",
+    "Rim_aurelia_sedan",
+    "Rubber_aurelia_sedan",
+    "TaillightLens_aurelia_sedan",
+    "Trim_aurelia_sedan",
+    "Underbody_aurelia_sedan"
+  ],
+  "default_paint": {
+    "hex": "#3D5A80",
+    "linear_rgb": [
+      0.0467,
+      0.1022,
+      0.2159
+    ],
+    "finish": "metallic"
+  },
+  "glb": {
+    "path": "res://assets/imported/cars/aurelia_sedan.glb",
+    "bytes": 1732716,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "aurelia_sedan"
+    ]
+  }
+}

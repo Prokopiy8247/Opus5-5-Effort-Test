@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_mxgvf"]
+
+[resource]
+script = ExtResource("1_mxgvf")
+id = 1
+key = &"concrete"
+display_name = "Concrete"
+grip = 0.97
+slide_ratio = 0.74
+bumpiness = 0.002
+dust_color = Color(0.7, 0.7, 0.7, 0)

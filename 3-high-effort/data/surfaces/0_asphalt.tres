@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/surface_def.gd" id="1_05jgf"]
+
+[resource]
+script = ExtResource("1_05jgf")
+grip_by_tire = PackedFloat32Array(1, 1.08, 0.97, 0.88, 0.92)
+particle_color = Color(0.75, 0.75, 0.75, 0.55)

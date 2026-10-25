@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_mk7ql"]
+
+[resource]
+script = ExtResource("1_mk7ql")
+id = "board_12"
+display_name = "Festival board 13"
+kind = 6
+road_id = "pinewood_gravel"
+start_frac = 0.6
+end_frac = 0.6
+stars = PackedFloat32Array(0, 0, 0)
+reward = 500

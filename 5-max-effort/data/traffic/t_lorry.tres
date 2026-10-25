@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_adq67"]
+
+[resource]
+script = ExtResource("1_adq67")
+id = &"t_lorry"
+display_name = "Box Lorry"
+category = "Traffic"
+model_path = "res://assets/imported/traffic/t_lorry.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 7600.0
+com_offset = Vector3(0, 0.25, 0)
+max_torque_nm = 950.0
+torque_curve = PackedFloat32Array(0.8, 0.93, 1, 0.98, 0.92, 0.85, 0.77, 0.66)
+idle_rpm = 780.0
+redline_rpm = 2600.0
+gear_ratios = PackedFloat32Array(3.5, 2.71, 2.21, 1.83, 1.53, 1.29)
+reverse_ratio = 3.3200000000000003
+tire_grip = 0.85
+wheel_radius_front = 0.5
+wheel_radius_rear = 0.5
+wheel_mass = 60.0
+spring_hz_front = 1.25
+spring_hz_rear = 1.35
+travel_up = 0.12
+travel_down = 0.16
+anti_roll_front = 106400.0
+anti_roll_rear = 76000.0
+brake_torque = 19760.0
+handbrake_torque = 11400.0
+steer_lock_deg = 36.0
+drag_area = 9.6
+performance_class = "D"
+performance_index = 452
+top_speed_kmh = 100.0
+power_kw = 179.0

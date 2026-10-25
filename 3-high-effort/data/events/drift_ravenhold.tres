@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_lpfqd"]
+
+[resource]
+script = ExtResource("1_lpfqd")
+id = "drift_ravenhold"
+display_name = "Ravenhold Drift"
+kind = 2
+road_id = "castle_climb"
+start_xz = Vector2(-860, -900)
+end_xz = Vector2(-920, -1200)
+stars = PackedFloat32Array(1200, 2800, 5000)
+reward = 1500

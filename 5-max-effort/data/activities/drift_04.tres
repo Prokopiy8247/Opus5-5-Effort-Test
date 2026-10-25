@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_h80nl"]
+
+[resource]
+script = ExtResource("1_h80nl")
+id = "drift_04"
+kind = 2
+display_name = "Pine Slide"
+region = "Granite Crown Highlands"
+s0 = 1870
+s1 = 2170
+position = Vector3(933.62, 287.49, -1053.44)
+heading = Vector3(-0.980531, 0, -0.19636421)
+end_position = Vector3(534.74, 353.49, -1196.11)
+end_heading = Vector3(0.99788344, 0, -0.06502759)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(5000, 12000, 22000)
+unit = "pts"
+length_m = 600.0

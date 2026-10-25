@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_i8a4f"]
+
+[resource]
+script = ExtResource("1_i8a4f")
+id = &"05_meridian_gt"
+display_name = "Meridian GT V12"
+maker = "Meridian"
+category = "Grand Tourer"
+year = 2023
+description = "Long-legged V12 grand tourer. Effortless speed and rock-solid stability."
+engine_label = "6.5 V12"
+model_path = "res://assets/imported/cars/05_meridian_gt.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1740.0
+com_offset = Vector3(0, 0.08, -0.1)
+inertia_scale = Vector3(1.05, 1.12, 1)
+max_torque_nm = 720.0
+torque_curve = PackedFloat32Array(0.6, 0.72, 0.83, 0.92, 0.98, 1, 0.98, 0.91)
+idle_rpm = 850.0
+redline_rpm = 7400.0
+engine_inertia = 0.25
+gear_ratios = PackedFloat32Array(3.15, 2.42, 1.95, 1.6, 1.33, 1.11, 0.93)
+reverse_ratio = 2.99
+final_drive = 3.2
+diff_lock = 0.5
+tire_grip = 1.12
+grip_rear = 1.05
+wheel_radius_front = 0.35
+wheel_radius_rear = 0.35
+spring_hz_front = 1.9
+spring_hz_rear = 2.0
+anti_roll_front = 30000.0
+anti_roll_rear = 22000.0
+brake_torque = 3800.0
+steer_lock_deg = 32.0
+steer_high_speed_deg = 3.4
+drag_area = 0.98
+downforce_area = 0.42
+cylinders = 12
+engine_tone = 0.9
+engine_roughness = 0.15
+exhaust_pop = 0.4
+performance_class = "S2"
+performance_index = 998
+default_color = Color(0.08, 0.2, 0.15, 1)
+top_speed_kmh = 318.0
+power_kw = 508.0

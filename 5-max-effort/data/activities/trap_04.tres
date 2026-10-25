@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_6j6lw"]
+
+[resource]
+script = ExtResource("1_6j6lw")
+id = "trap_04"
+display_name = "Lakeside Trap"
+region = "Meadowbrook Vale"
+s0 = 6620
+position = Vector3(-971.88, 31.59, 1598.99)
+heading = Vector3(-0.89740515, 0, -0.44120747)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(150, 185, 220)
+unit = "km/h"
+reward = 400
+prop_position = Vector3(-968.7033, 31.28149, 1592.5287)
+prop_yaw = 1.113852593860405

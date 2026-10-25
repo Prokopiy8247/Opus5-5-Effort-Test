@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_0ht21"]
+
+[resource]
+script = ExtResource("1_0ht21")
+part = "suspension"
+display_name = "Sport Springs"
+description = "Firmer springs and thicker anti-roll bars."
+spring_mult = 1.07
+arb_mult = 1.1
+price = 4000

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_ugvq7"]
+
+[resource]
+script = ExtResource("1_ugvq7")
+id = "car05_solstice"
+display_name = "Solstice GT"
+category = "Grand Tourer"
+glb_path = "res://assets/imported/vehicles/car05_solstice.glb"
+mass = 1680.0
+com_offset = Vector3(0, -0.174, 0)
+power_kw = 390.0
+peak_rpm = 6500.0
+redline = 7400.0
+gear_ratios = PackedFloat32Array(3, 2, 1.45, 1.12, 0.9, 0.75, 0.63)
+final_drive = 3.5
+top_speed_kmh = 305.0
+grip = 1.22
+offroad_grip = 0.75
+susp_travel = 0.18
+susp_freq = 1.8
+anti_roll = 10080.0
+downforce = 0.65
+brake_force = 14500.0
+steer_lock_deg = 32.0
+engine_voice = 0.8
+cylinders = 12
+base_color = Color(0.2, 0.2, 0.22, 1)
+finish = 2

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_232w4"]
+
+[resource]
+script = ExtResource("1_232w4")
+id = "pickup"
+display_name = "Hauler V8"
+maker = "Brannock"
+description = "Heavy rear-drive pickup truck. Torquey, loose rear, lots of body roll."
+pi = 585
+model_path = "res://assets/imported/cars/pickup.glb"
+year = 1996
+mass = 2280.0
+com_offset = Vector3(0, -0.1, 0)
+peak_torque = 610.0
+peak_torque_rpm = 3300.0
+redline = 5600.0
+idle_rpm = 700.0
+torque_falloff = 0.55
+gears = PackedFloat32Array(3.2, 2, 1.4, 1, 0.8)
+final_drive = 5.473016056323443
+grip = 0.92
+loose_grip = 1.1
+lateral_stiffness = 7.0
+rest_length = 0.48400000000000004
+spring = 39940.71428571429
+damper_bump = 3053.692591881882
+damper_rebound = 4580.538887822822
+arb_front = 9000.0
+arb_rear = 6000.0
+brake_force = 15000.0
+brake_bias = 0.6
+steer_lock = 33.0
+steer_speed_reduction = 0.7
+top_speed_kmh = 188.0
+downforce = 0.0
+cylinders = 8
+sound_pitch = 0.65
+sound_rough = 0.65
+paint_color = Color(0.62, 0.08, 0.08, 1)
+rim_color = Color(0.78, 0.79, 0.8, 1)

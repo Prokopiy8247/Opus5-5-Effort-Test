@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_ru2v1"]
+
+[resource]
+script = ExtResource("1_ru2v1")
+id = "muscle"
+display_name = "Thunderhawk 440"
+maker = "Brannock"
+description = "Big-block V8 muscle. Huge torque, light rear end, loves to step out."
+car_class = "A"
+pi = 715
+model_path = "res://assets/imported/cars/muscle.glb"
+year = 1970
+mass = 1660.0
+com_offset = Vector3(0, -0.2, 0)
+peak_torque = 640.0
+peak_torque_rpm = 3800.0
+redline = 6100.0
+idle_rpm = 700.0
+torque_falloff = 0.6
+gears = PackedFloat32Array(2.6, 1.75, 1.32, 1)
+final_drive = 2.8819850746187297
+grip = 0.98
+loose_grip = 0.9
+lateral_stiffness = 7.2
+rest_length = 0.354
+spring = 45235.0
+damper_bump = 2772.9454087666422
+damper_rebound = 4159.418113149964
+arb_front = 16000.0
+arb_rear = 8000.0
+brake_force = 12500.0
+brake_bias = 0.6
+steer_lock = 32.0
+steer_speed_reduction = 0.7
+top_speed_kmh = 258.0
+downforce = 0.2
+cylinders = 8
+sound_pitch = 0.7
+sound_rough = 0.75
+paint_color = Color(0.95, 0.62, 0.05, 1)
+rim_color = Color(0.78, 0.79, 0.8, 1)

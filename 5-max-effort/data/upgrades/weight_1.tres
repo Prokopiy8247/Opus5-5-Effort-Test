@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_jngbg"]
+
+[resource]
+script = ExtResource("1_jngbg")
+part = "weight"
+display_name = "Interior Strip"
+description = "Lighter seats and trim."
+mass_mult = 0.97
+price = 4000

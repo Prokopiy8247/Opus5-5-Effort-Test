@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_pty1n"]
+
+[resource]
+script = ExtResource("1_pty1n")
+id = "trap_02"
+display_name = "Valley Straight"
+region = "Meadowbrook Vale"
+road = 17
+s0 = 500
+position = Vector3(538.71, 32.89, -103.05)
+heading = Vector3(-0.43468308, 0, -0.9005835)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(150, 190, 225)
+unit = "km/h"
+reward = 400
+prop_position = Vector3(545.1942, 32.69106, -106.17972)
+prop_yaw = 0.4496863383308113

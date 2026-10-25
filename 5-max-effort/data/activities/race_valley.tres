@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_6sn7r"]
+
+[resource]
+script = ExtResource("1_6sn7r")
+id = "race_valley"
+kind = 4
+display_name = "Eastern Valley Dash"
+region = "Ochre Mesa Canyonlands"
+road = 17
+s0 = 18
+s1 = 639
+position = Vector3(986.77, 60.67, 743.86)
+heading = Vector3(-0.26480848, 0, -0.9643011)
+end_heading = Vector3(-0.43468073, 0, -0.9005846)
+width = 9.2
+points = PackedVector3Array(739.91, 23.27, 246.55, 419.79, 39.68, -354.33)
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(37, 30, 25)
+lower_is_better = true
+unit = "s"
+reward = 800
+length_m = 1242.0

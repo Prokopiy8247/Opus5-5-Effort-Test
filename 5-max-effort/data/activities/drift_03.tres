@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_ghaqy"]
+
+[resource]
+script = ExtResource("1_ghaqy")
+id = "drift_03"
+kind = 2
+display_name = "Gravel Ballet"
+region = "Granite Crown Highlands"
+road = 7
+s0 = 270
+s1 = 570
+position = Vector3(-85.39, 126.49, -758.85)
+heading = Vector3(0.6077728, 0, 0.79411095)
+end_position = Vector3(-413.38, 46.63, -403.21)
+end_heading = Vector3(-0.9098518, 0, 0.41493338)
+width = 5.6
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(5000, 12000, 22000)
+unit = "pts"
+length_m = 600.0

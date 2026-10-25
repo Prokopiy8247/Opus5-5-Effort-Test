@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TrafficType" format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic/traffic_type.gd" id="1_huqav"]
+
+[resource]
+script = ExtResource("1_huqav")
+id = &"bus"
+display_name = "Coach"
+model_path = "res://assets/imported/traffic/TrafficBus.glb"
+mass = 12000.0
+speed_factor = 0.82
+accel = 0.9
+decel = 3.0
+length = 11.2
+colors = Array[Color]([Color(0.95, 0.95, 0.94, 1), Color(0.08, 0.3, 0.6, 1), Color(0.85, 0.5, 0.05, 1), Color(0.7, 0.1, 0.1, 1)])
+class_weights = PackedFloat32Array(1, 0.8, 0.4, 0.2, 0, 0)

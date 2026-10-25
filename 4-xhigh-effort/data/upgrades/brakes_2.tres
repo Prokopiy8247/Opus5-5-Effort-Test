@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_nmyup"]
+
+[resource]
+script = ExtResource("1_nmyup")
+category = "brakes"
+level = 2
+display_name = "Sport Brakes"
+description = "Bigger discs and better pads: more stopping torque."
+cost = 20000
+multipliers = {
+"brake": 1.2
+}

@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_ap74a"]
+
+[sub_resource type="Curve" id="Curve_rpiwt"]
+_data = [Vector2(0, 0.55), 0.0, 0.0, 0, 0, Vector2(0.25, 0.78), 0.0, 0.0, 0, 0, Vector2(0.55, 0.95), 0.0, 0.0, 0, 0, Vector2(0.75, 1), 0.0, 0.0, 0, 0, Vector2(0.92, 0.94), 0.0, 0.0, 0, 0, Vector2(1, 0.86), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_ap74a")
+id = "castellan_gt"
+display_name = "Castellan GT"
+category = "Grand Tourer"
+blurb = "Front-engined V12 continent crusher. Huge stability at 300 km/h, effortless pace on the highway."
+perf_class = "S1"
+perf_index = 756
+model_path = "res://assets/imported/cars/castellan_gt.glb"
+year_style = "Modern"
+default_color = Color(0.12, 0.24, 0.17, 1)
+default_finish = 2
+mass = 1780.0
+com = Vector3(0, 0.48, -0.14)
+idle_rpm = 800.0
+redline_rpm = 7600.0
+max_rpm = 8000.0
+peak_torque = 633.0946362775743
+torque_curve = SubResource("Curve_rpiwt")
+cylinders = 12
+exhaust_rasp = 0.5
+gear_ratios = PackedFloat32Array(3.896, 2.914, 2.266, 1.785, 1.417, 1.132, 0.908)
+reverse_ratio = 3.701074422201122
+final_drive = 3.3
+awd_front_split = 0.0
+diff_lock = 0.5
+tire_grip = 1.13
+grip_rear = 1.05
+peak_slip_deg = 7.0
+wheelbase = 2.85
+track_front = 1.66
+track_rear = 1.65
+wheel_radius_front = 0.35
+wheel_radius_rear = 0.35
+body_size = Vector3(1.98, 1.28, 4.85)
+spring_front = 64000.0
+spring_rear = 62000.0
+damper_bump = 4400.0
+damper_rebound = 6000.0
+suspension_travel = 0.17
+anti_roll_front = 21000.0
+anti_roll_rear = 16000.0
+drag_area = 0.8515573688188551
+downforce_front = 0.28
+downforce_rear = 0.45
+brake_force = 23573.43
+brake_bias = 0.63
+handbrake_force = 13096.349999999999
+max_steer_deg = 32.0
+high_speed_steer_deg = 5.5
+top_speed_kmh = 325.0

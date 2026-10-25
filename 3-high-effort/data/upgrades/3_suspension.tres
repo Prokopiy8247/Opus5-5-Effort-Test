@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/upgrade_def.gd" id="1_pd7do"]
+
+[resource]
+script = ExtResource("1_pd7do")
+key = "suspension"
+display_name = "Suspension"
+level_names = PackedStringArray("Stock", "Street", "Sport", "Race")
+effects = {
+"mod_arb": [1.0, 1.12, 1.25, 1.4],
+"mod_spring": [1.0, 1.1, 1.2, 1.32]
+}
+pi_per_level = 10
+cost_per_level = 2000

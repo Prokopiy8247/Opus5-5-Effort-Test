@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_tklgl"]
+
+[resource]
+script = ExtResource("1_tklgl")
+id = &"Thunderhoof"
+display_name = "Thunderhoof 68"
+maker = "Thunderhoof"
+model_year = 1968
+body_style = "Classic muscle"
+description = "Big-block V8 muscle with a lazy four-speed-plus-overdrive. Loves a straight line, hates a hairpin."
+model_path = "res://assets/imported/cars/Thunderhoof.glb"
+order = 3
+default_color = Color(1, 0.36, 0.02, 1)
+default_finish = 0
+default_rim_color = Color(0.85, 0.86, 0.88, 1)
+mass = 1580.0
+com_offset = Vector3(0, 0.5, -0.12)
+idle_rpm = 700.0
+redline_rpm = 5900.0
+max_rpm = 6200.0
+torque_curve = PackedVector2Array(1000, 470, 2500, 620, 3800, 640, 5000, 590, 6200, 480)
+engine_inertia = 0.32
+engine_brake = 0.2
+gear_ratios = PackedFloat32Array(2.52, 1.88, 1.46, 1, 0.82)
+reverse_ratio = 2.6
+final_drive = 3.31
+shift_time = 0.24
+lsd = 0.6
+cylinders = 8
+engine_sound = &"v8_muscle"
+spring_front = 34000.0
+spring_rear = 30000.0
+damper_front = 2900.0
+damper_rear = 2700.0
+arb_front = 12000.0
+arb_rear = 4000.0
+bump_travel = 0.12
+tire_type = 0
+grip = 0.97
+grip_rear_scale = 0.93
+peak_slip_angle_deg = 8.5
+peak_slip_ratio = 0.12
+tire_shape = 1.35
+brake_torque = 4600.0
+brake_bias = 0.62
+handbrake_torque = 2600.0
+max_steer_deg = 32.0
+high_speed_steer_deg = 6.0
+steer_speed = 3.4
+drag_area = 0.85
+downforce = 0.05
+aero_balance = 0.5
+top_speed_kmh = 250.0

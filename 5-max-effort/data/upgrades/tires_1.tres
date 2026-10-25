@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_as3ji"]
+
+[resource]
+script = ExtResource("1_as3ji")
+part = "tires"
+display_name = "Sport Compound"
+description = "Stickier road compound."
+grip_mult = 1.04
+price = 4000

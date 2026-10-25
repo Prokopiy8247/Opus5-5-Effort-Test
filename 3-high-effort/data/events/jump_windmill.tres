@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_gbjhq"]
+
+[resource]
+script = ExtResource("1_gbjhq")
+id = "jump_windmill"
+display_name = "Windmill Air"
+kind = 3
+road_id = "windmill_track"
+start_xz = Vector2(580, -800)
+end_xz = Vector2(580, -800)
+stars = PackedFloat32Array(20, 32, 45)

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_8vxlw"]
+
+[resource]
+script = ExtResource("1_8vxlw")
+id = "drift_hairpins"
+display_name = "Crown Hairpins"
+kind = 2
+road_id = "festival_loop"
+start_xz = Vector2(-1560, -1335)
+end_xz = Vector2(-1540, -1160)
+stars = PackedFloat32Array(1500, 3500, 6000)
+reward = 1500

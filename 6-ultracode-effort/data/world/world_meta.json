@@ -1,0 +1,625 @@
+{
+	"cell": 2.0,
+	"half": 2048.0,
+	"holes": [
+		931058,
+		931059,
+		933108,
+		933109,
+		933110,
+		933111,
+		935160,
+		935161,
+		935162,
+		836963,
+		836964,
+		839012,
+		841061,
+		843110,
+		845159,
+		847208,
+		849257,
+		851306
+	],
+	"lakes": [
+		{
+			"level": 28.8420032960737,
+			"name": "Mirror Lake",
+			"pos": [
+				-40,
+				-600
+			],
+			"radius": 150.0
+		}
+	],
+	"log": [
+		"natural terrain 37068 ms",
+		"road ring            20256 m  bridges 12  tunnels 1",
+		"road expressway       3576 m  bridges 3  tunnels 0",
+		"road vale_north        429 m  bridges 0  tunnels 0",
+		"road festival_coast    612 m  bridges 0  tunnels 0",
+		"road canyon_link      1761 m  bridges 2  tunnels 0",
+		"road lake_road        1293 m  bridges 1  tunnels 0",
+		"road backroad          522 m  bridges 0  tunnels 0",
+		"road millbrook_st      597 m  bridges 0  tunnels 0",
+		"road harbour_st        429 m  bridges 1  tunnels 0",
+		"road lighthouse        174 m  bridges 0  tunnels 0",
+		"road desert_north     1437 m  bridges 3  tunnels 0",
+		"road vale_loop         867 m  bridges 0  tunnels 0",
+		"road coast_hills       537 m  bridges 0  tunnels 0",
+		"road keep_road         336 m  bridges 0  tunnels 0",
+		"road riverside         306 m  bridges 0  tunnels 0",
+		"road riverside_n       480 m  bridges 1  tunnels 0",
+		"road plateau_stage     855 m  bridges 2  tunnels 0",
+		"road orchard_track     858 m  bridges 0  tunnels 0",
+		"road rim_trail         507 m  bridges 0  tunnels 0",
+		"road lake_loop        1197 m  bridges 0  tunnels 0",
+		"road farm_track        732 m  bridges 0  tunnels 0",
+		"road mesa_cut          768 m  bridges 2  tunnels 0",
+		"road canyon_floor     1071 m  bridges 1  tunnels 0",
+		"road forest_track     1065 m  bridges 0  tunnels 0",
+		"road dune_track        642 m  bridges 0  tunnels 0",
+		"road highmoor_track    447 m  bridges 0  tunnels 0",
+		"roads 726 ms",
+		"carve 11369 ms",
+		"maps 4305 ms"
+	],
+	"n": 2049,
+	"pois": [
+		{
+			"kind": "hub",
+			"name": "Sunward Festival",
+			"pos": [
+				-180,
+				745
+			],
+			"region": 0,
+			"y": 26.9176092147827
+		},
+		{
+			"kind": "village",
+			"name": "Millbrook",
+			"pos": [
+				-1150,
+				640
+			],
+			"region": 0,
+			"y": 33.9507446289063
+		},
+		{
+			"kind": "farm",
+			"name": "Wend Farm",
+			"pos": [
+				-1480,
+				520
+			],
+			"region": 0,
+			"y": 22.044132232666
+		},
+		{
+			"kind": "diner",
+			"name": "Crossroads Diner",
+			"pos": [
+				-780,
+				200
+			],
+			"region": 0,
+			"y": 15.6025047302246
+		},
+		{
+			"kind": "landmark",
+			"name": "Mirror Lake",
+			"pos": [
+				60,
+				-600
+			],
+			"region": 0,
+			"y": 24.3700065612793
+		},
+		{
+			"kind": "hamlet",
+			"name": "Highmoor",
+			"pos": [
+				-1530,
+				-1340
+			],
+			"region": 1,
+			"y": 173.010330200195
+		},
+		{
+			"kind": "viewpoint",
+			"name": "Ironcrest Pass",
+			"pos": [
+				-930,
+				-1490
+			],
+			"region": 1,
+			"y": 188.982559204102
+		},
+		{
+			"kind": "landmark",
+			"name": "Ember Spur Tunnel",
+			"pos": [
+				-260,
+				-1250
+			],
+			"region": 1,
+			"y": 198.384307861328
+		},
+		{
+			"kind": "castle",
+			"name": "Old Keep Ruins",
+			"pos": [
+				-1850,
+				-1500
+			],
+			"region": 1,
+			"y": 182.568801879883
+		},
+		{
+			"kind": "gas",
+			"name": "Mesa Fuel",
+			"pos": [
+				1240,
+				-420
+			],
+			"region": 2,
+			"y": 106.310478210449
+		},
+		{
+			"kind": "hamlet",
+			"name": "Dustwater",
+			"pos": [
+				1080,
+				-60
+			],
+			"region": 2,
+			"y": 93.4918975830078
+		},
+		{
+			"kind": "landmark",
+			"name": "Gale Ridge Wind Farm",
+			"pos": [
+				1100,
+				-1500
+			],
+			"region": 2,
+			"y": 95.038932800293
+		},
+		{
+			"kind": "landmark",
+			"name": "Redwall Canyon",
+			"pos": [
+				760,
+				250
+			],
+			"region": 2,
+			"y": 77.0373153686523
+		},
+		{
+			"kind": "harbour",
+			"name": "Gullhaven",
+			"pos": [
+				1060,
+				1400
+			],
+			"region": 3,
+			"y": 17.0410118103027
+		},
+		{
+			"kind": "lighthouse",
+			"name": "Saltwind Lighthouse",
+			"pos": [
+				1780,
+				1520
+			],
+			"region": 3,
+			"y": 25.6948986053467
+		},
+		{
+			"kind": "landmark",
+			"name": "Estuary Bridge",
+			"pos": [
+				-720,
+				1460
+			],
+			"region": 3,
+			"y": -7.50097179412842
+		},
+		{
+			"kind": "diner",
+			"name": "Seabreak Diner",
+			"pos": [
+				280,
+				1330
+			],
+			"region": 3,
+			"y": 27.8991870880127
+		},
+		{
+			"kind": "gas",
+			"name": "Coast Fuel",
+			"pos": [
+				-1650,
+				1120
+			],
+			"region": 3,
+			"y": 34.3814277648926
+		}
+	],
+	"river": [
+		[
+			-560.0,
+			-1000.0,
+			104.01
+		],
+		[
+			-572.43,
+			-961.98,
+			95.28
+		],
+		[
+			-584.57,
+			-923.87,
+			89.34
+		],
+		[
+			-596.7,
+			-885.75,
+			79.65
+		],
+		[
+			-609.06,
+			-847.71,
+			71.7
+		],
+		[
+			-621.9,
+			-809.82,
+			66.37
+		],
+		[
+			-635.42,
+			-772.18,
+			59.16
+		],
+		[
+			-650.01,
+			-734.94,
+			54.04
+		],
+		[
+			-666.02,
+			-698.29,
+			49.05
+		],
+		[
+			-682.87,
+			-662.01,
+			45.43
+		],
+		[
+			-699.97,
+			-625.85,
+			44.79
+		],
+		[
+			-716.83,
+			-589.57,
+			40.48
+		],
+		[
+			-732.93,
+			-552.96,
+			35.5
+		],
+		[
+			-747.73,
+			-515.8,
+			30.54
+		],
+		[
+			-760.64,
+			-477.95,
+			27.44
+		],
+		[
+			-772.11,
+			-439.63,
+			27.44
+		],
+		[
+			-782.78,
+			-401.08,
+			26.99
+		],
+		[
+			-792.51,
+			-362.28,
+			26.99
+		],
+		[
+			-801.12,
+			-323.22,
+			26.94
+		],
+		[
+			-808.44,
+			-283.9,
+			26.26
+		],
+		[
+			-814.28,
+			-244.33,
+			26.26
+		],
+		[
+			-818.41,
+			-204.55,
+			25.2
+		],
+		[
+			-820.57,
+			-164.61,
+			24.07
+		],
+		[
+			-820.48,
+			-124.61,
+			21.63
+		],
+		[
+			-818.41,
+			-84.67,
+			21.12
+		],
+		[
+			-814.73,
+			-44.84,
+			19.59
+		],
+		[
+			-809.82,
+			-5.15,
+			19.59
+		],
+		[
+			-804.02,
+			34.43,
+			19.59
+		],
+		[
+			-797.67,
+			73.92,
+			17.91
+		],
+		[
+			-791.1,
+			113.38,
+			17.91
+		],
+		[
+			-783.86,
+			152.72,
+			17.91
+		],
+		[
+			-775.02,
+			191.72,
+			17.91
+		],
+		[
+			-765.14,
+			230.48,
+			17.91
+		],
+		[
+			-754.77,
+			269.11,
+			17.91
+		],
+		[
+			-744.43,
+			307.76,
+			17.61
+		],
+		[
+			-734.67,
+			346.55,
+			16.7
+		],
+		[
+			-726.07,
+			385.61,
+			15.79
+		],
+		[
+			-719.25,
+			425.02,
+			14.91
+		],
+		[
+			-714.15,
+			464.69,
+			14.2
+		],
+		[
+			-710.29,
+			504.5,
+			13.49
+		],
+		[
+			-707.41,
+			544.4,
+			12.77
+		],
+		[
+			-705.23,
+			584.34,
+			12.06
+		],
+		[
+			-703.43,
+			624.3,
+			11.35
+		],
+		[
+			-701.71,
+			664.26,
+			10.64
+		],
+		[
+			-699.78,
+			704.21,
+			9.93
+		],
+		[
+			-697.64,
+			744.16,
+			9.26
+		],
+		[
+			-695.52,
+			784.1,
+			8.6
+		],
+		[
+			-693.56,
+			824.05,
+			7.93
+		],
+		[
+			-691.87,
+			864.02,
+			7.26
+		],
+		[
+			-690.6,
+			903.99,
+			6.6
+		],
+		[
+			-689.86,
+			943.99,
+			5.93
+		],
+		[
+			-689.8,
+			983.99,
+			5.27
+		],
+		[
+			-690.61,
+			1023.98,
+			4.68
+		],
+		[
+			-692.46,
+			1063.93,
+			4.15
+		],
+		[
+			-695.09,
+			1103.85,
+			3.62
+		],
+		[
+			-698.23,
+			1143.72,
+			3.08
+		],
+		[
+			-701.58,
+			1183.58,
+			2.55
+		],
+		[
+			-704.88,
+			1223.45,
+			2.02
+		],
+		[
+			-707.83,
+			1263.34,
+			1.49
+		],
+		[
+			-710.16,
+			1303.27,
+			0.98
+		],
+		[
+			-711.97,
+			1343.23,
+			-0.2
+		],
+		[
+			-713.5,
+			1383.2,
+			-0.5
+		],
+		[
+			-714.82,
+			1423.18,
+			-0.5
+		],
+		[
+			-716.0,
+			1463.16,
+			-0.5
+		],
+		[
+			-717.12,
+			1503.14,
+			-0.5
+		],
+		[
+			-718.25,
+			1543.13,
+			-0.5
+		],
+		[
+			-719.45,
+			1583.11,
+			-0.5
+		],
+		[
+			-720.0,
+			1600.0,
+			-0.5
+		]
+	],
+	"seed": 20261023,
+	"stats": {
+		"by_road": {
+			"backroad": 522.0,
+			"canyon_floor": 1071.0,
+			"canyon_link": 1761.0,
+			"coast_hills": 537.0,
+			"desert_north": 1437.0,
+			"dune_track": 642.0,
+			"expressway": 3576.0,
+			"farm_track": 732.0,
+			"festival_coast": 612.0,
+			"forest_track": 1065.0,
+			"harbour_st": 429.0,
+			"highmoor_track": 447.0,
+			"keep_road": 336.0,
+			"lake_loop": 1197.0,
+			"lake_road": 1293.0,
+			"lighthouse": 174.0,
+			"mesa_cut": 768.0,
+			"millbrook_st": 597.0,
+			"orchard_track": 858.0,
+			"plateau_stage": 855.0,
+			"rim_trail": 507.0,
+			"ring": 20256.0,
+			"riverside": 306.0,
+			"riverside_n": 480.0,
+			"vale_loop": 867.0,
+			"vale_north": 429.0
+		},
+		"road_km": 41.75
+	},
+	"version": 1
+}

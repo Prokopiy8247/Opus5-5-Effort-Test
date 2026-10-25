@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_3b8h0"]
+
+[resource]
+script = ExtResource("1_3b8h0")
+id = &"10_libella_spider"
+display_name = "Libella Spider '58"
+maker = "Libella"
+category = "Vintage Roadster"
+year = 1958
+description = "Featherweight open roadster from the golden age. Slow, honest and pure joy."
+engine_label = "1.5 I4"
+model_path = "res://assets/imported/cars/10_libella_spider.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 840.0
+com_offset = Vector3(0, 0.12, 0)
+max_torque_nm = 135.0
+torque_curve = PackedFloat32Array(0.7, 0.82, 0.92, 0.98, 1, 0.95, 0.86, 0.74)
+idle_rpm = 800.0
+redline_rpm = 6100.0
+engine_inertia = 0.12
+gear_ratios = PackedFloat32Array(3.6, 2.11, 1.38, 0.93)
+reverse_ratio = 3.42
+final_drive = 4.3
+diff_lock = 0.1
+tire_grip = 0.86
+slip_angle_peak_deg = 8.0
+slide_ratio = 0.8
+wheel_radius_front = 0.3
+wheel_radius_rear = 0.3
+wheel_mass = 14.0
+spring_hz_front = 1.5
+spring_hz_rear = 1.55
+anti_roll_front = 9000.0
+anti_roll_rear = 4000.0
+brake_torque = 1500.0
+steer_lock_deg = 36.0
+steer_speed = 2.8
+drag_area = 0.81
+downforce_area = 0.0
+engine_tone = 1.05
+engine_roughness = 0.45
+performance_class = "C"
+performance_index = 538
+default_color = Color(0.62, 0.8, 0.85, 1)
+default_finish = 0
+top_speed_kmh = 168.0
+power_kw = 65.0

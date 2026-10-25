@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_2envr"]
+
+[resource]
+script = ExtResource("1_2envr")
+id = "jump_04"
+kind = 3
+display_name = "Quarry Flight"
+region = "Meadowbrook Vale"
+road = 7
+s0 = 685
+position = Vector3(-581.03, 27.23, -249.61)
+heading = Vector3(-0.5210945, 0, 0.853499)
+width = 5.6
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(30, 50, 70)
+unit = "m"
+prop_position = Vector3(-573.946, 27.06884, -245.28491)
+prop_yaw = -0.5481328146061437

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/env/weather_preset.gd" id="1_hejel"]
+
+[resource]
+script = ExtResource("1_hejel")
+id = &"cloudy"
+display_name = "Cloudy"
+cloud_coverage = 0.8
+cloud_darkness = 0.35
+overcast = 0.55
+cirrus = 0.25
+cloud_speed = 1.5
+haze = 0.35
+sky_tint = Color(0.94, 0.96, 1, 1)
+sun_energy = 0.45
+ambient_energy = 1.15
+shadow_softness = 0.55
+exposure = 1.08
+saturation = 1.04
+fog_density = 0.00032
+fog_color = Color(0.68, 0.72, 0.78, 1)
+fog_tint = 0.3
+aerial_perspective = 0.75
+fog_sky_affect = 0.08
+volumetric_density = 0.0012
+wind = 0.5

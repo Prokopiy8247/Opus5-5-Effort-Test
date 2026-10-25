@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_da1qi"]
+
+[resource]
+script = ExtResource("1_da1qi")
+id = "car07_dustrunner"
+display_name = "Dustrunner WRC"
+category = "Rally"
+glb_path = "res://assets/imported/vehicles/car07_dustrunner.glb"
+mass = 1250.0
+com_offset = Vector3(0, -0.204, 0)
+power_kw = 240.0
+redline = 7500.0
+gear_ratios = PackedFloat32Array(3.2, 2.2, 1.65, 1.3, 1.05, 0.88)
+final_drive = 4.4
+drivetrain = 2
+top_speed_kmh = 215.0
+grip = 1.15
+offroad_grip = 1.08
+susp_travel = 0.28
+susp_freq = 1.7
+anti_roll = 7500.0
+downforce = 0.4
+brake_force = 12000.0
+steer_lock_deg = 38.0
+engine_voice = 1.15
+turbo = true
+base_color = Color(0.95, 0.95, 0.95, 1)

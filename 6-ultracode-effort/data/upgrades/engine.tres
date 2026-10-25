@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_ortcl"]
+
+[resource]
+script = ExtResource("1_ortcl")
+level_names = PackedStringArray("Stock", "Street", "Sport", "Race")
+cost_per_level = 9000
+torque_per_level = 0.09
+rpm_per_level = 150.0
+top_speed_per_level = 0.025

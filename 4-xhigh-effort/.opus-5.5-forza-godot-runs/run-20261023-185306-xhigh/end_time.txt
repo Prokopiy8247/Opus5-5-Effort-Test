@@ -1,0 +1,6 @@
+run_id: run-20261023-185306-xhigh
+end_timestamp: 2026-10-24T01:35:03.583+02:00
+timezone: (UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb
+utc: 2026-10-23T23:35:03.583Z
+elapsed_wall_clock: 6:41:56 (401.95 min)
+known_pause: 2026-10-23T18:56:49+02:00 -> 2026-10-23T19:12:50+02:00 (16 min 01 s, between segment 1 and segment 2)

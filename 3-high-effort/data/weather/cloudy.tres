@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeatherPreset" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/weather_preset.gd" id="1_hejel"]
+
+[resource]
+script = ExtResource("1_hejel")
+key = "cloudy"
+display_name = "Cloudy"
+cloud_coverage = 0.65
+cloud_darkness = 0.35
+fog_density = 0.0006
+wind = 0.45
+sun_energy = 0.6
+ambient_energy = 0.85

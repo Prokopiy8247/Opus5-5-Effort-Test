@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_f8odu"]
+
+[resource]
+script = ExtResource("1_f8odu")
+part = "suspension"
+level = 3
+display_name = "Race Suspension"
+description = "Stiff race geometry."
+spring_mult = 1.08
+arb_mult = 1.15
+price = 36000

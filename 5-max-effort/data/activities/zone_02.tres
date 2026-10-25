@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_vxbbw"]
+
+[resource]
+script = ExtResource("1_vxbbw")
+id = "zone_02"
+kind = 1
+display_name = "Valley Sweepers"
+region = "Meadowbrook Vale"
+s0 = 30
+s1 = 410
+position = Vector3(-582.13, 22.24, 590.51)
+heading = Vector3(0.91758686, 0, -0.39753526)
+end_position = Vector3(-26.26, 28.93, 81.49)
+end_heading = Vector3(0.81373346, 0, -0.5812383)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(110, 140, 165)
+unit = "km/h"
+length_m = 760.0

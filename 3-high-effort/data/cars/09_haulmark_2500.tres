@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_jk8gv"]
+
+[resource]
+script = ExtResource("1_jk8gv")
+id = "haulmark_2500"
+display_name = "Haulmark 2500"
+maker = "Haulmark"
+year = 2019
+body_style = "Pickup truck"
+car_class = "D"
+pi = 480
+description = "Full-size work truck. Heavy, softly sprung and endearingly wallowy in the bends."
+model_path = "res://assets/imported/cars/haulmark_2500.glb"
+mass = 2350.0
+com_offset = Vector3(0, 0.82, -0.3)
+peak_torque = 620.0
+torque_curve = PackedVector2Array(800, 0.7, 2000, 1, 3500, 0.95, 4800, 0.8, 5400, 0.65)
+idle_rpm = 700.0
+redline_rpm = 5400.0
+cylinders = 8
+engine_layout = "V8"
+sound_base_pitch = 0.68
+sound_roughness = 0.6
+gear_ratios = PackedFloat32Array(3.6, 2.2, 1.5, 1.15, 0.9, 0.72)
+tire_type = 3
+grip = 0.94
+grip_rear_bias = 0.97
+slide_grip = 0.8
+suspension_rest = 0.26
+spring_hz_front = 1.1
+spring_hz_rear = 1.3
+damping_ratio = 0.32
+anti_roll_front = 7000.0
+anti_roll_rear = 3000.0
+brake_force = 15000.0
+brake_bias = 0.64
+handbrake_force = 6000.0
+steer_lock_deg = 36.0
+downforce_area = 0.0
+aero_balance = 0.5
+top_speed_kmh = 185.0
+paint_color = Color(0.55, 0.06, 0.06, 1)
+paint_finish = "gloss"
+rim_color = Color(0.78, 0.78, 0.8, 1)
+stat_speed = 4.4
+stat_handling = 3.2
+stat_accel = 4.6
+stat_launch = 4.8
+stat_braking = 3.8
+stat_offroad = 7.6
+power_hp = 390

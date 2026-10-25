@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_0ht21"]
+
+[resource]
+script = ExtResource("1_0ht21")
+category = "suspension"
+level = 1
+display_name = "Street Suspension"
+description = "Stiffer springs, dampers and anti-roll bars: less roll, sharper response."
+cost = 8000
+multipliers = {
+"susp": 1.1
+}

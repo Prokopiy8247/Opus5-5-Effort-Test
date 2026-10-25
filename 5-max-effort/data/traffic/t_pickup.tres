@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_cd20j"]
+
+[resource]
+script = ExtResource("1_cd20j")
+id = &"t_pickup"
+display_name = "Work Pickup"
+category = "Traffic"
+model_path = "res://assets/imported/traffic/t_pickup.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1950.0
+com_offset = Vector3(0, 0.12, 0)
+max_torque_nm = 400.0
+torque_curve = PackedFloat32Array(0.8, 0.93, 1, 0.98, 0.92, 0.85, 0.77, 0.66)
+idle_rpm = 800.0
+redline_rpm = 5200.0
+gear_ratios = PackedFloat32Array(3.5, 2.64, 2.1, 1.7, 1.39, 1.15)
+reverse_ratio = 3.3200000000000003
+tire_grip = 0.9
+wheel_radius_front = 0.38
+wheel_radius_rear = 0.38
+wheel_mass = 20.0
+spring_hz_front = 1.35
+spring_hz_rear = 1.4500000000000002
+travel_up = 0.1
+travel_down = 0.14
+anti_roll_front = 27300.0
+anti_roll_rear = 19500.0
+brake_torque = 5070.0
+handbrake_torque = 2925.0
+steer_lock_deg = 36.0
+drag_area = 1.7670000000000001
+performance_class = "C"
+performance_index = 565
+top_speed_kmh = 170.0
+power_kw = 147.0

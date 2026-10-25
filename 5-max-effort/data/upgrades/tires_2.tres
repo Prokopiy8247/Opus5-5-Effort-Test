@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_hy1y6"]
+
+[resource]
+script = ExtResource("1_hy1y6")
+part = "tires"
+level = 2
+display_name = "Semi-Slick"
+description = "Track-day rubber; a little worse off-road."
+grip_mult = 1.05
+offroad_mult = 0.96
+price = 16000

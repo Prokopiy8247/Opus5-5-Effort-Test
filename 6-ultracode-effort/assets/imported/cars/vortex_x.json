@@ -1,0 +1,220 @@
+{
+  "id": "vortex_x",
+  "name": "Vortex X",
+  "class": "mid-engine supercar (hypercar-flavoured)",
+  "drivetrain": "AWD",
+  "engine": "mid",
+  "doors": 2,
+  "seats": 2,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Cars/Car_vortex_x",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (car faces -z); metres; origin = ground, mid-axles",
+  "length": 4.6497,
+  "length_body_shell": 4.6,
+  "width": 2.0388,
+  "width_with_mirrors": 2.236,
+  "height": 1.12,
+  "height_overall": 1.12,
+  "ground_clearance": 0.11,
+  "ground_clearance_min": 0.094,
+  "wheelbase": 2.7,
+  "track_front": 1.7,
+  "track_rear": 1.65,
+  "wheel_radius_front": 0.345,
+  "wheel_radius_rear": 0.36,
+  "wheel_width_front": 0.265,
+  "wheel_width_rear": 0.335,
+  "rim_diameter_in_front": 20,
+  "rim_diameter_in_rear": 21,
+  "wheels": {
+    "FL": [
+      -0.85,
+      0.345,
+      -1.35
+    ],
+    "FR": [
+      0.85,
+      0.345,
+      -1.35
+    ],
+    "RL": [
+      -0.825,
+      0.36,
+      1.35
+    ],
+    "RR": [
+      0.825,
+      0.36,
+      1.35
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.6312,
+      0.5102,
+      -2.1431
+    ],
+    "Socket_HeadlightL": [
+      -0.6312,
+      0.5102,
+      -2.1431
+    ],
+    "Socket_Exhaust": [
+      0.098,
+      0.392,
+      2.396
+    ],
+    "Socket_Exhaust2": [
+      -0.098,
+      0.392,
+      2.396
+    ],
+    "Socket_CamHood": [
+      0.0,
+      0.88,
+      -0.9
+    ],
+    "Socket_CamCockpit": [
+      -0.36,
+      0.975,
+      0.46
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.36,
+      -2.262
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.36,
+      0.72,
+      0.06
+    ],
+    "column_axis": [
+      0.0,
+      -0.342,
+      -0.9397
+    ],
+    "radius": 0.165,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.36,
+    0.975,
+    0.46
+  ],
+  "body_aabb": {
+    "min": [
+      -1.118,
+      0.094,
+      -2.251
+    ],
+    "max": [
+      1.118,
+      1.12,
+      2.3987
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.118,
+      0.0,
+      -2.251
+    ],
+    "max": [
+      1.118,
+      1.12,
+      2.3987
+    ]
+  },
+  "tris": {
+    "Body": 29963,
+    "Glass": 1284,
+    "Interior": 3543,
+    "Lights_Head": 352,
+    "Lights_Tail": 304,
+    "Lights_Brake": 194,
+    "Lights_Reverse": 68,
+    "SteeringWheel": 1004,
+    "Wheel_FR": 3268,
+    "Caliper_FR": 70,
+    "Wheel_FL": 3268,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3268,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3268,
+    "Caliper_RL": 70,
+    "total": 50064
+  },
+  "materials": [
+    "BrakeDisc_vortex_x",
+    "BrakeLens_vortex_x",
+    "Caliper_vortex_x",
+    "Carbon_vortex_x",
+    "Chrome_vortex_x",
+    "Gauge_vortex_x",
+    "Glass_vortex_x",
+    "Grille_vortex_x",
+    "HeadlightLens_vortex_x",
+    "InteriorAccent_vortex_x",
+    "InteriorDark_vortex_x",
+    "Interior_vortex_x",
+    "Paint_vortex_x",
+    "ReverseLens_vortex_x",
+    "Rim_vortex_x",
+    "Rubber_vortex_x",
+    "TaillightLens_vortex_x",
+    "Trim_vortex_x",
+    "Underbody_vortex_x"
+  ],
+  "default_paint": {
+    "hex": "#E8590C",
+    "linear_rgb": [
+      0.807,
+      0.1,
+      0.0036
+    ],
+    "finish": "metallic"
+  },
+  "glb": {
+    "path": "res://assets/imported/cars/vortex_x.glb",
+    "bytes": 1779732,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_Exhaust2",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "vortex_x"
+    ]
+  }
+}

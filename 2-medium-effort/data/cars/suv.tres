@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_ykdir"]
+
+[resource]
+script = ExtResource("1_ykdir")
+id = "suv"
+display_name = "Ridgeback 4x4"
+maker = "Atlas Overland"
+description = "Long-travel off-roader. Shrugs off rough tracks, rolls in fast corners."
+car_class = "B"
+pi = 625
+model_path = "res://assets/imported/cars/suv.glb"
+year = 2018
+mass = 2120.0
+com_offset = Vector3(0, -0.1, 0)
+peak_torque = 560.0
+peak_torque_rpm = 3400.0
+redline = 5900.0
+idle_rpm = 700.0
+torque_falloff = 0.5
+gears = PackedFloat32Array(4, 2.4, 1.55, 1.15, 0.9, 0.75)
+final_drive = 6.043473867729206
+drive = 2
+turbo = true
+grip = 0.94
+loose_grip = 1.28
+lateral_stiffness = 7.5
+rest_length = 0.51
+spring = 34662.0
+damper_bump = 2743.1194388870495
+damper_rebound = 4114.679158330574
+arb_front = 14000.0
+arb_rear = 10000.0
+brake_force = 15000.0
+brake_bias = 0.6
+steer_speed_reduction = 0.7
+top_speed_kmh = 196.0
+downforce = 0.1
+cylinders = 8
+sound_pitch = 0.75
+sound_rough = 0.55
+paint_color = Color(0.38, 0.4, 0.3, 1)
+paint_finish = 2
+rim_color = Color(0.78, 0.79, 0.8, 1)

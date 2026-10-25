@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_h86c1"]
+
+[resource]
+script = ExtResource("1_h86c1")
+id = "jump_03"
+kind = 3
+display_name = "Orchard Hop"
+region = "Ochre Mesa Canyonlands"
+s0 = 5285
+position = Vector3(1476.1, 86.02, 1793.88)
+heading = Vector3(-0.9957067, 0, 0.092564926)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(30, 50, 70)
+unit = "m"
+prop_position = Vector3(1475.165, 85.69254, 1783.8234)
+prop_yaw = -1.4780987046052672

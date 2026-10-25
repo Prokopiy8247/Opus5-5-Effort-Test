@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_kb63p"]
+
+[resource]
+script = ExtResource("1_kb63p")
+id = &"03_brutus_fastback"
+display_name = "Brutus 427 Fastback"
+maker = "Brutus"
+category = "Muscle"
+year = 1969
+description = "Big-block brawler from another era. Huge torque, skinny grip, smoke on demand."
+engine_label = "7.0 V8"
+model_path = "res://assets/imported/cars/03_brutus_fastback.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1590.0
+com_offset = Vector3(0, 0.2, -0.12)
+inertia_scale = Vector3(1, 0.95, 1)
+max_torque_nm = 640.0
+torque_curve = PackedFloat32Array(0.74, 0.88, 0.97, 1, 0.97, 0.91, 0.83, 0.72)
+idle_rpm = 750.0
+redline_rpm = 6000.0
+engine_inertia = 0.3
+gear_ratios = PackedFloat32Array(2.6, 1.75, 1.27, 0.95)
+reverse_ratio = 2.47
+final_drive = 3.55
+diff_lock = 0.42
+tire_grip = 0.92
+grip_front = 1.02
+grip_rear = 0.9
+slide_ratio = 0.78
+wheel_radius_front = 0.34
+wheel_radius_rear = 0.34
+spring_hz_front = 1.4
+spring_hz_rear = 1.5
+damping_bump = 0.26
+damping_rebound = 0.42
+anti_roll_front = 18000.0
+anti_roll_rear = 7000.0
+brake_torque = 2750.0
+brake_bias = 0.62
+steer_lock_deg = 33.0
+drag_area = 1.651
+downforce_area = 0.0
+frontal_lift = 0.05
+cylinders = 8
+engine_tone = 0.62
+engine_roughness = 0.75
+exhaust_pop = 0.8
+performance_class = "A"
+performance_index = 702
+default_color = Color(0.9, 0.55, 0.05, 1)
+default_finish = 0
+top_speed_kmh = 222.0
+power_kw = 292.0

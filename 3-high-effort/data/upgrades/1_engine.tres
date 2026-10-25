@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/upgrade_def.gd" id="1_w2o3e"]
+
+[resource]
+script = ExtResource("1_w2o3e")
+level_names = PackedStringArray("Stock", "Street", "Sport", "Race")
+effects = {
+"mod_power": [1.0, 1.08, 1.17, 1.28],
+"mod_top": [1.0, 1.03, 1.06, 1.1]
+}
+pi_per_level = 22
+cost_per_level = 4000

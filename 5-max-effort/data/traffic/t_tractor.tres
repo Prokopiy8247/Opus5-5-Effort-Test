@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_o3clf"]
+
+[resource]
+script = ExtResource("1_o3clf")
+id = &"t_tractor"
+display_name = "Farm Tractor"
+category = "Traffic"
+model_path = "res://assets/imported/traffic/t_tractor.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 4200.0
+com_offset = Vector3(0, 0.25, 0)
+max_torque_nm = 700.0
+torque_curve = PackedFloat32Array(0.8, 0.93, 1, 0.98, 0.92, 0.85, 0.77, 0.66)
+idle_rpm = 690.0
+redline_rpm = 2300.0
+gear_ratios = PackedFloat32Array(3.5, 3.88, 4.22, 4.55)
+reverse_ratio = 3.3200000000000003
+wheel_radius_front = 0.8
+wheel_radius_rear = 0.8
+wheel_mass = 60.0
+spring_hz_front = 1.6
+spring_hz_rear = 1.7000000000000002
+travel_up = 0.12
+travel_down = 0.16
+anti_roll_front = 58800.0
+anti_roll_rear = 42000.0
+brake_torque = 10920.0
+handbrake_torque = 6300.0
+steer_lock_deg = 36.0
+drag_area = 111.574
+performance_class = "D"
+performance_index = 463
+top_speed_kmh = 40.0
+power_kw = 117.0

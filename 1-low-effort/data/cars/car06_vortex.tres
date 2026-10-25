@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_pja1o"]
+
+[resource]
+script = ExtResource("1_pja1o")
+id = "car06_vortex"
+display_name = "Vortex R"
+category = "Supercar"
+glb_path = "res://assets/imported/vehicles/car06_vortex.glb"
+mass = 1420.0
+com_offset = Vector3(0, -0.162, 0)
+power_kw = 560.0
+peak_rpm = 7800.0
+redline = 8800.0
+gear_ratios = PackedFloat32Array(3.1, 2.15, 1.65, 1.32, 1.08, 0.9, 0.76)
+final_drive = 3.6
+drivetrain = 2
+top_speed_kmh = 340.0
+grip = 1.38
+offroad_grip = 0.7
+susp_travel = 0.14
+susp_freq = 2.6
+anti_roll = 8520.0
+downforce = 1.1
+brake_force = 17000.0
+steer_lock_deg = 31.0
+cylinders = 10
+turbo = true
+base_color = Color(0.55, 0.9, 0.1, 1)

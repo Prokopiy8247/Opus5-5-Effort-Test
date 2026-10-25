@@ -1,0 +1,26 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic/traffic_vehicle_data.gd" id="1_mt4d0"]
+
+[resource]
+script = ExtResource("1_mt4d0")
+id = "hatch_small"
+display_name = "City Hatch"
+model_path = "res://assets/imported/traffic/hatch_small.glb"
+mass = 1050.0
+length = 3.9
+width = 1.72
+wheelbase = 2.45
+wheel_radius = 0.3
+com_height = 0.52
+max_speed_kmh = 155.0
+accel = 2.2
+decel = 3.2
+power_kw = 70.0
+corner_g = 0.3
+allowed_classes = PackedInt32Array(0, 1, 2, 3)
+allowed_regions = PackedInt32Array()
+spawn_weight = 0.4
+paints = PackedStringArray("red", "blue", "white", "silver", "yellow", "teal", "mint", "green", "orange", "grey")
+finishes = PackedInt32Array(0, 2)
+horn_hz = 520.0

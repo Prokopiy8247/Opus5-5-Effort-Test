@@ -1,0 +1,217 @@
+{
+  "id": "granite_rally",
+  "name": "Granite RS",
+  "class": "rally car (1990s-flavoured gravel coupe-hatch)",
+  "drivetrain": "AWD",
+  "engine": "front, turbo",
+  "doors": 3,
+  "seats": 2,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Cars/Car_granite_rally",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (car faces -z); metres; origin = ground, mid-axles",
+  "length": 4.2,
+  "length_overall": 4.3337,
+  "width": 1.8473,
+  "width_with_mirrors": 2.1,
+  "height": 1.39,
+  "height_overall": 1.6085,
+  "ground_clearance": 0.2,
+  "ground_clearance_min": 0.065,
+  "wheelbase": 2.55,
+  "track_front": 1.58,
+  "track_rear": 1.58,
+  "wheel_radius_front": 0.33,
+  "wheel_radius_rear": 0.33,
+  "wheel_width_front": 0.215,
+  "wheel_width_rear": 0.215,
+  "rim_diameter_in_front": 15,
+  "rim_diameter_in_rear": 15,
+  "wheels": {
+    "FL": [
+      -0.79,
+      0.33,
+      -1.275
+    ],
+    "FR": [
+      0.79,
+      0.33,
+      -1.275
+    ],
+    "RL": [
+      -0.79,
+      0.33,
+      1.275
+    ],
+    "RR": [
+      0.79,
+      0.33,
+      1.275
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.5801,
+      0.7195,
+      -2.1471
+    ],
+    "Socket_HeadlightL": [
+      -0.5801,
+      0.7195,
+      -2.1471
+    ],
+    "Socket_Exhaust": [
+      0.47,
+      0.392,
+      2.0813
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.04,
+      -1.06
+    ],
+    "Socket_CamCockpit": [
+      -0.37,
+      1.17,
+      0.22
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.44,
+      -2.295
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.37,
+      0.86,
+      -0.27
+    ],
+    "column_axis": [
+      0.0,
+      -0.3746,
+      -0.9272
+    ],
+    "radius": 0.175,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.37,
+    1.17,
+    0.22
+  ],
+  "body_aabb": {
+    "min": [
+      -1.05,
+      0.065,
+      -2.2501
+    ],
+    "max": [
+      1.05,
+      1.6085,
+      2.0836
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.05,
+      0.0,
+      -2.2611
+    ],
+    "max": [
+      1.05,
+      1.6085,
+      2.0836
+    ]
+  },
+  "tris": {
+    "Body": 28649,
+    "Glass": 1596,
+    "Interior": 6307,
+    "Lights_Head": 480,
+    "Lights_Tail": 720,
+    "Lights_Brake": 176,
+    "Lights_Reverse": 116,
+    "SteeringWheel": 980,
+    "Wheel_FR": 3384,
+    "Caliper_FR": 70,
+    "Wheel_FL": 3384,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3384,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3384,
+    "Caliper_RL": 70,
+    "total": 52840
+  },
+  "materials": [
+    "Alu_granite_rally",
+    "BrakeDisc_granite_rally",
+    "BrakeLens_granite_rally",
+    "Caliper_granite_rally",
+    "Carbon_granite_rally",
+    "Chrome_granite_rally",
+    "Gauge_granite_rally",
+    "Glass_granite_rally",
+    "Grille_granite_rally",
+    "HeadlightLens_granite_rally",
+    "InteriorAccent_granite_rally",
+    "InteriorCage_granite_rally",
+    "InteriorDark_granite_rally",
+    "Interior_granite_rally",
+    "Paint_granite_rally",
+    "ReverseLens_granite_rally",
+    "Rim_granite_rally",
+    "Rubber_granite_rally",
+    "TaillightLens_granite_rally",
+    "TowStrap_granite_rally",
+    "Trim_granite_rally",
+    "Underbody_granite_rally"
+  ],
+  "default_paint": {
+    "hex": "#F4F4F0",
+    "linear_rgb": [
+      0.905,
+      0.905,
+      0.871
+    ],
+    "finish": "gloss"
+  },
+  "glb": {
+    "path": "res://assets/imported/cars/granite_rally.glb",
+    "bytes": 1843108,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "granite_rally"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_7lo02"]
+
+[resource]
+script = ExtResource("1_7lo02")
+id = &"04_kaze_coupe"
+display_name = "Kaze S Coupe"
+maker = "Kaze"
+category = "Sports Coupe"
+year = 2022
+description = "Balanced front-engine, rear-drive coupe. Precise, playful and quick."
+engine_label = "3.0 Turbo I6"
+model_path = "res://assets/imported/cars/04_kaze_coupe.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1340.0
+com_offset = Vector3(0, 0.1, -0.05)
+max_torque_nm = 470.0
+torque_curve = PackedFloat32Array(0.5, 0.84, 1, 1, 0.99, 0.95, 0.89, 0.8)
+redline_rpm = 7300.0
+turbo = true
+turbo_lag = 0.4
+gear_ratios = PackedFloat32Array(3.3, 2.41, 1.87, 1.48, 1.19, 0.96)
+reverse_ratio = 3.14
+final_drive = 3.46
+diff_lock = 0.55
+tire_grip = 1.08
+wheel_radius_front = 0.325
+wheel_radius_rear = 0.325
+spring_hz_front = 2.1
+spring_hz_rear = 2.2
+anti_roll_front = 26000.0
+anti_roll_rear = 17000.0
+brake_torque = 2900.0
+drag_area = 0.987
+downforce_area = 0.22
+cylinders = 6
+exhaust_pop = 0.7
+performance_class = "S1"
+performance_index = 838
+default_color = Color(0.95, 0.95, 0.97, 1)
+default_finish = 3
+top_speed_kmh = 262.0
+power_kw = 287.0

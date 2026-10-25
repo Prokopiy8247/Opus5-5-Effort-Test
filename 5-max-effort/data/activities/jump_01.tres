@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_5vdch"]
+
+[resource]
+script = ExtResource("1_5vdch")
+id = "jump_01"
+kind = 3
+display_name = "Barnyard Leap"
+region = "Granite Crown Highlands"
+s0 = 1235
+position = Vector3(785.1, 147.79, -776.11)
+heading = Vector3(-0.99982435, 0, -0.01874213)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(30, 50, 70)
+unit = "m"
+prop_position = Vector3(785.28925, 148.52005, -786.2082)
+prop_yaw = -1.58953955353281

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_tdpxw"]
+
+[resource]
+script = ExtResource("1_tdpxw")
+id = 2
+key = &"dirt"
+display_name = "Dirt"
+grip = 0.7
+slip_peak_scale = 1.6
+slide_ratio = 0.86
+loose = 1.0
+rolling_resistance = 0.028
+bumpiness = 0.012
+wet_grip = 0.74
+dust_color = Color(0.55, 0.42, 0.3, 0.9)
+particle = 1
+sound = 2

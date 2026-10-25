@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_oaf4c"]
+
+[resource]
+script = ExtResource("1_oaf4c")
+id = "super"
+display_name = "Vortice R"
+maker = "Moretti Fabbrica"
+description = "Mid-engine all-wheel-drive hypercar. Brutal launches, huge downforce."
+car_class = "S2"
+pi = 935
+model_path = "res://assets/imported/cars/super.glb"
+year = 2025
+mass = 1460.0
+com_offset = Vector3(0, -0.2, -0.1)
+peak_torque = 790.0
+peak_torque_rpm = 6400.0
+redline = 8900.0
+idle_rpm = 700.0
+torque_falloff = 0.7
+gears = PackedFloat32Array(3.4, 2.35, 1.8, 1.45, 1.2, 1, 0.84)
+final_drive = 3.820341760368777
+drive = 2
+grip = 1.22
+loose_grip = 0.85
+lateral_stiffness = 10.5
+rest_length = 0.28
+spring = 59677.50000000001
+damper_bump = 2986.9758887543776
+damper_rebound = 4480.4638331315655
+arb_front = 30000.0
+arb_rear = 22000.0
+brake_force = 19000.0
+brake_bias = 0.56
+steer_lock = 30.0
+steer_speed_reduction = 0.7
+top_speed_kmh = 348.0
+downforce = 2.4
+cylinders = 10
+sound_pitch = 1.3
+paint_color = Color(0.75, 0.82, 0.1, 1)
+rim_color = Color(0.78, 0.79, 0.8, 1)

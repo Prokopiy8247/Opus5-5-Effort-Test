@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_ruybo"]
+
+[resource]
+script = ExtResource("1_ruybo")
+level = 1
+display_name = "Street Engine"
+description = "Intake, exhaust and ECU work: more power at every rpm."
+cost = 8000
+multipliers = {
+"power": 1.08,
+"top": 1.025
+}

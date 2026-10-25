@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SurfaceData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/surface_data.gd" id="1_sqhtc"]
+
+[resource]
+script = ExtResource("1_sqhtc")
+kind = 3
+display_name = "Gravel"
+grip = 0.64
+wet_grip = 0.9
+rolling_resistance = 0.035
+bumpiness = 0.5
+tire_mults = PackedFloat32Array(0.95, 0.85, 1.25, 1.15, 0.95)
+paved = false
+particle_color = Color(0.6, 0.57, 0.52, 0.7)
+particle_amount = 1.5
+skid_sound = &"dirt"
+roll_sound = &"gravel"

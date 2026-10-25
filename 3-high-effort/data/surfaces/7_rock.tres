@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/surface_def.gd" id="1_610y5"]
+
+[resource]
+script = ExtResource("1_610y5")
+id = 7
+key = "rock"
+display_name = "Rock"
+grip_by_tire = PackedFloat32Array(0.72, 0.7, 0.82, 0.86, 0.68)
+rolling_resistance = 0.025
+bumpiness = 0.03
+wet_sensitivity = 0.8
+is_offroad = true
+particle_color = Color(0.5, 0.48, 0.45, 0.6)
+squeal = 0.3
+rumble = 1.0

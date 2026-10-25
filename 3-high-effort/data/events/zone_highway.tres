@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_78g7p"]
+
+[resource]
+script = ExtResource("1_78g7p")
+id = "zone_highway"
+display_name = "Highway Haste"
+kind = 1
+road_id = "valley_highway"
+start_frac = 0.55
+end_frac = 0.8
+stars = PackedFloat32Array(110, 140, 165)
+reward = 1200

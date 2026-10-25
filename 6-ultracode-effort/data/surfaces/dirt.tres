@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SurfaceData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/surface_data.gd" id="1_tdpxw"]
+
+[resource]
+script = ExtResource("1_tdpxw")
+id = &"dirt"
+display_name = "Dirt"
+grip_road = 0.66
+grip_offroad = 0.84
+wet_grip = 0.82
+rolling_drag = 0.006
+roughness = 0.01
+slide_factor = 0.95
+particle_color = Color(0.55, 0.43, 0.3, 0.6)
+smokes = false
+audio_kind = 1
+skid_color = Color(0.22, 0.16, 0.1, 0.55)

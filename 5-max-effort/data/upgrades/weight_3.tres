@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_50w8x"]
+
+[resource]
+script = ExtResource("1_50w8x")
+part = "weight"
+level = 3
+display_name = "Race Shell"
+description = "Carbon panels and polycarbonate glass."
+mass_mult = 0.95
+price = 36000

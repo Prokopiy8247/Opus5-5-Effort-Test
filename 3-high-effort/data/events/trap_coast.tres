@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EventDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_def.gd" id="1_x0pbo"]
+
+[resource]
+script = ExtResource("1_x0pbo")
+id = "trap_coast"
+display_name = "Clifftop Camera"
+road_id = "festival_loop"
+start_xz = Vector2(1290, -480)
+end_xz = Vector2(1290, -480)
+stars = PackedFloat32Array(100, 130, 160)
+reward = 800

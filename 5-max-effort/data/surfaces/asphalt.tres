@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_r8snh"]
+
+[resource]
+script = ExtResource("1_r8snh")
+wet_grip = 0.72
+dust_color = Color(0.6, 0.6, 0.6, 0)

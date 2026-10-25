@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_032nq"]
+
+[resource]
+script = ExtResource("1_032nq")
+id = "coupe"
+display_name = "Kestrel S"
+maker = "Sakura Line"
+description = "High-revving rear-drive coupe, balanced and precise. A drift favourite."
+car_class = "A"
+pi = 745
+model_path = "res://assets/imported/cars/coupe.glb"
+year = 2004
+mass = 1290.0
+com_offset = Vector3(0, -0.2, 0)
+peak_torque = 420.0
+peak_torque_rpm = 5600.0
+redline = 8200.0
+idle_rpm = 800.0
+torque_falloff = 0.62
+gears = PackedFloat32Array(3.2, 2.15, 1.62, 1.3, 1.07, 0.88)
+final_drive = 4.2077169008848
+turbo = true
+grip = 1.1
+loose_grip = 0.92
+lateral_stiffness = 9.8
+rest_length = 0.30200000000000005
+spring = 45196.07142857143
+damper_bump = 2443.403415612856
+damper_rebound = 3665.105123419284
+arb_front = 22000.0
+arb_rear = 15000.0
+brake_force = 12000.0
+brake_bias = 0.6
+steer_lock = 35.0
+steer_speed_reduction = 0.7
+top_speed_kmh = 262.0
+downforce = 0.9
+sound_pitch = 1.25
+paint_color = Color(0.92, 0.92, 0.95, 1)
+rim_color = Color(0.78, 0.79, 0.8, 1)

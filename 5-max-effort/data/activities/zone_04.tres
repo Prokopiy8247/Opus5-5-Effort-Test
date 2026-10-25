@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_uh1g7"]
+
+[resource]
+script = ExtResource("1_uh1g7")
+id = "zone_04"
+kind = 1
+display_name = "Coastal Curves"
+region = "Ochre Mesa Canyonlands"
+s0 = 4710
+s1 = 5090
+position = Vector3(1542.92, 84.91, 963.85)
+heading = Vector3(0.30871588, 0, 0.9511543)
+end_position = Vector3(1788.67, 75.39, 1587.41)
+end_heading = Vector3(-0.48383686, 0, 0.8751582)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(100, 125, 150)
+unit = "km/h"
+length_m = 760.0

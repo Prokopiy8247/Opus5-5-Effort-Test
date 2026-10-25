@@ -1,0 +1,30 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic/traffic_vehicle_data.gd" id="1_ixj0k"]
+
+[resource]
+script = ExtResource("1_ixj0k")
+id = "lorry_box"
+display_name = "Box Lorry"
+model_path = "res://assets/imported/traffic/lorry_box.glb"
+mass = 9500.0
+length = 8.6
+width = 2.45
+height = 3.4
+wheelbase = 5.0
+wheel_radius = 0.5
+com_height = 1.25
+front_drive = false
+max_speed_kmh = 95.0
+accel = 0.85
+decel = 2.2
+power_kw = 200.0
+corner_g = 0.17
+time_gap = 2.4
+limit_factor = 0.9
+allowed_classes = PackedInt32Array(0, 1)
+allowed_regions = PackedInt32Array()
+spawn_weight = 0.1
+paints = PackedStringArray("white", "red", "blue", "green", "silver", "orange")
+finishes = PackedInt32Array(0)
+horn_hz = 250.0

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/env/weather_preset.gd" id="1_p716p"]
+
+[resource]
+script = ExtResource("1_p716p")
+id = &"storm"
+display_name = "Storm"
+cloud_coverage = 1.0
+cloud_darkness = 0.9
+overcast = 1.0
+cirrus = 0.0
+cloud_speed = 3.6
+haze = 0.7
+sky_tint = Color(0.82, 0.88, 1, 1)
+sun_energy = 0.05
+ambient_energy = 0.72
+shadow_softness = 1.0
+exposure = 1.12
+saturation = 0.88
+contrast = 1.06
+fog_density = 0.0019
+fog_color = Color(0.4, 0.44, 0.5, 1)
+fog_tint = 0.7
+aerial_perspective = 0.35
+fog_sky_affect = 0.35
+volumetric_density = 0.006
+low_fog = 0.003
+rain = 1.0
+wind = 1.0
+wetness = 1.0
+lightning_per_minute = 5.0
+lights_on = 1.0

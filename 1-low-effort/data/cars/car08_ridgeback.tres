@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_11dna"]
+
+[resource]
+script = ExtResource("1_11dna")
+id = "car08_ridgeback"
+display_name = "Ridgeback 4x4"
+category = "Off-road SUV"
+glb_path = "res://assets/imported/vehicles/car08_ridgeback.glb"
+mass = 2050.0
+com_offset = Vector3(0, -0.222, 0)
+power_kw = 230.0
+peak_rpm = 5000.0
+redline = 6000.0
+gear_ratios = PackedFloat32Array(4, 2.4, 1.6, 1.2, 0.95, 0.78)
+drivetrain = 2
+top_speed_kmh = 195.0
+grip = 0.95
+offroad_grip = 1.12
+susp_travel = 0.34
+susp_freq = 1.35
+anti_roll = 12300.0
+downforce = 0.1
+brake_force = 13000.0
+engine_voice = 0.7
+cylinders = 6
+turbo = true
+base_color = Color(0.35, 0.42, 0.25, 1)
+finish = 1

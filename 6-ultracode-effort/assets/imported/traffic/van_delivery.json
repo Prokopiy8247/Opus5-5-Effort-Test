@@ -1,0 +1,223 @@
+{
+  "id": "van_delivery",
+  "name": "Delivery Van",
+  "class": "panel delivery van",
+  "drivetrain": "RWD",
+  "engine": "front, 2.2 turbo-diesel I4",
+  "doors": 4,
+  "seats": 2,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Traffic/Traffic_van_delivery",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (vehicle faces -z); metres; origin = ground, mid-axles",
+  "length": 5.006,
+  "length_overall": 5.006,
+  "width": 2.0,
+  "width_with_mirrors": 2.404,
+  "height": 2.39,
+  "height_overall": 2.39,
+  "ground_clearance": 0.23,
+  "wheelbase": 3.2,
+  "track_front": 1.72,
+  "track_rear": 1.72,
+  "wheel_radius_front": 0.33,
+  "wheel_radius_rear": 0.33,
+  "wheel_width_front": 0.215,
+  "wheel_width_rear": 0.215,
+  "wheels": {
+    "FL": [
+      -0.86,
+      0.33,
+      -1.6
+    ],
+    "FR": [
+      0.86,
+      0.33,
+      -1.6
+    ],
+    "RL": [
+      -0.86,
+      0.33,
+      1.6
+    ],
+    "RR": [
+      0.86,
+      0.33,
+      1.6
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.76,
+      0.955,
+      -2.439
+    ],
+    "Socket_HeadlightL": [
+      -0.76,
+      0.955,
+      -2.439
+    ],
+    "Socket_Exhaust": [
+      0.602,
+      0.316,
+      2.46
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.62,
+      -1.85
+    ],
+    "Socket_CamCockpit": [
+      -0.48,
+      1.96,
+      -0.7
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.55,
+      -2.62
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.48,
+      1.5,
+      -1.19
+    ],
+    "column_axis": [
+      0.0,
+      -0.5592,
+      -0.829
+    ],
+    "radius": 0.19,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.48,
+    1.96,
+    -0.7
+  ],
+  "body_aabb": {
+    "min": [
+      -1.202,
+      0.23,
+      -2.506
+    ],
+    "max": [
+      1.202,
+      2.39,
+      2.5
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.202,
+      0.0,
+      -2.506
+    ],
+    "max": [
+      1.202,
+      2.39,
+      2.5
+    ]
+  },
+  "tris": {
+    "Body": 10300,
+    "Glass": 78,
+    "Lights_Head": 552,
+    "Lights_Tail": 244,
+    "Lights_Brake": 280,
+    "Lights_Reverse": 192,
+    "Interior": 794,
+    "SteeringWheel": 660,
+    "Wheel_FR": 2240,
+    "Caliper_FR": 70,
+    "Wheel_FL": 2240,
+    "Caliper_FL": 70,
+    "Wheel_RR": 2240,
+    "Caliper_RR": 70,
+    "Wheel_RL": 2240,
+    "Caliper_RL": 70,
+    "total": 22340
+  },
+  "materials": [
+    "Amber_van_delivery",
+    "BrakeLens_van_delivery",
+    "Caliper_van_delivery",
+    "Chrome_van_delivery",
+    "Gauge_van_delivery",
+    "Glass_van_delivery",
+    "Grille_van_delivery",
+    "HeadlightLens_van_delivery",
+    "InteriorDark_van_delivery",
+    "Interior_van_delivery",
+    "Paint_van_delivery",
+    "Plate_van_delivery",
+    "ReverseLens_van_delivery",
+    "Rim_van_delivery",
+    "Rubber_van_delivery",
+    "Steel_van_delivery",
+    "Stripe_van_delivery",
+    "TaillightLens_van_delivery",
+    "Trim_van_delivery",
+    "Underbody_van_delivery"
+  ],
+  "default_paint": {
+    "hex": "#ECEDEA",
+    "linear_rgb": [
+      0.838,
+      0.846,
+      0.823
+    ],
+    "finish": "gloss"
+  },
+  "rim_diameter_in_front": 16,
+  "rim_diameter_in_rear": 16,
+  "tyre_width_nominal": 0.215,
+  "cargo": {
+    "floor_height": 0.56,
+    "inner_length_approx": 2.8,
+    "side_door": "sliding, right (kerb) side",
+    "rear_doors": "twin hinged"
+  },
+  "notes": "Cab lining (inner skin + bulkhead) is part of Body so the merged traffic LOD stays opaque.",
+  "livery": "Paint (white, repaintable) + Stripe (orange belt stripe, fixed colour)",
+  "glb": {
+    "path": "res://assets/imported/traffic/van_delivery.glb",
+    "bytes": 833836,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "van_delivery"
+    ]
+  }
+}

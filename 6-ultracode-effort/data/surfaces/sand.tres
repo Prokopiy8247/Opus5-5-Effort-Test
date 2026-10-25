@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SurfaceData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/surface_data.gd" id="1_ih1ob"]
+
+[resource]
+script = ExtResource("1_ih1ob")
+id = &"sand"
+display_name = "Sand"
+grip_road = 0.5
+grip_offroad = 0.66
+wet_grip = 1.0
+rolling_drag = 0.045
+roughness = 0.006
+slide_factor = 0.92
+particle_color = Color(0.85, 0.75, 0.55, 0.65)
+smokes = false
+audio_kind = 2
+skid_color = Color(0.55, 0.47, 0.32, 0.5)

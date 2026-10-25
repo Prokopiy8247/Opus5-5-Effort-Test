@@ -1,0 +1,230 @@
+{
+  "id": "hauler_2500",
+  "name": "Hauler 2500",
+  "class": "full-size pickup truck (crew cab, open load bed)",
+  "drivetrain": "RWD-biased 4x4",
+  "engine": "front, turbo-diesel V8",
+  "doors": 4,
+  "seats": 5,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Cars/Car_hauler_2500",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (car faces -z); metres; origin = ground, mid-axles",
+  "length": 5.6005,
+  "length_bumper_to_bumper": 5.565,
+  "width": 2.0,
+  "width_with_mirrors": 2.44,
+  "height": 1.9,
+  "height_overall": 1.919,
+  "ground_clearance": 0.265,
+  "cab_floor_height": 0.5,
+  "bed": {
+    "floor_height": 0.9,
+    "rail_height": 1.374,
+    "inner_length": 1.577,
+    "inner_width": 1.6842,
+    "width_between_wheel_wells": 1.23,
+    "tailgate_y_godot": 2.775
+  },
+  "wheelbase": 3.55,
+  "track_front": 1.72,
+  "track_rear": 1.72,
+  "wheel_radius_front": 0.3999,
+  "wheel_radius_rear": 0.3999,
+  "wheel_width_front": 0.283,
+  "wheel_width_rear": 0.283,
+  "tyre_width_nominal": 0.275,
+  "wheel_width_note": "measured over the shoulder tread lugs (nominal 0.275)",
+  "rim_diameter_in_front": 18,
+  "rim_diameter_in_rear": 18,
+  "wheels": {
+    "FL": [
+      -0.86,
+      0.4,
+      -1.775
+    ],
+    "FR": [
+      0.86,
+      0.4,
+      -1.775
+    ],
+    "RL": [
+      -0.86,
+      0.4,
+      1.775
+    ],
+    "RR": [
+      0.86,
+      0.4,
+      1.775
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.792,
+      1.14,
+      -2.6653
+    ],
+    "Socket_HeadlightL": [
+      -0.792,
+      1.14,
+      -2.6653
+    ],
+    "Socket_Exhaust": [
+      0.62,
+      0.36,
+      2.712
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.56,
+      -1.25
+    ],
+    "Socket_CamCockpit": [
+      -0.45,
+      1.62,
+      -0.02
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.7,
+      -2.82
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.45,
+      1.22,
+      -0.5
+    ],
+    "column_axis": [
+      0.0,
+      -0.4067,
+      -0.9135
+    ],
+    "radius": 0.2,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.45,
+    1.62,
+    -0.02
+  ],
+  "body_aabb": {
+    "min": [
+      -1.22,
+      0.265,
+      -2.705
+    ],
+    "max": [
+      1.22,
+      1.919,
+      2.8955
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.22,
+      0.0001,
+      -2.705
+    ],
+    "max": [
+      1.22,
+      1.919,
+      2.8955
+    ]
+  },
+  "tris": {
+    "Body": 29598,
+    "Glass": 732,
+    "Interior": 5534,
+    "Lights_Head": 640,
+    "Lights_Tail": 364,
+    "Lights_Brake": 284,
+    "Lights_Reverse": 240,
+    "SteeringWheel": 912,
+    "Wheel_FR": 3416,
+    "Caliper_FR": 70,
+    "Wheel_FL": 3416,
+    "Caliper_FL": 70,
+    "Wheel_RR": 3416,
+    "Caliper_RR": 70,
+    "Wheel_RL": 3416,
+    "Caliper_RL": 70,
+    "total": 52248
+  },
+  "materials": [
+    "Alu_hauler_2500",
+    "Amber_hauler_2500",
+    "BedLiner_hauler_2500",
+    "BrakeDisc_hauler_2500",
+    "BrakeLens_hauler_2500",
+    "Caliper_hauler_2500",
+    "Chrome_hauler_2500",
+    "Gauge_hauler_2500",
+    "Glass_hauler_2500",
+    "Grille_hauler_2500",
+    "HeadlightLens_hauler_2500",
+    "Headliner_hauler_2500",
+    "InteriorDark_hauler_2500",
+    "Interior_hauler_2500",
+    "Paint_hauler_2500",
+    "Plastic_hauler_2500",
+    "ReverseLens_hauler_2500",
+    "Rim_hauler_2500",
+    "Rubber_hauler_2500",
+    "ScreenMap_hauler_2500",
+    "Screen_hauler_2500",
+    "Steel_hauler_2500",
+    "TaillightLens_hauler_2500",
+    "Trim_hauler_2500",
+    "Underbody_hauler_2500"
+  ],
+  "default_paint": {
+    "hex": "#2F3337",
+    "linear_rgb": [
+      0.0284,
+      0.0331,
+      0.0382
+    ],
+    "finish": "metallic"
+  },
+  "glb": {
+    "path": "res://assets/imported/cars/hauler_2500.glb",
+    "bytes": 2025464,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "hauler_2500"
+    ]
+  }
+}

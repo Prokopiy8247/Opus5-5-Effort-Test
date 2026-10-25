@@ -1,0 +1,5 @@
+﻿segment: 2
+segment_label: session-417a090e-f30c-4f33-b4c4-3714e17336b8 (Claude desktop Code tab, model claude-opus-5-5)
+segment_start_iso: 2026-10-23T19:13:03.455+02:00
+segment_start_utc: 2026-10-23T17:13:03Z
+note: Segment 1 (run start 2026-10-23T18:53:30+02:00) was an earlier session in this folder that only wrote start_time.txt and tools/blender_bridge.py (last file write 18:55:12). Gap 18:55:12 -> 19:13:03 is a known pause (session restarted with the Blender MCP server attached). Original start_time.txt is kept unchanged.

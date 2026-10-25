@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_ylohx"]
+
+[sub_resource type="Curve" id="Curve_5bd43"]
+_data = [Vector2(0, 0.52), 0.0, 0.0, 0, 0, Vector2(0.14, 0.72), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(0.74, 1), 0.0, 0.0, 0, 0, Vector2(0.9, 0.86), 0.0, 0.0, 0, 0, Vector2(1, 0.74), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_ylohx")
+id = "kestrel_r4"
+display_name = "Kestrel R4"
+category = "Hot Hatch"
+blurb = "Featherweight turbo hatch. Darty front end, playful on lift-off, loves mountain switchbacks."
+perf_class = "B"
+perf_index = 541
+model_path = "res://assets/imported/cars/kestrel_r4.glb"
+year_style = "Modern"
+default_color = Color(0.95, 0.76, 0, 1)
+mass = 1230.0
+com = Vector3(0, 0.5, -0.26)
+inertia_scale = Vector3(1, 0.88, 1)
+idle_rpm = 850.0
+redline_rpm = 6700.0
+max_rpm = 7000.0
+peak_torque = 319.9182453961967
+torque_curve = SubResource("Curve_5bd43")
+turbo = true
+exhaust_rasp = 0.55
+engine_pitch = 1.1
+gear_ratios = PackedFloat32Array(3.29, 2.366, 1.778, 1.356, 1.044, 0.808)
+reverse_ratio = 3.125962645474539
+reverse_max_kmh = 32.0
+drivetrain = 0
+awd_front_split = 0.0
+diff_lock = 0.35
+tire_grip = 1.08
+grip_rear = 1.03
+slide_grip = 0.82
+wheelbase = 2.55
+track_front = 1.53
+track_rear = 1.52
+wheel_radius_front = 0.315
+wheel_radius_rear = 0.315
+body_size = Vector3(1.78, 1.44, 4.05)
+spring_front = 52000.0
+spring_rear = 48000.0
+damper_bump = 3800.0
+suspension_travel = 0.19
+anti_roll_front = 17000.0
+anti_roll_rear = 15000.0
+drag_area = 0.774308430910497
+downforce_front = 0.12
+downforce_rear = 0.2
+brake_force = 16289.505000000003
+brake_bias = 0.66
+handbrake_force = 9049.725
+max_steer_deg = 34.0
+top_speed_kmh = 245.0

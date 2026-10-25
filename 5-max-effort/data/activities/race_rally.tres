@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_nsjh4"]
+
+[resource]
+script = ExtResource("1_nsjh4")
+id = "race_rally"
+kind = 4
+display_name = "Pinewood Rally Stage"
+region = "Granite Crown Highlands"
+road = 7
+s0 = 18
+s1 = 794
+position = Vector3(-523.74, 144.94, -982.17)
+heading = Vector3(0.98436636, 0, 0.17613316)
+end_heading = Vector3(-0.4641493, 0, 0.88575697)
+width = 5.6
+points = PackedVector3Array(-55.08, 117.53, -711.85, -427.62, 45.29, -395.92, -678.93, 24.79, -54.93)
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(71, 58, 49)
+lower_is_better = true
+unit = "s"
+reward = 800
+length_m = 1552.0

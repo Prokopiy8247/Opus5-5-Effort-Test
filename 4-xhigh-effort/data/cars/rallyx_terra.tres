@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_7nbyo"]
+
+[resource]
+script = ExtResource("1_7nbyo")
+id = &"RallyxTerra"
+display_name = "Rallyx Terra"
+maker = "Rallyx"
+model_year = 2025
+body_style = "Rally hatch"
+description = "Gravel-spec all-wheel-drive rally car on knobbly tyres. Short gears, long travel, flies over crests."
+model_path = "res://assets/imported/cars/RallyxTerra.glb"
+order = 7
+default_color = Color(0.93, 0.93, 0.92, 1)
+default_finish = 0
+default_rim_color = Color(0.95, 0.95, 0.95, 1)
+mass = 1260.0
+com_offset = Vector3(0, 0.52, -0.1)
+drivetrain = 2
+idle_rpm = 1000.0
+redline_rpm = 7200.0
+max_rpm = 7500.0
+torque_curve = PackedVector2Array(1500, 300, 2500, 440, 5500, 450, 7000, 380, 7500, 320)
+engine_inertia = 0.14
+engine_brake = 0.16
+gear_ratios = PackedFloat32Array(3, 2.15, 1.7, 1.38, 1.15, 0.98)
+reverse_ratio = 3.0
+final_drive = 4.4
+shift_time = 0.07
+awd_front_split = 0.5
+lsd = 0.7
+turbo = true
+cylinders = 4
+engine_sound = &"i4_rally"
+spring_front = 32000.0
+spring_rear = 30000.0
+damper_front = 3400.0
+damper_rear = 3200.0
+arb_front = 9000.0
+arb_rear = 8000.0
+bump_travel = 0.16
+droop_travel = 0.2
+tire_type = 2
+grip = 1.05
+peak_slip_angle_deg = 8.5
+peak_slip_ratio = 0.13
+tire_shape = 1.35
+brake_torque = 5600.0
+brake_bias = 0.6
+handbrake_torque = 3800.0
+max_steer_deg = 38.0
+high_speed_steer_deg = 8.0
+steer_speed = 5.5
+drag_area = 0.75
+car_class = "A"
+top_speed_kmh = 205.0

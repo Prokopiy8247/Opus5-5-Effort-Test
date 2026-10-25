@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_03s3g"]
+
+[resource]
+script = ExtResource("1_03s3g")
+id = &"01_pico_furia"
+display_name = "Pico Furia R"
+maker = "Pico"
+category = "Hot Hatch"
+year = 2021
+description = "Short, eager and loud. A front-driven hot hatch that loves tight valley roads."
+engine_label = "1.6 Turbo I4"
+model_path = "res://assets/imported/cars/01_pico_furia.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1190.0
+com_offset = Vector3(0, 0.12, -0.18)
+torque_curve = PackedFloat32Array(0.48, 0.8, 0.98, 1, 1, 0.96, 0.88, 0.76)
+idle_rpm = 950.0
+redline_rpm = 6900.0
+turbo = true
+turbo_lag = 0.45
+drivetrain = 0
+gear_ratios = PackedFloat32Array(3.45, 2.41, 1.8, 1.38, 1.07, 0.84)
+reverse_ratio = 3.2800000000000002
+final_drive = 4.1
+diff_lock = 0.45
+tire_grip = 1.02
+grip_rear = 1.02
+wheel_radius_front = 0.31
+wheel_radius_rear = 0.31
+spring_hz_front = 1.95
+spring_hz_rear = 2.1
+anti_roll_front = 20000.0
+anti_roll_rear = 18000.0
+brake_torque = 2400.0
+steer_lock_deg = 35.0
+drag_area = 0.856
+downforce_area = 0.1
+engine_tone = 1.15
+engine_roughness = 0.35
+exhaust_pop = 0.6
+performance_class = "A"
+performance_index = 703
+default_color = Color(0.85, 0.12, 0.08, 1)
+default_finish = 0
+top_speed_kmh = 228.0
+power_kw = 167.0

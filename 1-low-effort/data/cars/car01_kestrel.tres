@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_sehcg"]
+
+[resource]
+script = ExtResource("1_sehcg")
+id = "car01_kestrel"
+display_name = "Kestrel GTi"
+category = "Hot Hatch"
+glb_path = "res://assets/imported/vehicles/car01_kestrel.glb"
+mass = 1180.0
+com_offset = Vector3(0, -0.18, 0)
+power_kw = 165.0
+peak_rpm = 6200.0
+redline = 7200.0
+gear_ratios = PackedFloat32Array(3.3, 2.1, 1.55, 1.2, 0.98, 0.82)
+final_drive = 4.1
+drivetrain = 0
+top_speed_kmh = 228.0
+grip = 1.12
+offroad_grip = 0.82
+susp_travel = 0.2
+susp_freq = 2.1
+anti_roll = 7080.0
+downforce = 0.25
+brake_force = 10500.0
+steer_lock_deg = 36.0
+engine_voice = 1.25
+turbo = true
+base_color = Color(0.85, 0.12, 0.08, 1)

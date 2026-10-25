@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/upgrade_def.gd" id="1_t7ng1"]
+
+[resource]
+script = ExtResource("1_t7ng1")
+key = "weight"
+display_name = "Weight reduction"
+level_names = PackedStringArray("Stock", "Street", "Sport", "Race")
+effects = {
+"mod_mass": [1.0, 0.96, 0.92, 0.87]
+}
+pi_per_level = 15
+cost_per_level = 3000

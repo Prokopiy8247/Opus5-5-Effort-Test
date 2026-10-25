@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_kaibo"]
+
+[resource]
+script = ExtResource("1_kaibo")
+id = "drift_02"
+kind = 2
+display_name = "Switchback Sway"
+region = "Ochre Mesa Canyonlands"
+s0 = 3990
+s1 = 4290
+position = Vector3(1775.28, 98.22, -249.78)
+heading = Vector3(-0.60220206, 0, 0.79834366)
+end_position = Vector3(1718.44, 89.88, 219.87)
+end_heading = Vector3(-0.6363619, 0, 0.7713906)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(5000, 12000, 22000)
+unit = "pts"
+length_m = 600.0

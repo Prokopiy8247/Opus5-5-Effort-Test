@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="CarDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_definition.gd" id="1_n3w51"]
+
+[resource]
+script = ExtResource("1_n3w51")
+id = &"06_volta_x9"
+display_name = "Volta X9"
+maker = "Volta"
+category = "Supercar"
+year = 2024
+description = "Mid-engine, all-wheel-drive missile with active aero. The fastest car in the festival."
+engine_label = "5.2 V10"
+model_path = "res://assets/imported/cars/06_volta_x9.glb"
+fallback_wheel_positions = PackedVector3Array()
+mass = 1500.0
+com_offset = Vector3(0, 0.02, 0.12)
+inertia_scale = Vector3(0.95, 0.92, 0.9)
+max_torque_nm = 760.0
+torque_curve = PackedFloat32Array(0.56, 0.68, 0.8, 0.9, 0.96, 1, 0.99, 0.94)
+idle_rpm = 1000.0
+redline_rpm = 8600.0
+engine_inertia = 0.16
+drivetrain = 2
+gear_ratios = PackedFloat32Array(3.1, 2.41, 1.97, 1.63, 1.37, 1.15, 0.98)
+reverse_ratio = 2.95
+final_drive = 3.3
+awd_front_split = 0.32
+diff_lock = 0.55
+tire_grip = 1.22
+grip_rear = 1.04
+wheel_radius_front = 0.335
+wheel_radius_rear = 0.35
+spring_hz_front = 2.5
+spring_hz_rear = 2.6
+travel_up = 0.07
+travel_down = 0.09
+anti_roll_front = 34000.0
+anti_roll_rear = 28000.0
+brake_torque = 4400.0
+brake_bias = 0.62
+steer_lock_deg = 31.0
+steer_high_speed_deg = 3.2
+drag_area = 1.0110000000000001
+downforce_area = 0.85
+aero_balance = 0.42
+cylinders = 10
+engine_tone = 1.3
+engine_roughness = 0.25
+exhaust_pop = 0.9
+performance_class = "S2"
+performance_index = 998
+default_color = Color(0.1, 0.55, 0.15, 1)
+default_finish = 3
+top_speed_kmh = 342.0
+power_kw = 643.0

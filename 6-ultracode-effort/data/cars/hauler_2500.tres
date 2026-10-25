@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_xit60"]
+
+[sub_resource type="Curve" id="Curve_yv1wj"]
+_data = [Vector2(0, 0.66), 0.0, 0.0, 0, 0, Vector2(0.18, 0.94), 0.0, 0.0, 0, 0, Vector2(0.4, 1), 0.0, 0.0, 0, 0, Vector2(0.7, 0.88), 0.0, 0.0, 0, 0, Vector2(1, 0.66), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[resource]
+script = ExtResource("1_xit60")
+id = "hauler_2500"
+display_name = "Hauler 2500"
+category = "Pickup Truck"
+blurb = "Heavy V8 pickup. Leans hard, pulls like a train, surprisingly fun on gravel."
+perf_class = "D"
+perf_index = 398
+model_path = "res://assets/imported/cars/hauler_2500.glb"
+year_style = "Modern"
+default_color = Color(0.18, 0.2, 0.22, 1)
+default_finish = 2
+mass = 2450.0
+com = Vector3(0, 0.8, -0.38)
+inertia_scale = Vector3(1.15, 1.15, 1.15)
+idle_rpm = 650.0
+redline_rpm = 5600.0
+max_rpm = 6000.0
+peak_torque = 729.9361274883471
+torque_curve = SubResource("Curve_yv1wj")
+cylinders = 8
+exhaust_rasp = 0.55
+engine_pitch = 0.72
+gear_ratios = PackedFloat32Array(4.717, 3.35, 2.491, 1.88, 1.433, 1.099)
+reverse_ratio = 4.480770219061045
+reverse_max_kmh = 25.0
+final_drive = 3.73
+drivetrain = 2
+awd_front_split = 0.3
+diff_lock = 0.6
+tire_grip = 0.93
+grip_rear = 0.97
+peak_slip_deg = 9.0
+slide_grip = 0.84
+offroad_tires = 0.6
+wheelbase = 3.55
+track_front = 1.72
+track_rear = 1.72
+wheel_radius_front = 0.4
+wheel_radius_rear = 0.4
+body_size = Vector3(2, 1.9, 5.6)
+spring_front = 56000.0
+spring_rear = 64000.0
+damper_bump = 4200.0
+damper_rebound = 6000.0
+suspension_travel = 0.31
+anti_roll_front = 10000.0
+anti_roll_rear = 6000.0
+drag_area = 2.3112094730266457
+downforce_front = 0.0
+downforce_rear = 0.0
+brake_force = 32446.575
+handbrake_force = 18025.875
+high_speed_steer_deg = 8.0
+top_speed_kmh = 200.0

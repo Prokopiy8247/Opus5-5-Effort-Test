@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CarDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_def.gd" id="1_8v3s0"]
+
+[resource]
+script = ExtResource("1_8v3s0")
+id = "rally"
+display_name = "Torrent RS"
+maker = "Nordvik"
+description = "Turbo AWD rally weapon. Unmatched on gravel and dirt."
+car_class = "A"
+pi = 760
+model_path = "res://assets/imported/cars/rally.glb"
+year = 2012
+mass = 1260.0
+com_offset = Vector3(0, -0.2, 0)
+peak_torque = 440.0
+peak_torque_rpm = 4400.0
+redline = 7600.0
+idle_rpm = 800.0
+torque_falloff = 0.55
+gears = PackedFloat32Array(3, 2.2, 1.7, 1.38, 1.15, 0.98)
+final_drive = 4.059716344165146
+drive = 2
+turbo = true
+grip = 1.02
+loose_grip = 1.38
+lateral_stiffness = 8.5
+rest_length = 0.406
+spring = 28092.272727272728
+damper_bump = 1903.8322920792252
+damper_rebound = 2855.748438118838
+arb_front = 16000.0
+brake_force = 11500.0
+brake_bias = 0.6
+steer_lock = 38.0
+steer_speed_reduction = 0.7
+top_speed_kmh = 226.0
+downforce = 0.8
+sound_pitch = 1.1
+sound_rough = 0.5
+paint_color = Color(0.1, 0.35, 0.85, 1)
+rim_color = Color(0.95, 0.95, 0.95, 1)

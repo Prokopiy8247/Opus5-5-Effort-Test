@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_op4sl"]
+
+[resource]
+script = ExtResource("1_op4sl")
+id = "trap_05"
+display_name = "Granary Dash"
+region = "Granite Crown Highlands"
+s0 = 2740
+position = Vector3(1652.61, 314.56, -1124.81)
+heading = Vector3(0.96066594, 0, 0.27770656)
+width = 9.2
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(145, 185, 220)
+unit = "km/h"
+reward = 400
+prop_position = Vector3(1650.6105, 314.1257, -1117.8933)
+prop_yaw = -1.8522022711035715

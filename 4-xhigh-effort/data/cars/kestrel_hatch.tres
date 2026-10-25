@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_vnfdh"]
+
+[resource]
+script = ExtResource("1_vnfdh")
+id = &"KestrelHatch"
+display_name = "Kestrel Hatch R"
+maker = "Kestrel"
+model_year = 2025
+body_style = "Hot hatch"
+description = "Turbocharged front-drive hot hatch. Tiny, eager and happiest flung through village streets."
+model_path = "res://assets/imported/cars/KestrelHatch.glb"
+order = 1
+default_color = Color(0.98, 0.74, 0.04, 1)
+default_finish = 0
+default_rim_color = Color(0.08, 0.08, 0.09, 1)
+mass = 1290.0
+com_offset = Vector3(0, 0.5, -0.24)
+drivetrain = 0
+idle_rpm = 900.0
+redline_rpm = 6600.0
+max_rpm = 6900.0
+torque_curve = PackedVector2Array(1000, 260, 1800, 400, 4500, 400, 6000, 360, 6900, 290)
+engine_inertia = 0.16
+engine_brake = 0.14
+gear_ratios = PackedFloat32Array(3.46, 2.12, 1.48, 1.12, 0.89, 0.74)
+final_drive = 3.9
+shift_time = 0.12
+lsd = 0.35
+turbo = true
+cylinders = 4
+engine_sound = &"i4_turbo"
+spring_front = 44000.0
+spring_rear = 38000.0
+damper_front = 3500.0
+damper_rear = 3200.0
+arb_front = 15000.0
+arb_rear = 13000.0
+bump_travel = 0.1
+droop_travel = 0.12
+peak_slip_angle_deg = 7.0
+brake_torque = 5400.0
+brake_bias = 0.66
+handbrake_torque = 2800.0
+max_steer_deg = 35.0
+high_speed_steer_deg = 7.0
+steer_speed = 4.6
+drag_area = 0.68
+downforce = 0.25
+aero_balance = 0.5
+top_speed_kmh = 250.0

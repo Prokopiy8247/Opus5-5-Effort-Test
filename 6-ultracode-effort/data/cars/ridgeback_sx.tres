@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_ho8yo"]
+
+[sub_resource type="Curve" id="Curve_rql4d"]
+_data = [Vector2(0, 0.52), 0.0, 0.0, 0, 0, Vector2(0.14, 0.72), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(0.74, 1), 0.0, 0.0, 0, 0, Vector2(0.9, 0.86), 0.0, 0.0, 0, 0, Vector2(1, 0.74), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_ho8yo")
+id = "ridgeback_sx"
+display_name = "Ridgeback SX"
+category = "Off-Road SUV"
+blurb = "Tall, tough and unstoppable off the tarmac. Long-travel suspension shrugs off ruts and jumps."
+perf_index = 412
+model_path = "res://assets/imported/cars/ridgeback_sx.glb"
+year_style = "Modern"
+default_color = Color(0.42, 0.42, 0.23, 1)
+default_finish = 1
+mass = 2150.0
+com = Vector3(0, 0.74, -0.1)
+inertia_scale = Vector3(1.1, 1.05, 1.1)
+idle_rpm = 700.0
+redline_rpm = 6200.0
+max_rpm = 6500.0
+peak_torque = 485.5302842908346
+torque_curve = SubResource("Curve_rql4d")
+turbo = true
+cylinders = 6
+exhaust_rasp = 0.35
+engine_pitch = 0.85
+gear_ratios = PackedFloat32Array(4.795, 3.406, 2.533, 1.913, 1.458, 1.119)
+reverse_ratio = 4.554826025758494
+reverse_max_kmh = 28.0
+drivetrain = 2
+awd_front_split = 0.45
+diff_lock = 0.75
+tire_grip = 0.95
+peak_slip_deg = 9.5
+slide_grip = 0.84
+offroad_tires = 0.9
+wheelbase = 2.85
+track_front = 1.65
+track_rear = 1.65
+wheel_radius_front = 0.4
+wheel_radius_rear = 0.4
+body_size = Vector3(1.95, 1.85, 4.7)
+spring_front = 52000.0
+spring_rear = 54000.0
+damper_bump = 4600.0
+damper_rebound = 6600.0
+suspension_travel = 0.33
+anti_roll_front = 17000.0
+anti_roll_rear = 12000.0
+drag_area = 1.7795319105787226
+downforce_front = 0.0
+downforce_rear = 0.0
+brake_force = 28473.525
+brake_bias = 0.62
+handbrake_force = 15818.625
+max_steer_deg = 34.0
+high_speed_steer_deg = 8.0
+top_speed_kmh = 208.0

@@ -1,0 +1,224 @@
+{
+  "id": "pickup_work",
+  "name": "Work Pickup",
+  "class": "work pickup (single cab, steel-framed flatbed with side rails)",
+  "drivetrain": "RWD",
+  "engine": "front, 4.1 petrol I6",
+  "doors": 2,
+  "seats": 3,
+  "source_blend": "Opus55ForzaUltracodeEffort.blend",
+  "collection": "Traffic/Traffic_pickup_work",
+  "coordinate_system": "Godot: x right, y up, z = -BlenderY (vehicle faces -z); metres; origin = ground, mid-axles",
+  "length": 5.2028,
+  "length_overall": 5.2028,
+  "width": 1.9,
+  "width_with_mirrors": 2.3,
+  "height": 1.8,
+  "height_overall": 1.88,
+  "ground_clearance": 0.23,
+  "wheelbase": 3.2,
+  "track_front": 1.6,
+  "track_rear": 1.6,
+  "wheel_radius_front": 0.38,
+  "wheel_radius_rear": 0.38,
+  "wheel_width_front": 0.235,
+  "wheel_width_rear": 0.235,
+  "wheels": {
+    "FL": [
+      -0.8,
+      0.38,
+      -1.6
+    ],
+    "FR": [
+      0.8,
+      0.38,
+      -1.6
+    ],
+    "RL": [
+      -0.8,
+      0.38,
+      1.6
+    ],
+    "RR": [
+      0.8,
+      0.38,
+      1.6
+    ]
+  },
+  "sockets": {
+    "Socket_HeadlightR": [
+      0.7,
+      0.935,
+      -2.4198
+    ],
+    "Socket_HeadlightL": [
+      -0.7,
+      0.935,
+      -2.4198
+    ],
+    "Socket_Exhaust": [
+      0.562,
+      0.42,
+      2.425
+    ],
+    "Socket_CamHood": [
+      0.0,
+      1.42,
+      -1.55
+    ],
+    "Socket_CamCockpit": [
+      -0.42,
+      1.56,
+      -0.42
+    ],
+    "Socket_CamBumper": [
+      0.0,
+      0.55,
+      -2.58
+    ]
+  },
+  "steering_wheel": {
+    "position": [
+      -0.42,
+      1.15,
+      -0.88
+    ],
+    "column_axis": [
+      0.0,
+      -0.4384,
+      -0.8988
+    ],
+    "radius": 0.2,
+    "spin_axis_local_godot": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "note": "Blender local +Y (column toward dash) becomes node-local -Z after the +Y-up glTF export"
+  },
+  "wheel_spin_axis_local_godot": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "eye_point": [
+    -0.42,
+    1.56,
+    -0.42
+  ],
+  "body_aabb": {
+    "min": [
+      -1.15,
+      0.23,
+      -2.484
+    ],
+    "max": [
+      1.15,
+      1.88,
+      2.7188
+    ]
+  },
+  "car_aabb": {
+    "min": [
+      -1.15,
+      0.0,
+      -2.484
+    ],
+    "max": [
+      1.15,
+      1.88,
+      2.7188
+    ]
+  },
+  "tris": {
+    "Body": 6240,
+    "Glass": 58,
+    "Lights_Head": 116,
+    "Lights_Tail": 24,
+    "Lights_Brake": 24,
+    "Lights_Reverse": 24,
+    "Interior": 478,
+    "SteeringWheel": 648,
+    "Wheel_FR": 1844,
+    "Caliper_FR": 70,
+    "Wheel_FL": 1844,
+    "Caliper_FL": 70,
+    "Wheel_RR": 1844,
+    "Caliper_RR": 70,
+    "Wheel_RL": 1844,
+    "Caliper_RL": 70,
+    "total": 15268
+  },
+  "materials": [
+    "Amber_pickup_work",
+    "BrakeLens_pickup_work",
+    "Caliper_pickup_work",
+    "Chrome_pickup_work",
+    "Gauge_pickup_work",
+    "Glass_pickup_work",
+    "Grille_pickup_work",
+    "HeadlightLens_pickup_work",
+    "InteriorDark_pickup_work",
+    "Interior_pickup_work",
+    "Paint_pickup_work",
+    "Plastic_pickup_work",
+    "Plate_pickup_work",
+    "ReverseLens_pickup_work",
+    "Rim_pickup_work",
+    "Rubber_pickup_work",
+    "Steel_pickup_work",
+    "TaillightLens_pickup_work",
+    "Trim_pickup_work",
+    "Underbody_pickup_work",
+    "Wood_pickup_work"
+  ],
+  "default_paint": {
+    "hex": "#EFEFEA",
+    "linear_rgb": [
+      0.863,
+      0.863,
+      0.823
+    ],
+    "finish": "gloss"
+  },
+  "rim_diameter_in_front": 16,
+  "rim_diameter_in_rear": 16,
+  "tyre_width_nominal": 0.235,
+  "cargo": {
+    "deck_height": 1.04,
+    "deck_length": 2.59,
+    "deck_width": 1.89,
+    "rail_height": 1.33
+  },
+  "notes": "Cab lining is part of Body so the merged traffic LOD stays opaque. Distinct from the player Hauler 2500: single cab, boxy older style, flatbed, steel wheels, no chrome grille.",
+  "livery": "Paint = white (repaintable); Trim = grey painted steel (bumpers, grille surround, flares)",
+  "glb": {
+    "path": "res://assets/imported/traffic/pickup_work.glb",
+    "bytes": 593652,
+    "nodes": [
+      "Body",
+      "Caliper_FL",
+      "Caliper_FR",
+      "Caliper_RL",
+      "Caliper_RR",
+      "Glass",
+      "Interior",
+      "Lights_Brake",
+      "Lights_Head",
+      "Lights_Reverse",
+      "Lights_Tail",
+      "Socket_CamBumper",
+      "Socket_CamCockpit",
+      "Socket_CamHood",
+      "Socket_Exhaust",
+      "Socket_HeadlightL",
+      "Socket_HeadlightR",
+      "SteeringWheel",
+      "Wheel_FL",
+      "Wheel_FR",
+      "Wheel_RL",
+      "Wheel_RR",
+      "pickup_work"
+    ]
+  }
+}

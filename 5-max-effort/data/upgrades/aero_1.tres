@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_8jwbf"]
+
+[resource]
+script = ExtResource("1_8jwbf")
+part = "aero"
+display_name = "Lip & Spoiler"
+description = "Small front lip and rear spoiler."
+downforce_add = 0.12
+drag_mult = 1.02
+price = 4000

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_1q66a"]
+
+[resource]
+script = ExtResource("1_1q66a")
+id = &"MeridianGT"
+display_name = "Meridian GT V12"
+maker = "Meridian"
+body_style = "Grand tourer"
+description = "Front-mid V12 grand tourer. Long legs, huge stability at 300 km/h and a voice like thunder."
+model_path = "res://assets/imported/cars/MeridianGT.glb"
+order = 5
+default_color = Color(0.05, 0.12, 0.36, 1)
+default_rim_color = Color(0.7, 0.71, 0.73, 1)
+mass = 1720.0
+com_offset = Vector3(0, 0.48, -0.08)
+idle_rpm = 900.0
+redline_rpm = 7800.0
+max_rpm = 8100.0
+torque_curve = PackedVector2Array(1000, 380, 2500, 560, 4500, 650, 6500, 640, 7500, 580, 8100, 500)
+engine_inertia = 0.26
+engine_brake = 0.16
+gear_ratios = PackedFloat32Array(3.9, 2.55, 1.85, 1.43, 1.15, 0.95, 0.78)
+reverse_ratio = 3.5
+final_drive = 3.0
+shift_time = 0.1
+lsd = 0.5
+cylinders = 12
+engine_sound = &"v12"
+spring_front = 50000.0
+spring_rear = 48000.0
+damper_front = 4200.0
+damper_rear = 4000.0
+arb_front = 18000.0
+arb_rear = 12000.0
+bump_travel = 0.1
+droop_travel = 0.12
+grip = 1.12
+brake_torque = 7200.0
+brake_bias = 0.62
+handbrake_torque = 2800.0
+max_steer_deg = 32.0
+high_speed_steer_deg = 5.5
+drag_area = 0.78
+downforce = 0.45
+aero_balance = 0.44
+car_class = "S"
+top_speed_kmh = 330.0

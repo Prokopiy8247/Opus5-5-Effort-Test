@@ -1,0 +1,31 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/env/weather_preset.gd" id="1_srnrg"]
+
+[resource]
+script = ExtResource("1_srnrg")
+id = &"fog"
+display_name = "Fog"
+cloud_coverage = 1.0
+cloud_darkness = 0.1
+overcast = 1.0
+cirrus = 0.0
+cloud_speed = 0.4
+haze = 1.0
+sky_tint = Color(0.96, 0.97, 1, 1)
+sun_energy = 0.22
+ambient_energy = 1.2
+shadow_softness = 1.0
+exposure = 1.12
+saturation = 0.9
+contrast = 0.98
+fog_density = 0.0026
+fog_color = Color(0.74, 0.77, 0.8, 1)
+fog_tint = 0.85
+aerial_perspective = 0.25
+fog_sky_affect = 0.9
+volumetric_density = 0.006
+low_fog = 0.0075
+wind = 0.05
+wetness = 0.25
+lights_on = 1.0

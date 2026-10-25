@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_sqhtc"]
+
+[resource]
+script = ExtResource("1_sqhtc")
+id = 3
+key = &"gravel"
+display_name = "Gravel"
+grip = 0.66
+slip_peak_scale = 1.8
+slide_ratio = 0.88
+loose = 1.0
+rolling_resistance = 0.032
+bumpiness = 0.016
+wet_grip = 0.86
+dust_color = Color(0.62, 0.58, 0.52, 0.9)
+particle = 2
+sound = 1

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActivityDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/activities/activity_def.gd" id="1_cpspe"]
+
+[resource]
+script = ExtResource("1_cpspe")
+id = "trap_01"
+display_name = "Sunline Radar"
+region = "Meadowbrook Vale"
+road = 1
+s0 = 1120
+position = Vector3(809.57, 46.8, 834.37)
+heading = Vector3(0.9725918, 0, -0.23251925)
+width = 21.0
+points = PackedVector3Array()
+yaws = PackedFloat32Array()
+targets = PackedFloat32Array(150, 190, 225)
+unit = "km/h"
+reward = 400
+prop_position = Vector3(812.616, 46.483498, 847.11096)
+prop_yaw = -1.336129199999796

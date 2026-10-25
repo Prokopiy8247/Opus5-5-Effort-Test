@@ -1,0 +1,29 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic/traffic_vehicle_data.gd" id="1_oixhp"]
+
+[resource]
+script = ExtResource("1_oixhp")
+id = "tractor_farm"
+display_name = "Farm Tractor"
+model_path = "res://assets/imported/traffic/tractor_farm.glb"
+mass = 4200.0
+length = 4.3
+width = 2.3
+height = 2.9
+wheelbase = 2.5
+wheel_radius = 0.75
+com_height = 1.0
+front_drive = false
+max_speed_kmh = 38.0
+accel = 0.9
+decel = 2.5
+power_kw = 70.0
+corner_g = 0.2
+time_gap = 2.0
+allowed_classes = PackedInt32Array(1, 3)
+allowed_regions = PackedInt32Array(0)
+spawn_weight = 0.08
+paints = PackedStringArray("green", "red", "orange", "yellow", "blue")
+finishes = PackedInt32Array(0)
+horn_hz = 330.0

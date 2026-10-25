@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_uf4cc"]
+
+[resource]
+script = ExtResource("1_uf4cc")
+id = "valcourt_gt"
+display_name = "Valcourt GT"
+maker = "Valcourt"
+year = 2022
+body_style = "Grand tourer"
+car_class = "S1"
+pi = 860
+description = "Front-engined V12 grand tourer. Devastatingly fast and calm at three hundred."
+model_path = "res://assets/imported/cars/valcourt_gt.glb"
+mass = 1720.0
+com_offset = Vector3(0, 0.5, -0.1)
+peak_torque = 700.0
+torque_curve = PackedVector2Array(1000, 0.55, 2500, 0.88, 5000, 1, 7000, 0.9, 7400, 0.82)
+idle_rpm = 800.0
+redline_rpm = 7400.0
+cylinders = 12
+engine_layout = "V12"
+sound_base_pitch = 0.9
+sound_roughness = 0.2
+gear_ratios = PackedFloat32Array(3.1, 2.15, 1.6, 1.28, 1.05, 0.88, 0.74)
+tire_type = 1
+grip = 1.15
+grip_rear_bias = 1.03
+slide_grip = 0.82
+suspension_rest = 0.15
+spring_hz_front = 1.8
+spring_hz_rear = 1.9
+damping_ratio = 0.45
+anti_roll_front = 15000.0
+anti_roll_rear = 12000.0
+brake_force = 17000.0
+brake_bias = 0.6
+handbrake_force = 6500.0
+steer_lock_deg = 33.0
+downforce_area = 0.55
+top_speed_kmh = 315.0
+paint_color = Color(0.06, 0.2, 0.15, 1)
+rim_color = Color(0.6, 0.6, 0.62, 1)
+stat_speed = 9.0
+stat_handling = 7.6
+stat_accel = 8.2
+stat_launch = 6.8
+stat_braking = 8.0
+stat_offroad = 2.5
+power_hp = 620

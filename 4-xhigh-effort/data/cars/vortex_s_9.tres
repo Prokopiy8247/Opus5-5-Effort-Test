@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_xi2vd"]
+
+[resource]
+script = ExtResource("1_xi2vd")
+id = &"VortexS9"
+display_name = "Vortex S9"
+maker = "Vortex"
+body_style = "Mid-engine supercar"
+description = "Twin-turbo mid-engine all-wheel-drive supercar with a huge wing. Brutal launch, glued to the road."
+model_path = "res://assets/imported/cars/VortexS9.glb"
+order = 6
+default_color = Color(0.55, 0.86, 0.05, 1)
+default_finish = 0
+default_rim_color = Color(0.1, 0.1, 0.11, 1)
+mass = 1450.0
+com_offset = Vector3(0, 0.42, 0.24)
+drivetrain = 2
+idle_rpm = 1000.0
+redline_rpm = 8300.0
+max_rpm = 8600.0
+torque_curve = PackedVector2Array(1000, 500, 2500, 780, 6000, 800, 7500, 720, 8600, 600)
+engine_inertia = 0.18
+gear_ratios = PackedFloat32Array(3.5, 2.4, 1.8, 1.42, 1.15, 0.95, 0.78)
+final_drive = 3.3
+shift_time = 0.08
+awd_front_split = 0.35
+lsd = 0.55
+turbo = true
+cylinders = 8
+engine_sound = &"v8_flat"
+spring_front = 70000.0
+spring_rear = 68000.0
+damper_front = 5200.0
+damper_rear = 5000.0
+arb_front = 22000.0
+arb_rear = 16000.0
+bump_travel = 0.08
+droop_travel = 0.1
+grip = 1.2
+peak_slip_angle_deg = 7.0
+peak_slip_ratio = 0.1
+tire_shape = 1.5
+brake_torque = 8800.0
+brake_bias = 0.6
+max_steer_deg = 30.0
+high_speed_steer_deg = 5.0
+steer_speed = 4.6
+drag_area = 0.78
+downforce = 1.1
+aero_balance = 0.42
+car_class = "S"
+top_speed_kmh = 350.0

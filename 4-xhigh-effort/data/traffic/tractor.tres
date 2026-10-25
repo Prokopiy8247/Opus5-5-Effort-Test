@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="TrafficType" format=3]
+
+[ext_resource type="Script" path="res://scripts/traffic/traffic_type.gd" id="1_x04wv"]
+
+[resource]
+script = ExtResource("1_x04wv")
+id = &"tractor"
+display_name = "Farm tractor"
+model_path = "res://assets/imported/traffic/TrafficTractor.glb"
+mass = 4500.0
+speed_factor = 0.4
+accel = 0.8
+decel = 3.0
+length = 4.2
+colors = Array[Color]([Color(0.12, 0.45, 0.12, 1), Color(0.7, 0.08, 0.05, 1), Color(0.15, 0.25, 0.6, 1)])
+class_weights = PackedFloat32Array(0, 0.25, 0, 0.6, 1.5, 2)
+farm_only = true

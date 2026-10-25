@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="CarData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/car_data.gd" id="1_5v854"]
+
+[sub_resource type="Curve" id="Curve_5gnj1"]
+_data = [Vector2(0, 0.68), 0.0, 0.0, 0, 0, Vector2(0.2, 0.88), 0.0, 0.0, 0, 0, Vector2(0.45, 1), 0.0, 0.0, 0, 0, Vector2(0.7, 0.93), 0.0, 0.0, 0, 0, Vector2(0.9, 0.8), 0.0, 0.0, 0, 0, Vector2(1, 0.72), 0.0, 0.0, 0, 0]
+point_count = 6
+
+[resource]
+script = ExtResource("1_5v854")
+id = "brute_68"
+display_name = "Brute 68"
+category = "Classic Muscle"
+blurb = "Big-block V8, four speeds and skinny old-school grip. Smoke on demand, respect on the brakes."
+model_path = "res://assets/imported/cars/brute_68.glb"
+year_style = "1968"
+default_color = Color(0.62, 0.1, 0.1, 1)
+mass = 1620.0
+com = Vector3(0, 0.52, -0.12)
+inertia_scale = Vector3(1, 0.95, 1)
+idle_rpm = 700.0
+redline_rpm = 5800.0
+max_rpm = 6200.0
+peak_torque = 670.2705773097882
+torque_curve = SubResource("Curve_5gnj1")
+cylinders = 8
+exhaust_rasp = 0.75
+engine_pitch = 0.7
+gear_ratios = PackedFloat32Array(2.38, 1.641, 1.189, 0.876)
+reverse_ratio = 2.260739952843196
+final_drive = 3.55
+awd_front_split = 0.0
+diff_lock = 0.6
+tire_grip = 0.97
+grip_rear = 0.97
+peak_slip_deg = 8.5
+slide_grip = 0.86
+wheelbase = 2.8
+wheel_radius_front = 0.34
+wheel_radius_rear = 0.34
+body_size = Vector3(1.9, 1.33, 4.95)
+spring_front = 42000.0
+spring_rear = 38000.0
+damper_bump = 3000.0
+damper_rebound = 4200.0
+suspension_travel = 0.22
+anti_roll_front = 15000.0
+anti_roll_rear = 6000.0
+drag_area = 1.6125472448717353
+downforce_front = 0.0
+downforce_rear = 0.02
+brake_force = 21454.47
+brake_bias = 0.62
+handbrake_force = 11919.150000000001
+max_steer_deg = 32.0
+top_speed_kmh = 232.0

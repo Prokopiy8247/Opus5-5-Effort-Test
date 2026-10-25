@@ -1,0 +1,32 @@
+corridor 159 ms
+base heights 7847 ms
+river 323 ms
+road festival_loop     20208 m  bridge  956 m  tunnel  180 m
+road valley_highway     3768 m  bridge   40 m  tunnel    0 m
+road river_road         1712 m  bridge    0 m  tunnel    0 m
+road pinewood_gravel    1776 m  bridge   80 m  tunnel    0 m
+road ridge_lane          464 m  bridge    0 m  tunnel    0 m
+road windmill_track     1544 m  bridge    0 m  tunnel    0 m
+road turbine_link        224 m  bridge    0 m  tunnel    0 m
+road lighthouse_road     308 m  bridge    0 m  tunnel    0 m
+road clifftop_track      904 m  bridge    0 m  tunnel    0 m
+road harbour_lane        304 m  bridge  180 m  tunnel    0 m
+road mesa_run           1164 m  bridge    0 m  tunnel    0 m
+road ochre_cutoff        968 m  bridge  128 m  tunnel    0 m
+road dune_track          404 m  bridge    0 m  tunnel    0 m
+road south_lane          916 m  bridge    0 m  tunnel    0 m
+road hollow_track        604 m  bridge    0 m  tunnel    0 m
+road mill_lane           668 m  bridge    0 m  tunnel    0 m
+road redwell_lane       1124 m  bridge    0 m  tunnel    0 m
+road ochre_speedway      844 m  bridge    0 m  tunnel    0 m
+road castle_climb       1092 m  bridge    0 m  tunnel    0 m
+road brightmoor_ridge    324 m  bridge    0 m  tunnel    0 m
+road back_road           680 m  bridge    0 m  tunnel    0 m
+road meadow_lane         456 m  bridge   36 m  tunnel    0 m
+TOTAL ROAD LENGTH 40456 m
+roads 1420 ms
+carve dbg i=2505 road_y=158.53 h0=168.08 cw=1.000 ch=158.41
+carve dbg i=2521 road_y=165.57 h0=174.67 cw=1.000 ch=165.24
+carve dbg i=541 road_y=16.59 h0=17.51 cw=1.000 ch=16.38
+combine+surfaces 8378 ms
+BAKE DONE in 24171 ms

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="SurfaceDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/surface_def.gd" id="1_ih1ob"]
+
+[resource]
+script = ExtResource("1_ih1ob")
+id = 5
+key = &"sand"
+display_name = "Sand"
+grip = 0.52
+slip_peak_scale = 2.0
+slide_ratio = 0.9
+loose = 1.0
+rolling_resistance = 0.08
+soft_drag = 0.55
+bumpiness = 0.012
+wet_grip = 1.0
+dust_color = Color(0.85, 0.72, 0.5, 0.9)
+particle = 4
+sound = 4
+skidmarks = false

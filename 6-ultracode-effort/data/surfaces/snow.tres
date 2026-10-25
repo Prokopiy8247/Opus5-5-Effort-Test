@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SurfaceData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/surface_data.gd" id="1_fvvds"]
+
+[resource]
+script = ExtResource("1_fvvds")
+id = &"snow"
+display_name = "Snow"
+grip_road = 0.42
+grip_offroad = 0.56
+wet_grip = 0.95
+rolling_drag = 0.02
+roughness = 0.006
+slide_factor = 0.9
+particle_color = Color(0.95, 0.96, 1, 0.7)
+smokes = false
+audio_kind = 2
+skid_color = Color(0.75, 0.78, 0.82, 0.5)

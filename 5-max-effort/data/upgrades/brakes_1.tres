@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_l0550"]
+
+[resource]
+script = ExtResource("1_l0550")
+part = "brakes"
+display_name = "Sport Pads"
+description = "Higher-friction pads."
+brake_mult = 1.1
+price = 4000

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_def.gd" id="1_ruybo"]
+
+[resource]
+script = ExtResource("1_ruybo")
+display_name = "Street Intake & Exhaust"
+description = "Freer-flowing intake and exhaust."
+torque_mult = 1.07
+redline_add = 100.0
+price = 4000

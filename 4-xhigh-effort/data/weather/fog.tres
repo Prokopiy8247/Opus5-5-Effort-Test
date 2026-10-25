@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WeatherPreset" format=3]
+
+[ext_resource type="Script" path="res://scripts/world/weather_preset.gd" id="1_srnrg"]
+
+[resource]
+script = ExtResource("1_srnrg")
+id = &"fog"
+display_name = "Fog"
+cloud_coverage = 0.65
+cloud_darkness = 0.35
+fog_density = 0.0042
+fog_height_density = 0.015
+wetness = 0.35
+sun_energy = 0.45
+ambient = 0.8
+wind = 1.0

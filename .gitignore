@@ -1,0 +1,7 @@
+.godot/
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

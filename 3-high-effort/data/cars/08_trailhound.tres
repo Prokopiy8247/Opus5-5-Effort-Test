@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="CarSpec" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/car_spec.gd" id="1_3d02j"]
+
+[resource]
+script = ExtResource("1_3d02j")
+id = "trailhound"
+display_name = "Trailhound 4x4"
+maker = "Hound Works"
+body_style = "Off-road SUV"
+pi = 560
+description = "Tall, tough and unstoppable off the tarmac. Leans in corners, shrugs at rocks."
+model_path = "res://assets/imported/cars/trailhound.glb"
+mass = 2150.0
+com_offset = Vector3(0, 0.8, -0.05)
+peak_torque = 560.0
+torque_curve = PackedVector2Array(900, 0.7, 2000, 1, 3800, 0.96, 5200, 0.8, 5800, 0.66)
+idle_rpm = 750.0
+redline_rpm = 5800.0
+cylinders = 6
+engine_layout = "V6 turbo diesel"
+turbo = true
+sound_base_pitch = 0.75
+sound_roughness = 0.5
+drivetrain = 2
+awd_front_split = 0.48
+gear_ratios = PackedFloat32Array(4.2, 2.6, 1.7, 1.25, 1, 0.8)
+tire_type = 3
+grip_rear_bias = 1.02
+peak_slip_angle_deg = 9.0
+slide_grip = 0.8
+suspension_rest = 0.3
+spring_hz_front = 1.15
+spring_hz_rear = 1.25
+damping_ratio = 0.4
+anti_roll_front = 12000.0
+anti_roll_rear = 9000.0
+brake_force = 15000.0
+brake_bias = 0.6
+handbrake_force = 6000.0
+steer_lock_deg = 36.0
+downforce_area = 0.0
+aero_balance = 0.5
+top_speed_kmh = 190.0
+paint_color = Color(0.38, 0.4, 0.3, 1)
+paint_finish = "matte"
+rim_color = Color(0.2, 0.2, 0.21, 1)
+stat_speed = 4.6
+stat_handling = 4.2
+stat_accel = 4.8
+stat_launch = 6.0
+stat_braking = 4.6
+stat_offroad = 9.6
+power_hp = 300

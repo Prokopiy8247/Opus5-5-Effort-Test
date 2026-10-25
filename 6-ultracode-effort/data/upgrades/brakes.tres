@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicle/upgrade_data.gd" id="1_i2i6u"]
+
+[resource]
+script = ExtResource("1_i2i6u")
+slot = "brakes"
+display_name = "Brakes"
+level_names = PackedStringArray("Stock", "Street", "Sport", "Race")
+cost_per_level = 4000
+brake_per_level = 0.1
