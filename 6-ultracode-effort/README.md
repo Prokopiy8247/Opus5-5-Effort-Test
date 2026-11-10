@@ -24,6 +24,7 @@ Detailed beginner guide: [main README](../README.md).
 | `RESEARCH_NOTES.md` | the Forza Horizon 5 research the agent did before starting |
 | `PROGRESS.md` | the agent's work log |
 | `Prompt_6_ultracode.md` | the prompt the agent worked from |
+| `FOLLOW_UP_PROMPTS.md` | the follow-up prompts the author gave to improve the game (environment panel and camera, grass and road edges, pedestrians) |
 | `blender_source/` | the source `.blend` file with all 3D models |
 | everything else | the Godot project: scenes, scripts, resources, 3D models |
 
@@ -57,5 +58,6 @@ Detailed beginner guide: [main README](../README.md).
 | `RESEARCH_NOTES.md` | исследование Forza Horizon 5, которое агент сделал перед работой |
 | `PROGRESS.md` | журнал работы агента |
 | `Prompt_6_ultracode.md` | промпт, по которому агент работал |
+| `FOLLOW_UP_PROMPTS.md` | промпты автора на доработку игры (панель среды и камера, трава и стыки дорог, пешеходы) |
 | `blender_source/` | исходный `.blend`-файл со всеми 3D-моделями |
 | остальное | проект Godot: сцены, скрипты, ресурсы, 3D-модели |

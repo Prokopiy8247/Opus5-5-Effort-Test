@@ -903,6 +903,36 @@ static func _rows(ctx: Ctx, out: Out, bld: Build, rng: RandomNumberGenerator, ex
 		add_tree(ctx, out, "Tree_Poplar", Vector3(p.x, h, p.z), bld.org, sc, rng)
 
 
+# ------------------------------------------------------------------ forest mask
+
+## How wooded the ground at (x, z) is, 0 (open) .. 1 (deep forest). Mirrors the tree rules in the
+## chunk builder (same noise and thresholds per region) so the undergrowth grows where trees do,
+## thickens toward the forest interior and thins out smoothly at the edge. `crop` is the Vale field
+## mask (fields never carry trees), `rw` the region weights.
+static func forest_amount(ctx: Ctx, x: float, z: float, h: float, slope: float, rw: Color, crop: float) -> float:
+	var steep := 1.0 - smoothstep(0.25, 0.45, slope)
+	var f_vale := 0.0
+	var f_high := 0.0
+	var f_mesa := 0.0
+	var f_coast := 0.0
+	if rw.r > 0.01:
+		var wood := clampf(smoothstep(0.04, 0.3, ctx.n_wood.get_noise_2d(x, z)) + smoothstep(0.2, 0.4, slope) * 0.4, 0.0, 1.0)
+		f_vale = wood * (1.0 - smoothstep(0.1, 0.3, crop))
+	if rw.g > 0.01 and h < 288.0:
+		var alt := 1.0 - smoothstep(180.0, 286.0, h + ctx.n_mix.get_noise_2d(x * 3.0, z * 3.0) * 16.0)
+		f_high = smoothstep(-0.36, 0.04, ctx.n_wood.get_noise_2d(x + 5000.0, z - 3000.0)) * alt
+	if rw.b > 0.01:
+		# Mesa trees only stand near its borders (olive / dead trees, shrubs): a light scrub understorey there.
+		f_mesa = 0.45 * smoothstep(0.2, 0.55, rw.r + rw.a)
+	if rw.a > 0.01:
+		if h < 9.0:
+			f_coast = 0.0 if h < 4.8 else 0.7 * smoothstep(-0.05, 0.35, ctx.n_patch.get_noise_2d(x, z))
+		else:
+			f_coast = smoothstep(0.14, 0.42, ctx.n_wood.get_noise_2d(x, z))
+	var f := (rw.r * f_vale + rw.g * f_high + rw.b * f_mesa + rw.a * f_coast) / maxf(rw.r + rw.g + rw.b + rw.a, 0.01)
+	return clampf(f, 0.0, 1.0) * steep
+
+
 # ------------------------------------------------------------------ grass cells
 
 const FLOWERS := {
@@ -932,7 +962,8 @@ static func build_grass(ctx: Ctx, cell: Vector2i) -> Dictionary:
 			if absf(x) > HALF - 2.0 or absf(z) > HALF - 2.0:
 				continue
 			var h := d.height_at(x, z)
-			if h < 0.5 or road_dist(ctx, x, z) < 3.0 or excluded(ex, x, z, false) or in_lake(ctx, x, z, h, 0.3):
+			var rdist := road_dist(ctx, x, z)
+			if h < 0.5 or rdist < 3.0 or excluded(ex, x, z, false) or in_lake(ctx, x, z, h, 0.3):
 				continue
 			if near_river:
 				var rq := river_q(ctx, x, z)
@@ -948,12 +979,17 @@ static func build_grass(ctx: Ctx, cell: Vector2i) -> Dictionary:
 			var high_d := 0.6 * (1.0 - smoothstep(265.0, 300.0, h))
 			var coast_d := 0.55 if h > 4.8 else 0.16
 			var dens := (rw.r * vale_d + rw.g * high_d + rw.b * 0.11 + rw.a * coast_d) / maxf(rw.r + rw.g + rw.b + rw.a, 0.01)
+			# Undergrowth: thick, tall tufts between the trees, fading out toward the forest edge and
+			# keeping a wider clear strip beside roads.
+			var forest := forest_amount(ctx, x, z, h, slope, rw, crop)
+			forest *= smoothstep(3.0, 6.0, rdist)
+			dens = lerpf(dens, maxf(dens, 0.85), forest)
 			dens *= (1.0 - smoothstep(0.35, 0.5, slope)) * ctx.density
 			if roll > dens:
 				continue
 			var p := Vector3(x, h - 0.04, z) - org
 			var fp := ctx.n_patch.get_noise_2d(x * 3.0, z * 3.0)
-			var flower_p := (smoothstep(0.25, 0.5, fp) * 0.35 + 0.015) * (rw.r + rw.g * 0.6 + rw.a * 0.4 + rw.b * 0.15) * (1.0 - smoothstep(0.2, 0.45, crop))
+			var flower_p := (smoothstep(0.25, 0.5, fp) * 0.35 + 0.015) * (rw.r + rw.g * 0.6 + rw.a * 0.4 + rw.b * 0.15) * (1.0 - smoothstep(0.2, 0.45, crop)) * (1.0 - forest * 0.8)
 			if pick < flower_p:
 				var reg := pick_region(rw, rng.randf())
 				var pal: Array = FLOWERS[reg]
@@ -963,12 +999,15 @@ static func build_grass(ctx: Ctx, cell: Vector2i) -> Dictionary:
 				var sc := rng.randf_range(0.8, 1.3)
 				grass.add("flowers|Flowers_Tuft", Transform3D(Basis(Vector3.UP, rng.randf() * TAU).scaled(Vector3(sc, sc, sc)), p), Color(col.r, col.g, col.b, rng.randf()))
 			else:
-				var sc := rng.randf_range(0.8, 1.3)
+				var sc := rng.randf_range(0.8, 1.3) * (1.0 + forest * 0.45)
 				var sy := sc * rng.randf_range(0.7, 1.35)
 				if rw.a > 0.5 and h < 4.8:
 					sy *= 1.5
 				elif rw.b > 0.5:
 					sy *= 0.8
+				sy *= 1.0 + forest * rng.randf_range(0.9, 1.9)
+				# custom.a = forest level (8 steps) + the tuft's random seed
+				var lvl := floorf(forest * 7.99)
 				var b := Basis(Vector3.UP, rng.randf() * TAU).scaled(Vector3(sc, sy, sc))
-				grass.add("grass|Grass_Tuft", Transform3D(b, p), Color(rw.r, rw.g, rw.b, rng.randf()))
+				grass.add("grass|Grass_Tuft", Transform3D(b, p), Color(rw.r, rw.g, rw.b, (lvl + rng.randf() * 0.98) / 8.0))
 	return {"cell": cell, "groups": grass.packed()}

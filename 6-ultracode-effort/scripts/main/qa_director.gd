@@ -4,6 +4,8 @@ extends Node
 ##   --qa=shots   [--targets=a;b;c] [--views=0,2,4]  screenshots at teleport targets, then quit
 ##   --qa=drive   [--road=ring] [--speed=110] [--minutes=4]  autopilot lap with perf log, then quit
 ##   --qa=garage  screenshot of every car, then quit
+##   --qa=edges   --list=ring@300;J@2;E@lighthouse;B@ring [--tag=name] [--lat=3.5]  low close-ups of road edges
+##                (R@s road position, J@n n-th junction mouth, E@id dead end, B@id first bridge deck sample)
 ##   --time=<h> --weather=<id> --car=<id|index> --traffic=<0..1>   applied in any mode
 ##   --shot-dir=res://qa_output/shots
 ## Results are written to qa_output/ (git-ignored) and printed with a "[qa]" prefix.
@@ -105,6 +107,8 @@ func _run() -> void:
 			await _run_probe()
 		"spot":
 			await _run_spot()
+		"edges":
+			await _run_edges()
 		"teleports":
 			await _run_teleports()
 		"culverts":
@@ -255,6 +259,63 @@ func _run_spot() -> void:
 			rig.active = true
 		var p := Game.player_car.global_position
 		log_line("spot %s s=%.0f car=%s ground=%.2f flags=%d" % [r.id, sv, str(p.round()), w.ground_at(p.x, p.z, p.y + 5.0), r.flag_at(sv)])
+
+
+## Low close-ups of road edges / junctions / dead ends / bridge ends (see the header for --list).
+func _run_edges() -> void:
+	var w := Game.world as World
+	var net := w.data.network
+	var rig := Game.camera_rig as CameraRig
+	(Game.main as Node).car_input.enabled = false
+	var tag := _arg("tag", "edge")
+	var lat := _arg("lat", "3.5").to_float()
+	var idx := 0
+	for item in _arg("list", "ring@300").split(";"):
+		var kind := item.get_slice("@", 0)
+		var arg := item.get_slice("@", 1)
+		var pos := Vector3.ZERO
+		var look := Vector3.FORWARD
+		var camp := Vector3.ZERO
+		if kind == "J":
+			var jd: Dictionary = net.junctions[int(arg) % net.junctions.size()]
+			var parent := net.get_road(jd["parent"])
+			var child := net.get_road(jd["child"])
+			var pos0: Vector3 = parent.pos[int(jd["parent_index"])]
+			var ci := 0 if int(jd["child_end"]) == 0 else child.count() - 1
+			var inward := 6 if ci == 0 else -6
+			var cp: Vector3 = child.pos[clampi(ci + inward * 2, 0, child.count() - 1)]
+			var dirv := (Vector3(pos0.x - cp.x, 0.0, pos0.z - cp.z)).normalized()
+			pos = pos0
+			camp = cp + Vector3(0, 2.6, 0) - dirv * 1.0
+			look = pos0 + dirv * 3.0
+		else:
+			var r := net.get_road(arg if kind != "R" else item.get_slice("@", 1).get_slice(":", 0))
+			var sv := 0.0
+			if kind == "R":
+				sv = item.get_slice("@", 1).get_slice(":", 1).to_float()
+			elif kind == "E":
+				sv = r.length - 1.0
+			elif kind == "B":
+				for i in r.count():
+					if r.flags[i] & 1:
+						sv = maxf(i * r.ds - 6.0, 0.0)
+						break
+			pos = r.surface_point(sv, 0.0)
+			var fwd := r.flat_tangent_at(sv)
+			var rt := Vector3(-fwd.z, 0.0, fwd.x)
+			var back := -1.0 if kind == "E" else 1.0
+			camp = pos - fwd * 9.0 * back + rt * lat + Vector3(0, 3.0, 0)
+			look = pos + fwd * 6.0 * back
+		(Game.main as Node).teleport_to({"position": pos, "forward": Vector3.FORWARD})
+		await _wait_streamed()
+		Game.player_car.freeze = true
+		Game.player_car.global_position = pos + Vector3(0, -50.0, 0)
+		rig.active = false
+		rig.global_transform = Transform3D(Basis(), camp).looking_at(look, Vector3.UP)
+		await _wait(0.8)
+		await shot("%s_%02d_%s" % [tag, idx, item.replace("@", "_").replace(":", "_")])
+		rig.active = true
+		idx += 1
 
 
 ## Names of the bodies overlapping a box slightly larger than the car (stuck diagnostics).

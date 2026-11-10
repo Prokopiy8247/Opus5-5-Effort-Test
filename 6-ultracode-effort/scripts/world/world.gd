@@ -31,6 +31,9 @@ func build() -> bool:
 	terrain_mat.shader = load("res://assets/shaders/terrain.gdshader")
 	terrain_mat.set_shader_parameter("noise_large", noise_large)
 	terrain_mat.set_shader_parameter("noise_detail", noise_detail)
+	for gname: String in ["grass", "field", "dirt", "gravel", "sand", "rock", "snow"]:
+		terrain_mat.set_shader_parameter("tex_%s_albedo" % gname, load("res://assets/textures/terrain/%s_albedo.png" % gname))
+		terrain_mat.set_shader_parameter("tex_%s_normal" % gname, load("res://assets/textures/terrain/%s_normal.png" % gname))
 	var rimg := Image.create_from_data(data.map_n, data.map_n, false, Image.FORMAT_L8, data.road_dist)
 	road_dist_tex = ImageTexture.create_from_image(rimg)
 	terrain_mat.set_shader_parameter("road_dist_tex", road_dist_tex)

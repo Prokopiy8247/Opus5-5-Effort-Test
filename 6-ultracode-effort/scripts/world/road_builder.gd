@@ -5,6 +5,7 @@ extends Node3D
 ## tunnel tubes from the RoadNetwork. Geometry is generated on the WorkerThreadPool per road and
 ## committed on the main thread in pieces.
 
+const FILLET_EDGE_U := 1.1875      # fillet UV.x on the outer arc (road.gdshader: 1.5 m past the lane edge of an 8 m road)
 const PIECE := 40                 # samples per mesh/collider piece (~120 m)
 const BARRIER_LAYER := 32           # physics layer 6: rails, bridge parapets, tunnel tube
 const DETAIL_PIECE := 120         # samples per rail/post/sign mesh (~360 m) so visibility ranges apply locally
@@ -247,6 +248,7 @@ func _build_road(ri: int) -> void:
 				skip[i] = 1
 			if d < pe + 8.0 or (d < 160.0 and _dist_to_road(parent, int(jd["index"]), r.pos[i]) < pe + hw + 2.0):
 				lower[i] = 0.035
+	var gain := _verge_gain(r, n)
 	var segs := n if r.loop else n - 1
 	var paved := r.surface == &"asphalt"
 	var tube := WorldGen.tube_mask(r.flags)
@@ -264,9 +266,59 @@ func _build_road(ri: int) -> void:
 		var s1 := end
 		if end < segs and next_cov == covered:
 			s1 = mini(end + 1, segs)
-		_build_piece(r, start, s1, cols, skip, lower, deck, covered)
+		_build_piece(r, start, s1, cols, skip, lower, deck, covered, gain)
 		start = end
 	_build_furniture(r)
+
+
+## Per-sample strength (0..1) of the dirty road edge (road.gdshader, vertex colour r): fades to 0 around every junction
+## this road takes part in, so the child's pavement and the corner fillets are not cut by the parent's dirt band.
+func _verge_gain(r: RoadNetwork.Road, n: int) -> PackedFloat32Array:
+	var gain := PackedFloat32Array()
+	gain.resize(n)
+	gain.fill(1.0)
+	for jd: Dictionary in data.network.junctions:
+		var p0 := Vector3.ZERO
+		var near := 0.0
+		if jd["parent"] == r.id:
+			var child := data.network.get_road(jd["child"])
+			if child == null:
+				continue
+			p0 = r.pos[int(jd["parent_index"])]
+			near = child.width * 0.5 + child.shoulder + 3.0
+		elif jd["child"] == r.id:
+			var parent := data.network.get_road(jd["parent"])
+			if parent == null:
+				continue
+			p0 = parent.pos[int(jd["parent_index"])]
+			near = parent.width * 0.5 + parent.shoulder + 3.0
+		else:
+			continue
+		var far := near + 10.0
+		for i in n:
+			var dx := r.pos[i].x - p0.x
+			var dz := r.pos[i].z - p0.z
+			if absf(dx) > far or absf(dz) > far:
+				continue
+			gain[i] = minf(gain[i], smoothstep(near, far, sqrt(dx * dx + dz * dz)))
+	return gain
+
+
+## 1 at the end of a bridge deck, easing to 0 about 10 m into it: the concrete deck takes up the asphalt's
+## look gradually (road.gdshader, vertex colour g).
+func _deck_end_fade(r: RoadNetwork.Road, i: int) -> float:
+	var n := r.count()
+	var lim := maxi(int(10.0 / maxf(r.ds, 0.5)), 2)
+	for k in range(1, lim + 1):
+		for dir in [-1, 1]:
+			var j: int = i + dir * k
+			if r.loop:
+				j = posmod(j, n)
+			elif j < 0 or j >= n:
+				continue
+			if (r.flags[j] & 1) == 0:
+				return 1.0 - float(k - 1) / float(lim)
+	return 0.0
 
 
 ## Segment i..i+1 lies inside a tunnel tube.
@@ -304,13 +356,14 @@ func _frame(r: RoadNetwork.Road, i: int) -> Array:
 	return [r.pos[i % n], Vector3(-t.z, 0.0, t.x), r.bank[i % n]]
 
 
-func _build_piece(r: RoadNetwork.Road, s0: int, s1: int, cols: Array, skip: PackedByteArray, lower: PackedFloat32Array, deck := false, covered := false) -> void:
+func _build_piece(r: RoadNetwork.Road, s0: int, s1: int, cols: Array, skip: PackedByteArray, lower: PackedFloat32Array, deck := false, covered := false, gain := PackedFloat32Array()) -> void:
 	var n := r.count()
 	var origin := r.pos[s0]
 	origin.y = 0.0
 	var verts := PackedVector3Array()
 	var norms := PackedVector3Array()
 	var uvs := PackedVector2Array()
+	var colors := PackedColorArray()
 	var idx := PackedInt32Array()
 	var faces := PackedVector3Array()
 	var e: float = float(cols[5][0])
@@ -326,6 +379,8 @@ func _build_piece(r: RoadNetwork.Road, s0: int, s1: int, cols: Array, skip: Pack
 		var bank: float = f[2]
 		var nrm := (Vector3.UP - rt * bank).normalized()
 		var base := verts.size()
+		# Vertex colour for road.gdshader: r = dirty-edge strength, g = bridge-deck end fade, b = dead-end apron.
+		var vcol := Color(gain[k] if k < gain.size() else 1.0, _deck_end_fade(r, i) if deck else 0.0, 0.0, 1.0)
 		for c in nc:
 			var o: float = cols[c][0]
 			var yo: float = cols[c][1]
@@ -333,6 +388,7 @@ func _build_piece(r: RoadNetwork.Road, s0: int, s1: int, cols: Array, skip: Pack
 			verts.append(v)
 			norms.append(nrm)
 			uvs.append(Vector2((o + e) / (2.0 * e), float(i) * r.ds / 4.0))
+			colors.append(vcol)
 		if rows > 0 and valid and prev_valid:
 			for c in nc - 1:
 				var a := base - nc + c
@@ -346,9 +402,9 @@ func _build_piece(r: RoadNetwork.Road, s0: int, s1: int, cols: Array, skip: Pack
 		prev_valid = valid
 	# A dead end (no junction) runs out onto the ground over a short sloped apron instead of a kerb.
 	if not r.loop and s1 == n - 1 and r.j_end.is_empty() and prev_valid:
-		_end_apron(r, n - 1, 1.0, cols, origin, e, verts, norms, uvs, idx, faces, verts.size() - nc)
+		_end_apron(r, n - 1, 1.0, cols, origin, e, verts, norms, uvs, colors, idx, faces, verts.size() - nc)
 	if not r.loop and s0 == 0 and r.j_start.is_empty() and skip[0] == 0:
-		_end_apron(r, 0, -1.0, cols, origin, e, verts, norms, uvs, idx, faces, 0)
+		_end_apron(r, 0, -1.0, cols, origin, e, verts, norms, uvs, colors, idx, faces, 0)
 	if idx.is_empty():
 		return
 	var arrays := []
@@ -356,6 +412,7 @@ func _build_piece(r: RoadNetwork.Road, s0: int, s1: int, cols: Array, skip: Pack
 	arrays[Mesh.ARRAY_VERTEX] = verts
 	arrays[Mesh.ARRAY_NORMAL] = norms
 	arrays[Mesh.ARRAY_TEX_UV] = uvs
+	arrays[Mesh.ARRAY_COLOR] = colors
 	arrays[Mesh.ARRAY_INDEX] = idx
 	var surf: StringName = &"concrete" if deck else r.surface
 	_push({"kind": "road", "arrays": arrays, "origin": origin, "faces": faces, "surface": surf, "road_id": r.id,
@@ -366,7 +423,7 @@ func _build_piece(r: RoadNetwork.Road, s0: int, s1: int, cols: Array, skip: Pack
 ## Row of vertices 1.4 m beyond end sample i (`out` +1 past the last sample, -1 before the first), 0.6 m lower,
 ## joined to the existing end row at index `row` (mesh + collision).
 func _end_apron(r: RoadNetwork.Road, i: int, out: float, cols: Array, origin: Vector3, e: float, verts: PackedVector3Array,
-		norms: PackedVector3Array, uvs: PackedVector2Array, idx: PackedInt32Array, faces: PackedVector3Array, row: int) -> void:
+		norms: PackedVector3Array, uvs: PackedVector2Array, colors: PackedColorArray, idx: PackedInt32Array, faces: PackedVector3Array, row: int) -> void:
 	var f := _frame(r, i)
 	var p: Vector3 = f[0]
 	var rt: Vector3 = f[1]
@@ -380,6 +437,7 @@ func _end_apron(r: RoadNetwork.Road, i: int, out: float, cols: Array, origin: Ve
 		verts.append(p + fwd * 1.4 + rt * o + Vector3(0, o * bank + yo - 0.6, 0) - origin)
 		norms.append((Vector3.UP + fwd * 0.4).normalized())
 		uvs.append(Vector2((o + e) / (2.0 * e), (float(i) * r.ds + out * 1.4) / 4.0))
+		colors.append(Color(1.0, 0.0, 1.0, 1.0))
 	for c in nc - 1:
 		# Rows in travel order: (first, second) = (end row, apron) past the end, (apron, end row) before the start.
 		var a := (row if out > 0.0 else base) + c
@@ -1059,6 +1117,7 @@ func _build_junction_fillets() -> void:
 	var verts := PackedVector3Array()
 	var norms := PackedVector3Array()
 	var uvs := PackedVector2Array()
+	var colors := PackedColorArray()
 	var idx := PackedInt32Array()
 	var faces := PackedVector3Array()
 	var origin := Vector3.ZERO
@@ -1088,7 +1147,10 @@ func _build_junction_fillets() -> void:
 			var ay := parent.surface_point(s_par + (a - Vector2(p0.x, p0.z)).dot(t), side * ep).y - 0.012
 			verts.append(Vector3(a.x, ay, a.y))
 			norms.append(Vector3.UP)
+			# UV.x of a fillet is its lateral position (width 8): 0.5 at the fan apex (clean asphalt), growing to
+			# FILLET_EDGE_U on the outer arc so road.gdshader dusts and dirties the rim like any other road edge.
 			uvs.append(Vector2(0.5, 0.0))
+			colors.append(Color(1.0, 0.0, 0.0, 1.0))
 			var steps := 7
 			var start_v := (a + up * radius) - o
 			var end_v := (a + uc * radius) - o
@@ -1108,7 +1170,8 @@ func _build_junction_fillets() -> void:
 				var qy := lerpf(py, cy, float(k) / steps) - 0.012
 				verts.append(Vector3(q.x, qy, q.y))
 				norms.append(Vector3.UP)
-				uvs.append(Vector2(0.5, float(k)))
+				uvs.append(Vector2(FILLET_EDGE_U, float(k)))
+				colors.append(Color(1.0, 0.0, 0.0, 1.0))
 			for k in steps:
 				var i1 := b0 + 1 + k
 				var i2 := b0 + 2 + k
@@ -1129,6 +1192,7 @@ func _build_junction_fillets() -> void:
 	arrays[Mesh.ARRAY_VERTEX] = verts
 	arrays[Mesh.ARRAY_NORMAL] = norms
 	arrays[Mesh.ARRAY_TEX_UV] = uvs
+	arrays[Mesh.ARRAY_COLOR] = colors
 	arrays[Mesh.ARRAY_INDEX] = idx
 	_push({"kind": "road", "arrays": arrays, "origin": origin, "faces": faces, "surface": &"asphalt", "road_id": "junction",
 		"width": 8.0, "shoulder": 0.0, "lanes": 1, "marking": 0, "surface_kind": 0})

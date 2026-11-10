@@ -1,0 +1,23 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Export outputs
+/build/
+/export/
+*.pck
+*.exe
+*.zip
+
+# Blender autosave / versioned backups and project backups
+*.blend1
+*.blend2
+/backups/
+
+# Local agent / tool state
+.claude/settings.local.json
+__pycache__/
+*.pyc
+
+# Screenshots / scratch output from QA tools (kept out of git; selected shots are copied to docs/screenshots)
+/qa_output/

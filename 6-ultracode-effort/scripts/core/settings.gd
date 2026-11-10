@@ -22,8 +22,10 @@ var values: Dictionary = {
 	# camera
 	"camera_mode": 0,
 	"camera_shake": 1.0,
+	"camera_sensitivity": 1.0,
 	# world
 	"traffic_density": 0.6,
+	"pedestrian_density": 0.6,
 	# audio
 	"volume_master": 0.85,
 	"volume_engine": 1.0,

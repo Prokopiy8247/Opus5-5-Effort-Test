@@ -46,3 +46,4 @@ state is summarised in `OPUS_5.5_FINAL_REPORT.md`.
 | Occlusion culling | NOT IMPLEMENTED | not needed for the frame budget: visibility ranges, LODs, far meshes and chunk streaming instead |
 | Gamepad support | NOT IMPLEMENTED | intentionally left out at the user's request (keyboard + mouse only) |
 | Further audio work / audio QA | NOT IMPLEMENTED | stopped at the user's request on 2026-10-24; the procedural audio above stays as implemented, test runs are muted |
+| Pedestrians and cyclists (pavements, 19 looks, sitting/standing/talking/jogging, flee from cars, no colliders, insurance relocation) | WORKING | procedural MultiMesh people with vertex-shader animation, `pedestrians` console command and F2 slider; verified by `pedestrians_verify` |

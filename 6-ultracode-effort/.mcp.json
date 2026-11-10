@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "blender-opus55-ultracode": {
+      "command": "C:\\Users\\Cryptopiy\\AppData\\Local\\Microsoft\\WinGet\\Links\\uvx.exe",
+      "args": ["mcp-for-blender", "--port", "9882"]
+    }
+  }
+}

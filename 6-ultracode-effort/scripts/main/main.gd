@@ -5,6 +5,7 @@ extends Node3D
 
 const ENV_SCRIPT := "res://scripts/env/environment_controller.gd"
 const TRAFFIC_SCRIPT := "res://scripts/traffic/traffic_manager.gd"
+const PEDESTRIANS_SCRIPT := "res://scripts/pedestrians/pedestrian_manager.gd"
 const ACTIVITIES_SCRIPT := "res://scripts/activities/activity_manager.gd"
 const UI_SCRIPT := "res://scripts/ui/ui_root.gd"
 const AUDIO_SCRIPT := "res://scripts/audio/car_audio.gd"
@@ -49,6 +50,7 @@ func _ready() -> void:
 	_add_optional(DRESSING_SCRIPT, "Dressing", self, func(n: Node) -> void: Game.set_meta(&"dressing", n))
 	_add_optional(SETTLEMENTS_SCRIPT, "Settlements", self)
 	_add_optional(TRAFFIC_SCRIPT, "Traffic", self, func(n: Node) -> void: Game.traffic = n)
+	_add_optional(PEDESTRIANS_SCRIPT, "Pedestrians", self, func(n: Node) -> void: Game.pedestrians = n)
 	_add_optional(ACTIVITIES_SCRIPT, "Activities", self, func(n: Node) -> void: Game.activities = n)
 	_add_optional(UI_SCRIPT, "UI", self, func(n: Node) -> void: Game.hud = n)
 	_add_optional(AMBIENT_SCRIPT, "AmbientAudio", self)

@@ -17,7 +17,7 @@ const GpsScript := preload("res://scripts/ui/gps_route.gd")
 const RouteLineScript := preload("res://scripts/ui/route_line_3d.gd")
 const MENU_SCRIPTS: PackedStringArray = [
 	"res://scripts/ui/console.gd", "res://scripts/ui/garage_menu.gd", "res://scripts/ui/debug_menu.gd",
-	"res://scripts/ui/pause_menu.gd", "res://scripts/ui/photo_mode.gd",
+	"res://scripts/ui/pause_menu.gd", "res://scripts/ui/photo_mode.gd", "res://scripts/ui/environment_panel.gd",
 ]
 
 var hud_root: Control

@@ -48,6 +48,7 @@ var main: Node
 var world: Node
 var env: Node
 var traffic: Node
+var pedestrians: Node
 var activities: Node
 var hud: Node
 var camera_rig: Node
@@ -206,6 +207,16 @@ func set_traffic_density(v: float) -> void:
 
 func get_traffic_density() -> float:
 	return traffic.get_density() if traffic else float(Settings.get_value("traffic_density", 0.6))
+
+
+func set_pedestrian_density(v: float) -> void:
+	Settings.set_value("pedestrian_density", clampf(v, 0.0, 1.0))
+	if pedestrians:
+		pedestrians.set_density(clampf(v, 0.0, 1.0))
+
+
+func get_pedestrian_density() -> float:
+	return pedestrians.get_density() if pedestrians else float(Settings.get_value("pedestrian_density", 0.6))
 
 
 # ----------------------------------------------------------------- assists

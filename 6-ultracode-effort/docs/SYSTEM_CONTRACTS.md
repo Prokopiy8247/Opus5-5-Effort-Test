@@ -190,3 +190,18 @@ Use `scripts/world/prop_library.gd` (owned by the dressing implementer) to fetch
   in over 95-140 m. Festival flags register dressing exclusions (pocket + approach lane) before Dressing starts.
 - Activities ignore triggers and discoveries while `Game.benchmark_mode` is on.
 - Loading screen warms up render pipelines for the kit props and first-seen materials; F12 encodes/saves on a thread.
+
+## Pedestrians (`Game.pedestrians`, `scripts/pedestrians/pedestrian_manager.gd`) — task 3
+
+- People have NO colliders or areas on any layer; cars can never hit them and nothing may add one. Danger is computed from
+  car position/velocity (time to reach + lateral distance): walkers/joggers run perpendicular to the car's path, seated
+  people jump up and run, cyclists swerve off the lane and brake. If a car is already on top of someone (teleport/spawn) the
+  person is moved instantly to a safe spot (no signals, damage, fines, shake, no effect on the car).
+- API: `Game.set_pedestrian_density(0..1)`, `Game.get_pedestrian_density()`; manager: `set_density/get_density/
+  set_density_cap/effective_density/active_count/get_stats/set_auto_spawn/clear_all/get_peds`. Console: `pedestrians <0..1|on|off>`;
+  F2 menu slider; setting `pedestrian_density` (default 0.6). Density is scaled by quality, night (x0.35) and precipitation;
+  zero in benchmark mode.
+- Pavements (`scripts/pedestrians/pedestrian_paths.gd`) are visual-only strips (2.3 m, 5 cm above ground) beside the STREET
+  roads; road colliders, surfaces and grip are untouched. Bicycles ride on STREET roads and short calm regional roads.
+- Rendering: one MultiMesh per look + one for bicycles, animation in the vertex shader; at most 44 animated people (<=70 m).
+- Test: `tools/tests/pedestrians_verify.tscn -- --part=walk|sit|bike|insure|all|places|shots|lineup [--speeds=30,80,160,350]`.

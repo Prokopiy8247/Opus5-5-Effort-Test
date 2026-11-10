@@ -20,6 +20,8 @@ var _weather_box: HFlowContainer
 var _weather_buttons: Dictionary = {}
 var _traffic_toggle: CheckButton
 var _traffic_slider: HSlider
+var _ped_toggle: CheckButton
+var _ped_slider: HSlider
 var _assist_toggles: Dictionary = {}
 var _display_toggles: Dictionary = {}
 var _bench_label: RichTextLabel
@@ -260,6 +262,18 @@ func _build_world_column() -> Control:
 		_traffic_toggle.set_pressed_no_signal(x > 0.01), 110)
 	v.add_child(_traffic_slider.get_meta(&"row"))
 	v.add_child(Style.spacer(4))
+	v.add_child(_sub("Pedestrians"))
+	_ped_toggle = Style.toggle("Pedestrians", true, func(on: bool) -> void:
+		var pv := _ped_slider.value if _ped_slider.value > 0.01 else 0.6
+		Game.set_pedestrian_density(pv if on else 0.0)
+		if on:
+			Style.set_slider(_ped_slider, pv))
+	v.add_child(_ped_toggle)
+	_ped_slider = Style.slider_row("Density", 0.0, 1.0, 0.05, 0.6, func(x: float) -> String: return "%d%%" % roundi(x * 100.0), func(x: float) -> void:
+		Game.set_pedestrian_density(x)
+		_ped_toggle.set_pressed_no_signal(x > 0.01), 110)
+	v.add_child(_ped_slider.get_meta(&"row"))
+	v.add_child(Style.spacer(4))
 	v.add_child(_sub("Assists"))
 	var ag := GridContainer.new()
 	ag.columns = 2
@@ -354,6 +368,9 @@ func _sync() -> void:
 	var dens := Game.get_traffic_density()
 	_traffic_toggle.set_pressed_no_signal(dens > 0.01)
 	Style.set_slider(_traffic_slider, dens)
+	var pdens := Game.get_pedestrian_density()
+	_ped_toggle.set_pressed_no_signal(pdens > 0.01)
+	Style.set_slider(_ped_slider, pdens)
 	var st := Game.get_assists()
 	for k: String in _assist_toggles:
 		(_assist_toggles[k] as CheckButton).set_pressed_no_signal(bool(st.get(k, false)))

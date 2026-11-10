@@ -249,6 +249,7 @@ can be added to any command as well.
 | `-- --qa=teleports` | teleports to every target and checks the car settles upright on a road |
 | `-- --qa=drive --road=ring ...` | QA autopilot lap with FPS / frame-time / memory / node logging |
 | `-- --qa=spot --road=<id> --s=a,b` | screenshots at arbitrary road positions |
+| `-- --qa=edges --list=ring@300;J@2;E@lighthouse;B@ring --tag=x` | low close-ups of road edges: `R@road:s`, `J@n` junction mouth, `E@id` dead end, `B@id` bridge start (use with `--time=` / `--weather=`) |
 | `-- --qa=shots / garage` | screenshots at targets / of every car (chase + cockpit) |
 | `tools/tests/core_fix_test.tscn` | in-game regression checks for the review fixes (menu hold, tunnel rebuild, headlights, rewind, g spike, dirt, look-back, streamer readiness, braking line) |
 | `tools/tests/final_validation.tscn` | Section 15.3 checklist: spawn on road, console, traffic, weather/time, all 10 cars drivable with their Blender model, save/load (`-- --shots=<dir>` for screenshots) |
@@ -296,3 +297,19 @@ nodes, up to ~5,900 draw calls. Cold start to a streamed spawn area ~12.4 s. Log
 - The QA tools' frame-time numbers use the process delta, which saturates at about 85 ms; longer stalls need
   wall-clock measurement (see `fix4_ui_pipewarm.tscn`).
 - Gamepad input and any further audio work were dropped at the user's request.
+
+## Forest undergrowth and road edges (task 2)
+
+- `Rules.forest_amount()` (dressing_rules.gd) mirrors the per-region tree masks; `build_grass` uses it for denser, taller,
+  darker tufts between trees (fading out at forest edges and within 6 m of roads). Level 0..7 + seed live in the grass
+  instance custom `.a`. `grass.gdshader` takes the ground colour from the average terrain textures and thins far tufts.
+- Road edge: `assets/shaders/road_verge.gdshaderinc` holds the verge colours shared by `road.gdshader` (dust, grit, soil,
+  skirt) and `terrain.gdshader` (verge ground); re-measure `VERGE_TEX_MEAN` when the dirt/gravel textures are regenerated.
+  Road meshes carry vertex colour r = edge strength (0 near junctions), g = bridge-deck end fade, b = dead-end apron.
+
+
+### Pedestrians (task 3)
+
+`Godot_console.exe --path . --audio-driver Dummy res://tools/tests/pedestrians_verify.tscn -- --part=all` drives the car at 30/80/160/350 km/h at a
+walker, jogger, seated person and cyclist (plus a control run without a person, because forced 350 km/h produces background
+impact signals) and spawns the car on a person; prints `[ped] PASS|FAIL` and `failures: N`. Console command: `pedestrians <0..1|on|off>`.

@@ -2,9 +2,22 @@ class_name CameraRig
 extends Node3D
 ## Chase (near/far), hood, bumper and cockpit cameras with smooth transitions, speed-dependent FOV
 ## and distance, camera collision, free look (hold right mouse button and drag), look-back and shake.
+## In the chase views free look is a full orbit: 360° yaw, wide pitch, mouse-wheel distance, and a
+## pin key (camera_pin) that keeps the chosen angle following the car instead of returning to centre.
+## Mouse sensitivity comes from Settings ("camera_sensitivity").
 
 enum Mode { CHASE_NEAR, CHASE_FAR, HOOD, BUMPER, COCKPIT }
 const MODE_NAMES := ["Chase", "Chase Far", "Hood", "Bumper", "Cockpit"]
+
+## Orbit pitch limits in the chase views (radians of camera elevation over the anchor).
+const ORBIT_PITCH_MIN := -0.9
+const ORBIT_PITCH_MAX := 1.35
+## Head-turn limits in the attached views (hood / bumper / cockpit).
+const HEAD_YAW_MAX := 1.1
+const HEAD_PITCH_MIN := -0.45
+const HEAD_PITCH_MAX := 0.6
+const ORBIT_DIST_MIN := 3.2
+const ORBIT_DIST_MAX := 26.0
 
 signal mode_changed(mode: int)
 
@@ -25,6 +38,10 @@ var _snap_fov := false
 var _free_yaw: float = 0.0
 var _free_pitch: float = 0.0
 var _free_idle: float = 0.0
+## camera_pin: keep the current orbit angle / head turn (no auto-return) while it is on.
+var _pinned: bool = false
+## Wheel-set orbit distance; < 0 while the orbit is inactive (distance follows the speed logic).
+var _orbit_dist: float = -1.0
 var _noise := FastNoiseLite.new()
 var _t: float = 0.0
 var _dist_smooth: float = 5.5
@@ -76,6 +93,12 @@ func set_mode(m: int, persist := true) -> void:
 		# To or from a view attached to the car: cut (a blend would fly through the body).
 		_blend = 1.0
 		_snap_fov = true
+		# A pinned angle from the other view family stays inside the new view's limits.
+		if m <= Mode.CHASE_FAR:
+			_free_pitch = clampf(_free_pitch, ORBIT_PITCH_MIN, ORBIT_PITCH_MAX)
+		else:
+			_free_yaw = clampf(_free_yaw, -HEAD_YAW_MAX, HEAD_YAW_MAX)
+			_free_pitch = clampf(_free_pitch, HEAD_PITCH_MIN, HEAD_PITCH_MAX)
 	mode = m
 	if persist:
 		Settings.set_value("camera_mode", m)
@@ -93,12 +116,31 @@ func _on_impact(strength: float, _pos: Vector3) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if not active or Game.is_overlay_open():
 		return
+	var chasing := mode <= Mode.CHASE_FAR
 	if event.is_action_pressed("camera_next"):
 		cycle_mode()
+	elif event.is_action_pressed("camera_pin"):
+		_pinned = not _pinned
+	elif event is InputEventMouseButton and chasing:
+		# Wheel zoom in the orbit (while it is pinned or the right button is held).
+		var mb := event as InputEventMouseButton
+		var want_zoom := _pinned or Input.is_action_pressed("free_look")
+		if want_zoom and mb.pressed and (mb.button_index == MOUSE_BUTTON_WHEEL_UP or mb.button_index == MOUSE_BUTTON_WHEEL_DOWN):
+			if _orbit_dist < 0.0:
+				_orbit_dist = maxf(_dist_smooth, ORBIT_DIST_MIN)
+			_orbit_dist = clampf(_orbit_dist + (1.6 if mb.button_index == MOUSE_BUTTON_WHEEL_UP else -1.6), ORBIT_DIST_MIN, ORBIT_DIST_MAX)
+			get_viewport().set_input_as_handled()
 	elif event is InputEventMouseMotion and Input.is_action_pressed("free_look"):
 		var mm := event as InputEventMouseMotion
-		_free_yaw -= mm.relative.x * 0.005
-		_free_pitch = clampf(_free_pitch - mm.relative.y * 0.004, -0.6, 0.9)
+		var sens := float(Settings.get_value("camera_sensitivity", 1.0))
+		if chasing:
+			# Full orbit: unlimited yaw, wide pitch (slightly below the car up to near top-down).
+			_free_yaw -= mm.relative.x * 0.005 * sens
+			_free_pitch = clampf(_free_pitch - mm.relative.y * 0.004 * sens, ORBIT_PITCH_MIN, ORBIT_PITCH_MAX)
+		else:
+			# Head turn in the attached views stays within sane limits.
+			_free_yaw = clampf(_free_yaw - mm.relative.x * 0.004 * sens, -HEAD_YAW_MAX, HEAD_YAW_MAX)
+			_free_pitch = clampf(_free_pitch - mm.relative.y * 0.003 * sens, HEAD_PITCH_MIN, HEAD_PITCH_MAX)
 		_free_idle = 0.0
 
 
@@ -108,8 +150,9 @@ func _process(delta: float) -> void:
 	_t += delta
 	var t := target.get_global_transform_interpolated()
 	var spd := target.linear_velocity.length()
-	# Free look returns to centre shortly after the right mouse button is released.
-	if not Input.is_action_pressed("free_look"):
+	# Free look returns to centre shortly after the right mouse button is released - unless the
+	# camera is pinned (camera_pin): then the chosen angle keeps following the car.
+	if not Input.is_action_pressed("free_look") and not _pinned:
 		_free_idle += delta
 		if _free_idle > 0.6:
 			_free_yaw = lerp_angle(_free_yaw, 0.0, clampf(delta * 3.0, 0.0, 1.0))
@@ -126,8 +169,7 @@ func _process(delta: float) -> void:
 	if _blend < 1.0:
 		_blend = minf(_blend + delta / 0.35, 1.0)
 		var e := _blend * _blend * (3.0 - 2.0 * _blend)
-		xf = (t * _from_local).interpolate_with(xf, e)
-	# Shake: impacts (trauma) + subtle high-speed rumble.
+		xf = (t * _from_local).interpolate_with(xf, e)	# Shake: impacts (trauma) + subtle high-speed rumble.
 	_trauma = maxf(_trauma - delta * 1.4, 0.0)
 	var shake_scale := float(Settings.get_value("camera_shake", 1.0))
 	var amp := (_trauma * _trauma * 0.06 + clampf((spd - 35.0) / 60.0, 0.0, 1.0) * 0.0035) * shake_scale
@@ -170,13 +212,27 @@ func _chase(t: Transform3D, delta: float, spd: float, look_back: bool) -> Transf
 	var far := mode == Mode.CHASE_FAR
 	var base_dist := (7.4 if far else 5.0) + body_h * 0.6
 	var dist := base_dist + clampf(spd / 80.0, 0.0, 1.0) * 1.2
+	# While the orbit is active (free look held, or the camera pinned at an angle) the wheel-set
+	# distance takes over; when the orbit ends it releases the distance back to the speed logic.
+	var orbiting := _pinned or Input.is_action_pressed("free_look") or absf(_free_yaw) > 0.01 or absf(_free_pitch) > 0.01
+	if orbiting:
+		if _orbit_dist < 0.0:
+			_orbit_dist = maxf(_dist_smooth, ORBIT_DIST_MIN)
+		dist = _orbit_dist
+	else:
+		_orbit_dist = -1.0
 	_dist_smooth = dist if reseed else lerpf(_dist_smooth, dist, 1.0 - exp(-delta * 2.0))
 	var height := body_h * (1.1 if far else 0.95) + (0.9 if far else 0.45)
 	var yaw := _yaw + _free_yaw + (PI if look_back else 0.0)
-	var dir := Vector3(sin(yaw) * cos(_pitch), sin(_pitch), cos(yaw) * cos(_pitch))
+	# True spherical orbit around the anchor: yaw offset spins around the car, the free pitch is the
+	# camera elevation (positive = above, up to near top-down; negative = a low look up at the car).
+	var p := clampf(_pitch + _free_pitch, ORBIT_PITCH_MIN, ORBIT_PITCH_MAX)
+	var horiz := cos(p) * _dist_smooth
+	var vert := height + sin(p) * _dist_smooth
+	var dir := Vector3(sin(yaw) * cos(p), sin(p), cos(yaw) * cos(p))
 	_cam_y = lerpf(_cam_y, t.origin.y, 1.0 - exp(-delta * 10.0))
 	var anchor := Vector3(t.origin.x, _cam_y, t.origin.z)
-	var pos := anchor - dir * _dist_smooth + Vector3.UP * (height + _free_pitch * 2.5)
+	var pos := anchor + Vector3(-sin(yaw) * horiz, vert, -cos(yaw) * horiz)
 	var look := anchor + Vector3.UP * (body_h * 0.62) + dir * (2.0 + spd * 0.04)
 	# Camera collision against the world.
 	var space := get_world_3d().direct_space_state

@@ -26,7 +26,8 @@ func setup(context: Rules.Ctx, scenario: RID, ring_radius: float) -> void:
 	ctx = context
 	_scenario = scenario
 	radius = ring_radius
-	Mats.grass().set_shader_parameter("fade_start", radius * 0.62)
+	Mats.grass().set_shader_parameter("fade_start", radius * 0.55)
+	Mats.grass().set_shader_parameter("thin_start", radius * 0.3)
 	Mats.grass().set_shader_parameter("fade_end", radius - 4.0)
 
 

@@ -4,7 +4,7 @@ extends Control
 
 const Style := preload("res://scripts/ui/ui_style.gd")
 
-const KEYS := [["`", "Console"], ["F1", "Garage"], ["F2", "Debug"], ["M", "Map"], ["C", "Camera"], ["R", "Reset"], ["Backspace", "Rewind"], ["P", "Photo"]]
+const KEYS := [["`", "Console"], ["F1", "Garage"], ["F2", "Debug"], ["M", "Map"], ["C", "Camera"], ["V", "Pin cam"], ["N", "Env"], ["R", "Reset"], ["Backspace", "Rewind"], ["P", "Photo"]]
 const SHOW_TIME := 12.0
 const FADE_TIME := 1.2
 

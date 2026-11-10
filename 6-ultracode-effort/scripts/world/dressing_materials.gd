@@ -5,6 +5,7 @@ extends RefCounted
 
 const FOLIAGE_SHADER := "res://assets/shaders/foliage.gdshader"
 const GRASS_SHADER := "res://assets/shaders/grass.gdshader"
+const TERRAIN_TEX := "res://assets/textures/terrain/"
 const BUILDING_SHADER := "res://assets/shaders/building_props.gdshader"
 
 static var _foliage: ShaderMaterial
@@ -43,8 +44,28 @@ static func grass() -> ShaderMaterial:
 	if _grass == null:
 		_grass = ShaderMaterial.new()
 		_grass.shader = load(GRASS_SHADER)
+		_grass.set_shader_parameter("ground_grass", _average_color(TERRAIN_TEX + "grass_albedo.png"))
+		_grass.set_shader_parameter("ground_sand", _average_color(TERRAIN_TEX + "sand_albedo.png"))
 		_register(_grass)
 	return _grass
+
+
+## Mean linear colour of a terrain albedo texture (16x16 samples), so the grass follows the ground textures.
+static func _average_color(path: String) -> Vector3:
+	var tex := load(path) as Texture2D
+	var img := tex.get_image() if tex != null else null
+	if img == null or img.is_empty():
+		return Vector3(0.4, 0.4, 0.3)
+	if img.is_compressed():
+		img.decompress()
+	var sum := Vector3.ZERO
+	var w := img.get_width()
+	var h := img.get_height()
+	for j in 16:
+		for i in 16:
+			var c := img.get_pixel(i * w / 16 + w / 32, j * h / 16 + h / 32).srgb_to_linear()
+			sum += Vector3(c.r, c.g, c.b)
+	return sum / 256.0
 
 
 static func solid() -> ShaderMaterial:

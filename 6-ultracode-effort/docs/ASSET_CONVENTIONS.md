@@ -14,6 +14,12 @@ Single source of truth shared by the Blender authoring scripts (`tools/blender/`
 - No external assets, no AI generation, no downloaded textures. Materials are plain PBR values
   (base colour / metallic / roughness / emission); textures, if any, are generated procedurally in Blender
   and packed into the .glb.
+- Ground textures for `assets/shaders/terrain.gdshader` (albedo with roughness in alpha + tangent
+  normal, `assets/textures/terrain/<name>_albedo/_normal.png`) are generated in place by
+  `tools/make_terrain_textures.gd` (Godot headless script; periodic noise -> exactly tileable).
+  Regenerate with: `Godot_console.exe --headless --path <project> -s tools/make_terrain_textures.gd`
+  (wrapped in timeout, ~2.5 min). Import settings for these PNGs: VRAM compressed + mipmaps
+  (`compress/mode=2`, `mipmaps/generate=true`).
 - No unnamed objects (`Cube.001` etc.) in exported assets.
 
 ## Axes
@@ -55,3 +61,11 @@ Material names may carry a suffix (e.g. `Paint_kestrel_r4`); Godot matches by th
 | 8 | `ridgeback_sx` | Ridgeback SX | off-road SUV, AWD |
 | 9 | `hauler_2500` | Hauler 2500 | pickup truck, RWD-biased 4x4 |
 | 10 | `lark_roadster` | Lark Roadster | vintage open roadster, RWD |
+
+## Pedestrians and bicycles (task 3)
+
+- All people and bicycles are procedural (`scripts/pedestrians/pedestrian_meshes.gd`): 19 looks (height, build, skin, hair,
+  clothes, hats, bags, backpacks) and one bicycle. No external models or textures are used, so there are no third-party
+  sources or CC0 licences to record. Vertex colours only; limb id in UV.x drives the vertex-shader animation
+  (`assets/shaders/pedestrian.gdshader`). Pavements use `assets/shaders/sidewalk.gdshader` (procedural tiles).
+- No physics bodies or areas for people (see docs/SYSTEM_CONTRACTS.md "Pedestrians").

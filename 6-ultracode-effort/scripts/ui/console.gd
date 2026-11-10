@@ -312,6 +312,7 @@ func _register_commands() -> void:
 	_cmd("timescale", "timescale <x>", "Day-night speed multiplier (0 freezes time)", _c_timescale)
 	_cmd("weather", "weather <id> [fade]", "Change the weather instantly (fade = smooth transition)", _c_weather, _weather_args)
 	_cmd("traffic", "traffic <0..1|on|off>", "Traffic density", _c_traffic, func(_i: int) -> PackedStringArray: return PackedStringArray(["on", "off", "0", "0.3", "0.6", "1"]))
+	_cmd("pedestrians", "pedestrians <0..1|on|off>", "Pedestrian density", _c_pedestrians, func(_i: int) -> PackedStringArray: return PackedStringArray(["on", "off", "0", "0.3", "0.6", "1"]))
 	_cmd("speed", "speed", "Toggle km/h and mph", func(_a: PackedStringArray) -> void:
 		var mph := not bool(Settings.get_value("units_mph", false))
 		Settings.set_value("units_mph", mph)
@@ -508,6 +509,26 @@ func _c_weather(a: PackedStringArray) -> void:
 		_ok("Weather: [b]%s[/b]%s" % [a[0].to_lower(), " (fading in)" if fade else ""])
 	else:
 		_err("Unknown weather '%s' - options: %s" % [Style.bb_escape(a[0]), ", ".join(ids)])
+
+
+func _c_pedestrians(a: PackedStringArray) -> void:
+	if a.is_empty():
+		_info("Pedestrian density %.2f. Usage: pedestrians <0..1|on|off>" % Game.get_pedestrian_density())
+		return
+	var v := -1.0
+	match a[0].to_lower():
+		"on":
+			v = 0.6
+		"off":
+			v = 0.0
+		_:
+			if a[0].is_valid_float():
+				v = a[0].to_float()
+	if v < 0.0 or v > 1.0:
+		_err("Pedestrian density must be between 0 and 1")
+		return
+	Game.set_pedestrian_density(v)
+	_ok("Pedestrian density %.2f%s" % [v, "" if Game.pedestrians else " (pedestrian system not loaded)"])
 
 
 func _c_traffic(a: PackedStringArray) -> void:

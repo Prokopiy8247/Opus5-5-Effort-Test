@@ -9,14 +9,16 @@ const CONTROL_ROWS := [
 	["Throttle", ["accelerate"]], ["Brake / reverse", ["brake"]], ["Steer", ["steer_left", "steer_right"]],
 	["Handbrake", ["handbrake"]], ["Shift up / down", ["gear_up", "gear_down"]], ["Horn", ["horn"]],
 	["Headlights", ["headlights"]], ["Reset to road", ["reset_car"]], ["Rewind (hold)", ["rewind"]], ["Change camera", ["camera_next"]],
-	["Look back", ["look_back"]], ["Free look", ["free_look"]], ["Map", ["toggle_map"]],
+	["Look back", ["look_back"]], ["Free look", ["free_look"]], ["Pin camera (orbit)", ["camera_pin"]], ["Map", ["toggle_map"]],
 	["Garage", ["toggle_garage"]], ["Debug menu", ["toggle_debug_menu"]], ["Console", ["toggle_console"]],
 	["Photo mode", ["toggle_photo_mode"]], ["Hide HUD", ["toggle_hud"]], ["Telemetry", ["toggle_telemetry"]],
+	["Environment panel", ["toggle_environment"]],
 	["Screenshot", ["screenshot"]], ["Pause", ["pause"]],
 ]
 const MENU_ROWS := [
 	["Menu: move", "Arrows"], ["Menu: select", "Enter"], ["Menu: back", "Esc"], ["Menu: switch tab", "Q / E"],
-	["Photo: fly", "W A S D  Q E"], ["Photo: fast", "Shift"], ["Photo: look", "RMB drag"], ["Photo: zoom", "Wheel"],
+	["Camera: orbit", "RMB drag"], ["Camera: orbit zoom", "Wheel"], ["Photo: fly", "W A S D  Q E"], ["Photo: fast", "Shift"],
+	["Photo: look", "RMB drag"], ["Photo: zoom", "Wheel"],
 	["Photo: panel", "Tab / Arrows, Enter"], ["Photo: hide UI", "H"], ["Photo: capture", "F12"],
 ]
 
@@ -221,6 +223,7 @@ func _build_settings() -> Control:
 	_toggle(v, "hud_visible", "HUD visible")
 	v.add_child(_head("Camera"))
 	_slider(v, "camera_shake", "Camera shake", 0.0, 1.5, 0.05)
+	_slider(v, "camera_sensitivity", "Mouse sensitivity", 0.2, 2.0, 0.05)
 	v.add_child(_head("Audio"))
 	_slider(v, "volume_master", "Master volume", 0.0, 1.0, 0.05)
 	_slider(v, "volume_engine", "Engine", 0.0, 1.0, 0.05)

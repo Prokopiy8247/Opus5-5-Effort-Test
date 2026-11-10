@@ -8,7 +8,7 @@ export const meta = {
 
 const P = 'W:\\YouTube\\Opus 5.5 Effort Test\\6. Opus 5.5 Forza Ultracode Effort\\6.-opus-5.5-forza-ultracode-effort'
 const GD = 'W:\\Godot_v4.7.2-stable_win64.exe\\Godot_v4.7.2-stable_win64_console.exe'
-const DOC = 'godot_doc/doc/classes'; // local checkout of the Godot class reference (path removed for publishing)
+const DOC = 'C:\\Users\\CRYPTO~1\\AppData\\Local\\Temp\\claude\\C--Users-Cryptopiy--claude-spares-spare-9ibPVk\\d7ef9fbc-fae7-4e96-8b81-003b0208d2c4\\scratchpad\\godot_doc\\doc\\classes'
 
 const COMMON = `You are a senior Godot 4.7 gameplay engineer implementing ONE subsystem of "Sunward Roads", an ORIGINAL open-world arcade-sim racing game (spirit of Forza Horizon 5 but no Forza names/assets/UI copies anywhere) in the existing project at:
 ${P}
